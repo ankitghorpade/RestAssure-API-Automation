@@ -1,0 +1,25 @@
+{
+  "body": {
+  "request": {
+    "method": "deleteprovisionbenchmark",
+    "parameters": {
+      "parameterset": [{
+        "parameter": [{
+          "key": "adminId",
+          "value": "INJECT_ADMINID"
+        }, {
+          "key": "benchmarkname",
+          "value": "INJECT_BENCHMARKNAME"
+        }, {
+          "key": "target_organization",
+          "value": "INJECT_TARGET_ORGANIZATION"
+        }]
+      }]
+    }
+  }
+},
+  "status": "INJECT_STATUS",
+  "urlparam": "Valid",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

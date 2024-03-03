@@ -1,0 +1,39 @@
+{
+  "body": {
+    "request": {
+      "method": "updategroup",
+      "parameters": {
+        "parameterset": [
+          {
+            "parameter": [
+              {
+                "key": "groupname",
+                "value": "INJECT_GROUPNAME"
+              },
+              {
+                "key": "newgroupname",
+                "value": "INJECT_NEW_GROUPNAME"
+              },
+              {
+                "key": "groupdesc",
+                "value": "INJECT_GROUPDESCRIPTION"
+              },
+              {
+                "key": "profilename",
+                "value": "INJECT_PROFILE_NAME"
+              },
+              {
+                "key": "configname",
+                "value": "INJECT_CONFIG_NAME"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "status": "INJECT_STATUS",
+  "urlparam": "INJECT_ACCNAME",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

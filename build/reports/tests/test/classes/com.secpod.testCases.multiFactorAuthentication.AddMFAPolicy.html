@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.secpod.testCases.multiFactorAuthentication.AddMFAPolicy</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.secpod.testCases.multiFactorAuthentication.AddMFAPolicy</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.secpod.testCases.multiFactorAuthentication.html">com.secpod.testCases.multiFactorAuthentication</a> &gt; AddMFAPolicy</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">3.758s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">addMFAPolicy[0]({&quot;request&quot;:{&quot;method&quot;:&quot;addMFAPolicy&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;INJECT_POLICYNAME&quot;},{&quot;key&quot;:&quot;policyDescription&quot;,&quot;value&quot;:&quot;INJECT_POLICYDESCRIPTION&quot;},{&quot;key&quot;:&quot;environmentId&quot;,&quot;value&quot;:&quot;INJECT_ENVIRONMENT_ID&quot;},{&quot;key&quot;:&quot;clientId&quot;,&quot;value&quot;:&quot;INJECT_CLIENT_ID&quot;},{&quot;key&quot;:&quot;authenticationPath&quot;,&quot;value&quot;:&quot;INJECT_AUTHENTICATION_PATH&quot;},{&quot;key&quot;:&quot;usernameOption&quot;,&quot;value&quot;:&quot;INJECT_MFA_USERNAME_OPTION&quot;}]}]}}}, 200.0, Add Pingone Mfa Policy With Valid Parameters, &quot;success&quot;)</td>
+<td class="success">1.914s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addMFAPolicy[1]({&quot;request&quot;:{&quot;method&quot;:&quot;addMFAPolicy&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;pingtest&quot;},{&quot;key&quot;:&quot;policyDescription&quot;,&quot;value&quot;:&quot;demo&quot;},{&quot;key&quot;:&quot;environmentId&quot;,&quot;value&quot;:&quot;invalid_env_id&quot;},{&quot;key&quot;:&quot;clientId&quot;,&quot;value&quot;:&quot;Invalid_client_id&quot;},{&quot;key&quot;:&quot;authenticationPath&quot;,&quot;value&quot;:&quot;https://auth.pingone.asia&quot;},{&quot;key&quot;:&quot;usernameOption&quot;,&quot;value&quot;:&quot;custom&quot;}]}]}}}, 200.0, Add Pingone Mfa Policy With InValid Parameters, &quot;Invalid multi-factor authentication input&quot;)</td>
+<td class="success">1.844s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>totalNumberOfRows::2
+APIhelper::::::::::{&quot;body&quot;:{&quot;request&quot;:{&quot;method&quot;:&quot;addMFAPolicy&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;INJECT_POLICYNAME&quot;},{&quot;key&quot;:&quot;policyDescription&quot;,&quot;value&quot;:&quot;INJECT_POLICYDESCRIPTION&quot;},{&quot;key&quot;:&quot;environmentId&quot;,&quot;value&quot;:&quot;INJECT_ENVIRONMENT_ID&quot;},{&quot;key&quot;:&quot;clientId&quot;,&quot;value&quot;:&quot;INJECT_CLIENT_ID&quot;},{&quot;key&quot;:&quot;authenticationPath&quot;,&quot;value&quot;:&quot;INJECT_AUTHENTICATION_PATH&quot;},{&quot;key&quot;:&quot;usernameOption&quot;,&quot;value&quot;:&quot;INJECT_MFA_USERNAME_OPTION&quot;}]}]}}},&quot;status&quot;:&quot;200.0&quot;,&quot;urlparam&quot;:&quot;Valid&quot;,&quot;description_of_TC&quot;:&quot;Add Pingone Mfa Policy With Valid Parameters&quot;,&quot;expected_results&quot;:&quot;success&quot;}
+APIhelper::::::::::{&quot;body&quot;:{&quot;request&quot;:{&quot;method&quot;:&quot;addMFAPolicy&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;pingtest&quot;},{&quot;key&quot;:&quot;policyDescription&quot;,&quot;value&quot;:&quot;demo&quot;},{&quot;key&quot;:&quot;environmentId&quot;,&quot;value&quot;:&quot;invalid_env_id&quot;},{&quot;key&quot;:&quot;clientId&quot;,&quot;value&quot;:&quot;Invalid_client_id&quot;},{&quot;key&quot;:&quot;authenticationPath&quot;,&quot;value&quot;:&quot;https://auth.pingone.asia&quot;},{&quot;key&quot;:&quot;usernameOption&quot;,&quot;value&quot;:&quot;custom&quot;}]}]}}},&quot;status&quot;:&quot;200.0&quot;,&quot;urlparam&quot;:&quot;Valid&quot;,&quot;description_of_TC&quot;:&quot;Add Pingone Mfa Policy With InValid Parameters&quot;,&quot;expected_results&quot;:&quot;Invalid multi-factor authentication input&quot;}
+
+###############Add Pingone Mfa Policy With Valid Parameters###############
+
+https://192.168.2.22/AncorWebService/perform
+{&quot;request&quot;:{&quot;method&quot;:&quot;addMFAPolicy&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;PingOneTest11&quot;},{&quot;key&quot;:&quot;policyDescription&quot;,&quot;value&quot;:&quot;Test&quot;},{&quot;key&quot;:&quot;environmentId&quot;,&quot;value&quot;:&quot;612fb5a2-3c63-461c-8689-8286b316cdee&quot;},{&quot;key&quot;:&quot;clientId&quot;,&quot;value&quot;:&quot;2321773e-ed61-4e1b-8f2c-2031d6e12cbf&quot;},{&quot;key&quot;:&quot;authenticationPath&quot;,&quot;value&quot;:&quot;https://auth.pingone.asia&quot;},{&quot;key&quot;:&quot;usernameOption&quot;,&quot;value&quot;:&quot;custom&quot;}]}]}}}
+{&quot;response&quot;:{&quot;method&quot;:&quot;addMFAPolicy&quot;,&quot;results&quot;:{&quot;result&quot;:[{&quot;key&quot;:&quot;PingOneTest11&quot;,&quot;status&quot;:&quot;success&quot;,&quot;reason&quot;:&quot;&quot;}]}}}
+
+###############removeMFAPolicy###############
+
+https://192.168.2.22/AncorWebService/perform
+{&quot;request&quot;:{&quot;method&quot;:&quot;removeMFAPolicy&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;PingOneTest11&quot;}]}]}}}
+{&quot;response&quot;:{&quot;method&quot;:&quot;removeMFAPolicy&quot;,&quot;results&quot;:{&quot;result&quot;:[{&quot;key&quot;:&quot;PingOneTest11&quot;,&quot;status&quot;:&quot;success&quot;,&quot;reason&quot;:&quot;&quot;}]}}}
+
+###############Add Pingone Mfa Policy With InValid Parameters###############
+
+https://192.168.2.22/AncorWebService/perform
+{&quot;request&quot;:{&quot;method&quot;:&quot;addMFAPolicy&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;pingtest&quot;},{&quot;key&quot;:&quot;policyDescription&quot;,&quot;value&quot;:&quot;demo&quot;},{&quot;key&quot;:&quot;environmentId&quot;,&quot;value&quot;:&quot;invalid_env_id&quot;},{&quot;key&quot;:&quot;clientId&quot;,&quot;value&quot;:&quot;Invalid_client_id&quot;},{&quot;key&quot;:&quot;authenticationPath&quot;,&quot;value&quot;:&quot;https://auth.pingone.asia&quot;},{&quot;key&quot;:&quot;usernameOption&quot;,&quot;value&quot;:&quot;custom&quot;}]}]}}}
+{&quot;response&quot;:{&quot;method&quot;:&quot;addMFAPolicy&quot;,&quot;results&quot;:{&quot;result&quot;:[{&quot;key&quot;:&quot;pingtest&quot;,&quot;status&quot;:&quot;fail&quot;,&quot;reason&quot;:&quot;Invalid multi-factor authentication input&quot;}]}}}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4</a> at 27-Nov-2023, 1:22:12 am</p>
+</div>
+</div>
+</body>
+</html>

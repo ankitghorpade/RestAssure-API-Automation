@@ -1,0 +1,26 @@
+{
+"body":{
+  "request": {
+    "method": "enforceMultiFactor",
+    "parameters": {
+      "parameterset": [{
+        "parameter": [{
+          "key": "loginid",
+          "value": "INJECT_AUTH_LOGINID"
+        },
+          {
+            "key": "policyName",
+            "value": "INJECT_POLICYNAME"
+
+          }
+        ]
+      }]
+    }
+  }
+},
+
+  "status": "INJECT_STATUS",
+  "urlparam": "Valid",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

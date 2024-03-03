@@ -1,0 +1,22 @@
+{
+  "body":{
+    "request": {
+      "method": "getMisconfigurationFixforRollback",
+      "parameters": {
+        "parameterset": [{
+          "parameter": [{
+            "key": "accountid",
+            "value": "INJECT_ACCOUNT_ID"
+          }]
+        }]
+      }
+    }
+  },
+  "status": "INJECT_STATUS",
+  "urlparam": "Valid",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+
+}
+
+

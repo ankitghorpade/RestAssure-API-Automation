@@ -1,0 +1,39 @@
+{
+  "body": {
+    "request": {
+      "method": "addOrganization",
+      "parameters": {
+        "parameterset": [
+          {
+            "parameter": [
+              {
+                "key": "name",
+                "value": "INJECT_ORGNAME"
+              },
+              {
+                "key": "email",
+                "value": "INJECT_EMAIL"
+              },
+              {
+                "key": "numberofsubscriptions",
+                "value": "INJECT_SUBSCRIPTIONS"
+              },
+              {
+                "key": "enddate",
+                "value": "INJECT_ENDDATE"
+              },
+              {
+                "key": "adminid",
+                "value": "INJECT_ADMINID"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "status": "INJECT_STATUS",
+  "urlparam": "Valid",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

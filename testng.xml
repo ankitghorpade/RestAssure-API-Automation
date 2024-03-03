@@ -1,0 +1,398 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="1" verbose="1" name="API Suite" annotations="JDK" parallel="tests">
+
+    <test name="CreateOrg">
+        <classes>
+            <class name="com.secpod.testCases.organizationManagement.CreateOrg"/>
+        </classes>
+    </test>
+    <test name="UpdateOrg">
+        <classes>
+            <class name="com.secpod.testCases.organizationManagement.UpdateOrg"/>
+        </classes>
+    </test>
+    <test name="DeleteOrg">
+        <classes>
+            <class name="com.secpod.testCases.organizationManagement.DeleteOrg"/>
+        </classes>
+    </test>
+    <test name="GetOrganization">
+        <classes>
+            <class name="com.secpod.testCases.organizationManagement.GetOrganization"/>
+        </classes>
+    </test>
+    <test name="AddAccount">
+        <classes>
+            <class name="com.secpod.testCases.accountManagement.AddAccount"/>
+        </classes>
+    </test>
+    <test name="UpdateAccount">
+        <classes>
+            <class name="com.secpod.testCases.accountManagement.UpdateAccount"/>
+        </classes>
+    </test>
+    <test name="RemoveAccount">
+        <classes>
+            <class name="com.secpod.testCases.accountManagement.RemoveAccount"/>
+        </classes>
+    </test>
+    <test name="GetAccount">
+        <classes>
+            <class name="com.secpod.testCases.accountManagement.GetAccount"/>
+        </classes>
+    </test>
+    <test name="GetDownloadUrl">
+        <classes>
+            <class name="com.secpod.testCases.accountManagement.GetDownloadUrl"/>
+        </classes>
+    </test>
+    <test name="DownloadAgent">
+        <classes>
+            <class name="com.secpod.testCases.accountManagement.DownloadAgent"/>
+        </classes>
+    </test>
+    <test name="GetAgentActivationConf">
+        <classes>
+            <class name="com.secpod.testCases.accountManagement.GetAgentActivationConf"/>
+        </classes>
+    </test>
+    <test name="UpdateServiceProvision">
+        <classes>
+            <class name="com.secpod.testCases.organizationManagement.UpdateServiceProvision"/>
+        </classes>
+    </test>
+    <test name="AddDevice">
+        <classes>
+            <class name="com.secpod.testCases.deviceManagement.AddDevice"/>
+        </classes>
+    </test>
+    <test name="UpdateDevice">
+        <classes>
+            <class name="com.secpod.testCases.deviceManagement.UpdateDevice"/>
+        </classes>
+    </test>
+    <test name="ScanDevice">
+        <classes>
+            <class name="com.secpod.testCases.deviceManagement.ScanDevice"/>
+        </classes>
+    </test>
+    <test name="GetDevice">
+        <classes>
+            <class name="com.secpod.testCases.deviceManagement.GetDevice"/>
+        </classes>
+    </test>
+    <test name="DeleteDevice">
+        <classes>
+            <class name="com.secpod.testCases.deviceManagement.DeleteDevice"/>
+        </classes>
+    </test>
+    <test name="UpdateDeviceAlias">
+        <classes>
+            <class name="com.secpod.testCases.deviceManagement.UpdateDeviceAlias"/>
+        </classes>
+    </test>
+    <test name="RemoveDeviceAlias">
+        <classes>
+            <class name="com.secpod.testCases.deviceManagement.RemoveDeviceAlias"/>
+        </classes>
+    </test>
+    <test name="GetDeviceReport">
+        <classes>
+            <class name="com.secpod.testCases.deviceManagement.GetDeviceReport"/>
+        </classes>
+    </test>
+    <test name="GetHostResults">
+        <classes>
+            <class name="com.secpod.testCases.deviceManagement.GetHostResults"/>
+        </classes>
+    </test>
+    <test name="AddGroup">
+        <classes>
+            <class name="com.secpod.testCases.groupManagement.AddGroup"/>
+        </classes>
+    </test>
+    <test name="UpdateGroup">
+        <classes>
+            <class name="com.secpod.testCases.groupManagement.UpdateGroup"/>
+        </classes>
+    </test>
+    <test name="DeleteGroup">
+        <classes>
+            <class name="com.secpod.testCases.groupManagement.DeleteGroup"/>
+        </classes>
+    </test>
+    <test name="AssignDevicestoGroup">
+        <classes>
+            <class name="com.secpod.testCases.groupManagement.AssignDevicestoGroup"/>
+        </classes>
+    </test>
+    <test name="UnAssignDevicesfromGroup">
+        <classes>
+            <class name="com.secpod.testCases.groupManagement.UnAssignDevicesfromGroup"/>
+        </classes>
+    </test>
+    <test name="GetGroup">
+        <classes>
+            <class name="com.secpod.testCases.groupManagement.GetGroup"/>
+        </classes>
+    </test>
+    <test name="AddConfig">
+        <classes>
+            <class name="com.secpod.testCases.configManagement.AddConfig"/>
+        </classes>
+    </test>
+    <test name="GetConfig">
+        <classes>
+            <class name="com.secpod.testCases.configManagement.GetConfig"/>
+        </classes>
+    </test>
+    <test name="DeleteConfig">
+        <classes>
+            <class name="com.secpod.testCases.configManagement.DeleteConfig"/>
+        </classes>
+    </test>
+    <test name="AddBenchmark">
+        <classes>
+            <class name="com.secpod.testCases.complianceManagement.AddBenchmark"/>
+        </classes>
+    </test>
+
+    <test name="ProvisionBenchmark">
+        <classes>
+            <class name="com.secpod.testCases.complianceManagement.ProvisionBenchmark"/>
+        </classes>
+    </test>
+
+    <test name="UpdateProvisionBenchmark">
+        <classes>
+            <class name="com.secpod.testCases.complianceManagement.UpdateProvisionBenchmark"/>
+        </classes>
+    </test>
+
+    <test name="DeleteProvisionBenchmark">
+        <classes>
+            <class name="com.secpod.testCases.complianceManagement.DeleteProvisionBenchmark"/>
+        </classes>
+    </test>
+    <test name="DeleteBenchmark">
+        <classes>
+            <class name="com.secpod.testCases.complianceManagement.DeleteBenchmark"/>
+        </classes>
+    </test>
+    <test name="GetMisconfigurationFixForRollback">
+        <classes>
+            <class name="com.secpod.testCases.complianceManagement.GetMisconfigurationFixForRollback"/>
+        </classes>
+    </test>
+    <test name="GetApplicableMisconfigurationRemediation">
+        <classes>
+            <class name="com.secpod.testCases.complianceManagement.GetApplicableMisconfigurationRemediation"/>
+        </classes>
+    </test>
+    <test name="PAHealthCheck">
+        <classes>
+            <class name="com.secpod.testCases.postureAnomaly.HealthCheck"/>
+        </classes>
+    </test>
+    <test name="AddPAScanConfig">
+        <classes>
+            <class name="com.secpod.testCases.postureAnomaly.AddPAScanConfig"/>
+        </classes>
+    </test>
+    <test name="GetPAScanConfig">
+        <classes>
+            <class name="com.secpod.testCases.postureAnomaly.GetPAScanConfig"/>
+        </classes>
+    </test>
+    <test name="DeletePAScanConfig">
+        <classes>
+            <class name="com.secpod.testCases.postureAnomaly.DeletePAScanConfig"/>
+        </classes>
+    </test>
+    <test name="InitiatePAScan">
+        <classes>
+            <class name="com.secpod.testCases.postureAnomaly.InitiatePAScan"/>
+        </classes>
+    </test>
+    <test name="GetStatus">
+        <classes>
+            <class name="com.secpod.testCases.postureAnomaly.GetStatus"/>
+        </classes>
+    </test>
+    <test name="GetPostureAnomaly">
+        <classes>
+            <class name="com.secpod.testCases.postureAnomaly.GetPostureAnomaly"/>
+        </classes>
+    </test>
+    <test name="GetAllConfiguration">
+        <classes>
+            <class name="com.secpod.testCases.postureAnomaly.GetAllConfiguration"/>
+        </classes>
+    </test>
+    <test name="PostConfiguration">
+        <classes>
+            <class name="com.secpod.testCases.postureAnomaly.PostConfiguration"/>
+        </classes>
+    </test>
+    <test name="GetConfigurationStatus">
+        <classes>
+            <class name="com.secpod.testCases.postureAnomaly.GetConfigurationStatus"/>
+        </classes>
+    </test>
+    <test name="GetConfiguration">
+        <classes>
+            <class name="com.secpod.testCases.postureAnomaly.GetConfiguration"/>
+        </classes>
+    </test>
+    <test name="PostWhitelist">
+        <classes>
+            <class name="com.secpod.testCases.postureAnomaly.PostWhitelist"/>
+        </classes>
+    </test>
+    <test name="GetWhitelist">
+        <classes>
+            <class name="com.secpod.testCases.postureAnomaly.GetWhitelist"/>
+        </classes>
+    </test>
+    <test name="AddADConfig">
+        <classes>
+            <class name="com.secpod.testCases.ActiveDirectory.AddADConfig"/>
+        </classes>
+    </test>
+    <test name="DeleteADConfig">
+        <classes>
+            <class name="com.secpod.testCases.ActiveDirectory.DeleteADConfig"/>
+        </classes>
+    </test>
+    <test name="UpdateADConfig">
+        <classes>
+            <class name="com.secpod.testCases.ActiveDirectory.UpdateADConfig"/>
+        </classes>
+    </test>
+    <test name="GetADConfig">
+        <classes>
+            <class name="com.secpod.testCases.ActiveDirectory.GetADConfig"/>
+        </classes>
+    </test>
+    <test name="InitiateAD">
+        <classes>
+            <class name="com.secpod.testCases.ActiveDirectory.InitiateAD"/>
+        </classes>
+    </test>
+    <test name="AddUser">
+        <classes>
+            <class name="com.secpod.testCases.userManagement.AddUser"/>
+        </classes>
+    </test>
+    <test name="AssignOrgToUser">
+        <classes>
+            <class name="com.secpod.testCases.userManagement.AssignOrgToUser"/>
+        </classes>
+    </test>
+
+    <test name="UnAssignOrgToUser">
+        <classes>
+            <class name="com.secpod.testCases.userManagement.UnAssignOrgToUser"/>
+        </classes>
+    </test>
+
+    <test name="DeleteUser">
+        <classes>
+            <class name="com.secpod.testCases.userManagement.DeleteUser"/>
+        </classes>
+    </test>
+    <test name="GetProfileNames">
+        <classes>
+            <class name="com.secpod.testCases.reportManagement.GetProfileNames"/>
+        </classes>
+    </test>
+    <test name="GetProfileReport">
+        <classes>
+            <class name="com.secpod.testCases.reportManagement.GetProfileReport"/>
+        </classes>
+    </test>
+    <test name="GetVulnerableAssets">
+        <classes>
+            <class name="com.secpod.testCases.reportManagement.GetVulnerableAssets"/>
+        </classes>
+    </test>
+    <test name="GetReportNames">
+        <classes>
+            <class name="com.secpod.testCases.reportManagement.GetReportNames"/>
+        </classes>
+    </test>
+    <test name="GetAssets">
+        <classes>
+            <class name="com.secpod.testCases.reportManagement.GetAssets"/>
+        </classes>
+    </test>
+    <test name="GetReportApis">
+        <classes>
+            <class name="com.secpod.testCases.reportManagement.GetReportApis"/>
+        </classes>
+    </test>
+    <test name="EnforeMultifactor">
+        <classes>
+            <class name="com.secpod.testCases.multiFactorAuthentication.EnforceMultifactor"/>
+        </classes>
+    </test>
+    <test name="WithdrawMultifactor">
+        <classes>
+            <class name="com.secpod.testCases.multiFactorAuthentication.WithdrawMultifactor"/>
+        </classes>
+    </test>
+    <test name="IsMultiFactorEnforced">
+        <classes>
+            <class name="com.secpod.testCases.multiFactorAuthentication.IsMultiFactorEnforced"/>
+        </classes>
+    </test>
+
+
+    <test name="RemoveMFAPolicy">
+        <classes>
+            <class name="com.secpod.testCases.multiFactorAuthentication.RemoveMFAPolicy"/>
+        </classes>
+    </test>
+    <test name="IsMFAPolicyExist">
+        <classes>
+            <class name="com.secpod.testCases.multiFactorAuthentication.IsMFAPolicyExist"/>
+        </classes>
+    </test>
+    <test name="IsMultiFactorEnabled">
+        <classes>
+            <class name="com.secpod.testCases.multiFactorAuthentication.IsMultiFactorEnabled"/>
+        </classes>
+    </test>
+    <test name="GetMFAPolicy">
+        <classes>
+            <class name="com.secpod.testCases.multiFactorAuthentication.GetMFAPolicy"/>
+        </classes>
+    </test>
+
+    <test name="UpdateMFAPolicy">
+        <classes>
+            <class name="com.secpod.testCases.multiFactorAuthentication.UpdateMFAPolicy"/>
+        </classes>
+    </test>
+
+    <test name="AddMFAPolicy">
+        <classes>
+            <class name="com.secpod.testCases.multiFactorAuthentication.AddMFAPolicy"/>
+        </classes>
+    </test>
+    <test name="GetUserMFAPolicy">
+        <classes>
+            <class name="com.secpod.testCases.multiFactorAuthentication.GetUserMFAPolicy"/>
+        </classes>
+    </test>
+
+
+    <test name="IsUserMFAPolicy">
+        <classes>
+            <class name="com.secpod.testCases.multiFactorAuthentication.IsUserMFAPolicyExist"/>
+        </classes>
+    </test>
+
+
+</suite>

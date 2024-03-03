@@ -1,0 +1,24 @@
+{
+  "body":{
+    "request": {
+      "method": "removeOrganization",
+      "parameters": {
+        "parameterset": [
+          {
+            "parameter": [
+              {
+                "key": "name",
+                "value": "INJECT_ORGNAME"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "status": "INJECT_STATUS",
+  "urlparam": "Valid",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+
+}

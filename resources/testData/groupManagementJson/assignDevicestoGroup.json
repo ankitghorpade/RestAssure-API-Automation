@@ -1,0 +1,27 @@
+{
+  "body": {
+    "request": {
+      "method": "assigndevicestogroup",
+      "parameters": {
+        "parameterset": [
+          {
+            "parameter": [
+              {
+                "key": "groupname",
+                "value": "INJECT_GROUPNAME"
+              },
+              {
+                "key": "hostname",
+                "value": "INJECT_HOSTNAME"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "status": "INJECT_STATUS",
+  "urlparam": "INJECT_ACCNAME",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

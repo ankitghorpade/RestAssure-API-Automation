@@ -1,0 +1,14 @@
+{
+  "body": {
+    "request": {
+      "method": "getprofilenames",
+      "parameters": {
+
+      }
+    }
+  },
+  "status": "INJECT_STATUS",
+  "urlparam": "INJECT_ACCNAME",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

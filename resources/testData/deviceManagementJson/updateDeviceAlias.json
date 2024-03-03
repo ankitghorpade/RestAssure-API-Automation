@@ -1,0 +1,27 @@
+{
+  "body": {
+  "request": {
+    "method": "updateDeviceAlias",
+    "parameters": {
+      "parameterset": [
+        {
+          "parameter": [
+            {
+              "key": "hostname",
+              "value": "INJECT_HOSTNAME"
+            },
+            {
+              "key": "alias",
+              "value": "INJECT_ALIAS"
+            }
+          ]
+        }
+      ]
+    }
+  }
+},
+  "status": "INJECT_STATUS",
+  "urlparam": "INJECT_ACCNAME",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

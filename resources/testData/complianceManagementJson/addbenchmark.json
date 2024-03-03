@@ -1,0 +1,37 @@
+{
+  "body": {
+    "request": {
+      "method": "addbenchmark",
+      "parameters": {
+        "parameterset": [{
+          "parameter": [{
+            "key": "account_name",
+            "value": "INJECT_ACCNAME"
+          }, {
+            "key": "benchmarkname",
+            "value": "INJECT_BENCHMARKNAME"
+          }, {
+            "key": "target_account_name",
+            "value": "INJECT_TARGET_ACCOUNT_NAME"
+          }, {
+            "key": "target_group",
+            "value": "INJECT_TARGET_GROUP"
+          }]
+        }]
+      }
+    }
+  },
+  "status": "INJECT_STATUS",
+  "urlparam": "Valid",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}
+
+
+
+
+
+
+
+
+

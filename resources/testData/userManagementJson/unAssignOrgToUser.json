@@ -1,0 +1,27 @@
+{
+  "body": {
+    "request": {
+      "method": "unassignUserFromOrganization",
+      "parameters": {
+        "parameterset": [
+          {
+            "parameter": [
+              {
+                "key": "user",
+                "value": "INJECT_USERID"
+              },
+              {
+                "key": "organization",
+                "value": "INJECT_ORGNAME"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "status": "INJECT_STATUS",
+  "urlparam": "Valid",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

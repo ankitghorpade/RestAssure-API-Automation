@@ -1,0 +1,67 @@
+
+
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "accounts": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "accountinfo": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "organization": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "startdate": {
+                  "type": "string"
+                },
+                "enddate": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "agentautoupgrade": {
+                  "type": "boolean"
+                },
+                "maxsubscriptions": {
+                  "type": "integer"
+                },
+                "inusesubscriptions": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "name",
+                "organization",
+                "email",
+                "startdate",
+                "enddate",
+                "id",
+                "agentautoupgrade",
+                "maxsubscriptions",
+                "inusesubscriptions"
+              ]
+            }
+          },
+          "required": [
+            "accountinfo"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "accounts"
+  ]
+}

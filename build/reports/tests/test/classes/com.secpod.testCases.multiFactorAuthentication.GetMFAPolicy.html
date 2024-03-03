@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.secpod.testCases.multiFactorAuthentication.GetMFAPolicy</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.secpod.testCases.multiFactorAuthentication.GetMFAPolicy</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.secpod.testCases.multiFactorAuthentication.html">com.secpod.testCases.multiFactorAuthentication</a> &gt; GetMFAPolicy</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.208s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">getMFAPolicy[0]({&quot;request&quot;:{&quot;method&quot;:&quot;getMFAPolicy&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;INJECT_POLICYNAME&quot;}]}]}}}, 200, Get Mfa policy, &quot;Any TOTP Authenticator App&quot;)</td>
+<td class="success">0.630s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getMFAPolicy[1]({&quot;request&quot;:{&quot;method&quot;:&quot;getMFAPolicy&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;Demo&quot;}]}]}}}, 200, Wrong name, &quot;No records found with given name&quot;)</td>
+<td class="success">0.578s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>totalNumberOfRows::2
+APIhelper::::::::::{&quot;body&quot;:{&quot;request&quot;:{&quot;method&quot;:&quot;getMFAPolicy&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;INJECT_POLICYNAME&quot;}]}]}}},&quot;status&quot;:&quot;200&quot;,&quot;urlparam&quot;:&quot;Valid&quot;,&quot;description_of_TC&quot;:&quot;Get Mfa policy&quot;,&quot;expected_results&quot;:&quot;Any TOTP Authenticator App&quot;}
+APIhelper::::::::::{&quot;body&quot;:{&quot;request&quot;:{&quot;method&quot;:&quot;getMFAPolicy&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;Demo&quot;}]}]}}},&quot;status&quot;:&quot;200&quot;,&quot;urlparam&quot;:&quot;Valid&quot;,&quot;description_of_TC&quot;:&quot;Wrong name&quot;,&quot;expected_results&quot;:&quot;No records found with given name&quot;}
+
+###############Get Mfa policy###############
+
+https://192.168.2.22/AncorWebService/perform
+{&quot;request&quot;:{&quot;method&quot;:&quot;getMFAPolicy&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;Authenticator App&quot;}]}]}}}
+{ &quot;mfaPolicy&quot;:{&quot;provider&quot;:&quot;Any TOTP Authenticator App&quot;,&quot;name&quot;:&quot;Authenticator App&quot;,&quot;description&quot;:&quot;Time-based One-Time Password multi-factor authentication policy - TOTP&quot;}}
+
+###############Wrong name###############
+
+https://192.168.2.22/AncorWebService/perform
+{&quot;request&quot;:{&quot;method&quot;:&quot;getMFAPolicy&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;Demo&quot;}]}]}}}
+{&quot;response&quot;:{&quot;method&quot;:&quot;getMFAPolicy&quot;,&quot;results&quot;:{&quot;result&quot;:[{&quot;key&quot;:&quot;null&quot;,&quot;status&quot;:&quot;Fail&quot;,&quot;reason&quot;:&quot;No records found with given name&quot;}]}}}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4</a> at 27-Nov-2023, 1:22:12 am</p>
+</div>
+</div>
+</body>
+</html>

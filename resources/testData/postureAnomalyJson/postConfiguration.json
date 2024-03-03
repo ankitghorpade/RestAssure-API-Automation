@@ -1,0 +1,22 @@
+{"body": {
+  "account_name": "INJECT_ACCNAME",
+  "configuration": {
+    "configure_items": [
+      {
+        "id": "INJECT_PA_ID",
+        "key": "local_port",
+        "type": "port",
+        "reference": "All Ports - Windows",
+        "family": "INJECT_FAMILY",
+        "group": "",
+        "devices": "",
+        "configure": ["INJECT_PORT"]
+      }
+    ]
+  }
+},
+  "status": "INJECT_STATUS",
+  "urlparam": "Valid",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

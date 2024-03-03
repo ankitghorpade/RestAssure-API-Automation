@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [API Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="1" parallel="tests" name="IsMultiFactorEnabled(failed)" verbose="0">
+    <classes>
+      <class name="com.secpod.testCases.multiFactorAuthentication.IsMultiFactorEnabled">
+        <methods>
+          <include name="isMultiFactorEnabled" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.secpod.testCases.multiFactorAuthentication.IsMultiFactorEnabled -->
+    </classes>
+  </test> <!-- IsMultiFactorEnabled(failed) -->
+</suite> <!-- Failed suite [API Suite] -->

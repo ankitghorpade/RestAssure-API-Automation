@@ -1,0 +1,58 @@
+{
+  "body": {
+    "request": {
+      "method": "updateADconfig",
+      "parameters": {
+        "parameterset": [{
+          "parameter": [{
+            "key": "organization",
+            "value": "INJECT_ORGNAME"
+          }, {
+            "key": "devicename",
+            "value": "INJECT_DEVICENAME"
+          }, {
+            "key": "integrationtype",
+            "value": "INJECT_INTEGRATIONTYPE"
+          }, {
+            "key": "save",
+            "value": "INJECT_SAVE"
+          }, {
+            "key": "username",
+            "value": "INJECT_USERNAME"
+          }, {
+            "key": "password",
+            "value": "INJECT_PASSWORD"
+          }, {
+            "key": "domainname",
+            "value": "INJECT_DOMAINNAME"
+          }, {
+            "key": "sslverify",
+            "value": "INJECT_SSLVERIFY"
+          }, {
+            "key": "mode",
+            "value": "INJECT_MODE"
+          }, {
+            "key": "schedule",
+            "value": "INJECT_SCHEDULE"
+          }, {
+            "key": "starttime",
+            "value": "INJECT_TIME"
+          }, {
+            "key": "monthoftheyear",
+            "value": "INJECT_MONTH"
+          }, {
+            "key": "weekofthemonth",
+            "value": "INJECT_WEEK"
+          }, {
+            "key": "dayoftheweek",
+            "value": "INJECT_DAY"
+          }]
+        }]
+      }
+    }
+  },
+  "status": "INJECT_STATUS",
+  "urlparam": "Valid",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

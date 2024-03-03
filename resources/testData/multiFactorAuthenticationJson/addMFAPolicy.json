@@ -1,0 +1,40 @@
+{
+  "body":{
+    "request": {
+      "method": "addMFAPolicy",
+      "parameters": {
+        "parameterset": [{
+          "parameter": [{
+            "key": "policyName",
+            "value": "INJECT_POLICYNAME"
+          }, {
+            "key": "policyDescription",
+            "value": "INJECT_POLICYDESCRIPTION"
+          },
+            {
+              "key": "environmentId",
+              "value": "INJECT_ENVIRONMENT_ID"
+            },
+            {
+              "key": "clientId",
+              "value": "INJECT_CLIENT_ID"
+            },
+            {
+              "key": "authenticationPath",
+              "value": "INJECT_AUTHENTICATION_PATH"
+            },
+            {
+              "key": "usernameOption",
+              "value": "INJECT_MFA_USERNAME_OPTION"
+            }
+          ]
+        }]
+      }
+    }
+  },
+
+  "status": "INJECT_STATUS",
+  "urlparam": "Valid",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.secpod.testCases.multiFactorAuthentication.EnforceMultifactor" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:51:22" hostname="SP-ANKIT-LAPTOP" time="2.05">
+  <properties/>
+  <testcase name="enforceMultiFactor[0]({&quot;request&quot;:{&quot;method&quot;:&quot;enforceMultiFactor&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;loginid&quot;,&quot;value&quot;:&quot;INJECT_USERID&quot;},{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;INJECT_POLICYNAME&quot;}]}]}}}, 200, Enfore Multifactor Policy to valid user, &quot;success&quot;)" classname="com.secpod.testCases.multiFactorAuthentication.EnforceMultifactor" time="0.761"/>
+  <testcase name="enforceMultiFactor[1]({&quot;request&quot;:{&quot;method&quot;:&quot;enforceMultiFactor&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;loginid&quot;,&quot;value&quot;:&quot;INJECT_USERID&quot;},{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;INJECT_POLICYNAME&quot;}]}]}}}, 200, Enfore Multifactor policy to already exist User, &quot;Multi-Factor Authentication is already enforced for user&quot;)" classname="com.secpod.testCases.multiFactorAuthentication.EnforceMultifactor" time="0.652"/>
+  <testcase name="enforceMultiFactor[2]({&quot;request&quot;:{&quot;method&quot;:&quot;enforceMultiFactor&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;loginid&quot;,&quot;value&quot;:&quot;Invalid_id&quot;},{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;INJECT_POLICYNAME&quot;}]}]}}}, 200, Enfore Multifactor policy to Invalid user, &quot;Failed due to invalid login id&quot;)" classname="com.secpod.testCases.multiFactorAuthentication.EnforceMultifactor" time="0.634"/>
+  <system-out><![CDATA[
+###############get organization###############
+
+https://192.168.2.22/AncorWebService/perform
+{"request":{"method":"getOrganization"}}
+{ "organizations":[{"organizationinfo":{"name":"Nicole","email":"qatest@secpod.com","startdate":"2023-09-21","enddate":"2023-12-31","maxsubscriptions":50,"inusesubscriptions":0}},{"organizationinfo":{"name":"org2","email":"qatest@secpod.com","startdate":"2023-09-20","enddate":"2023-12-31","maxsubscriptions":15,"inusesubscriptions":0}},{"organizationinfo":{"name":"Smitha","email":"qatest@secpod.com","startdate":"2023-10-11","enddate":"2023-12-31","maxsubscriptions":20,"inusesubscriptions":1}},{"organizationinfo":{"name":"testUpdate1","email":"test11@test.com","startdate":"2023-09-26","enddate":"2023-12-12","maxsubscriptions":1,"inusesubscriptions":0}},{"organizationinfo":{"name":"Test_ANKIT","email":"qatest@secpod.com","startdate":"2023-10-12","enddate":"2023-12-31","maxsubscriptions":5,"inusesubscriptions":0}},{"organizationinfo":{"name":"Avinash","email":"qatest@secpod.com","startdate":"2023-09-23","enddate":"2023-12-31","maxsubscriptions":2,"inusesubscriptions":0}},{"organizationinfo":{"name":"SHIV","email":"qatest@secpod.com","startdate":"2023-10-18","enddate":"2023-12-31","maxsubscriptions":5,"inusesubscriptions":3}},{"organizationinfo":{"name":"Ashok","email":"qatest@secpod.com","startdate":"2023-08-22","enddate":"2023-12-31","maxsubscriptions":5,"inusesubscriptions":1}}]}
+
+###############Create User for deletion###############
+
+https://192.168.2.22/AncorWebService/perform
+{"request":{"method":"adduser","parameters":{"parameterset":[{"parameter":[{"key":"id","value":"API.A4GD@123.com"},{"key":"password","value":"P4ssw0rd@"},{"key":"name","value":"uniqname"},{"key":"organization","value":"Nicole"},{"key":"email","value":"commonuserforDelete@secpod.com"},{"key":"role","value":"ORGADMIN"}]}]}}}
+{"response":{"method":"adduser","results":{"result":[{"key":"API.A4GD@123.com","status":"success","reason":""}]}}}
+totalNumberOfRows::4
+APIhelper::::::::::{"body":{"request":{"method":"enforceMultiFactor","parameters":{"parameterset":[{"parameter":[{"key":"loginid","value":"INJECT_USERID"},{"key":"policyName","value":"INJECT_POLICYNAME"}]}]}}},"status":"200","urlparam":"Valid","description_of_TC":"Enfore Multifactor Policy to valid user","expected_results":"success"}
+APIhelper::::::::::{"body":{"request":{"method":"enforceMultiFactor","parameters":{"parameterset":[{"parameter":[{"key":"loginid","value":"INJECT_USERID"},{"key":"policyName","value":"INJECT_POLICYNAME"}]}]}}},"status":"200","urlparam":"Valid","description_of_TC":"Enfore Multifactor policy to already exist User","expected_results":"Multi-Factor Authentication is already enforced for user"}
+APIhelper::::::::::{"body":{"request":{"method":"enforceMultiFactor","parameters":{"parameterset":[{"parameter":[{"key":"loginid","value":"Invalid_id"},{"key":"policyName","value":"INJECT_POLICYNAME"}]}]}}},"status":"200","urlparam":"Valid","description_of_TC":"Enfore Multifactor policy to Invalid user","expected_results":"Failed due to invalid login id"}
+
+###############Enfore Multifactor Policy to valid user###############
+
+https://192.168.2.22/AncorWebService/perform
+{"request":{"method":"enforceMultiFactor","parameters":{"parameterset":[{"parameter":[{"key":"loginid","value":"API.A4GD@123.com"},{"key":"policyName","value":"Authenticator App"}]}]}}}
+{"response":{"method":"enforceMultiFactor","results":{"result":[{"key":"API.A4GD@123.com","status":"success","reason":""}]}}}
+
+###############Enfore Multifactor policy to already exist User###############
+
+https://192.168.2.22/AncorWebService/perform
+{"request":{"method":"enforceMultiFactor","parameters":{"parameterset":[{"parameter":[{"key":"loginid","value":"API.A4GD@123.com"},{"key":"policyName","value":"Authenticator App"}]}]}}}
+{"response":{"method":"enforceMultiFactor","results":{"result":[{"key":"API.A4GD@123.com","status":"fail","reason":"Multi-Factor Authentication is already enforced for user"}]}}}
+
+###############Enfore Multifactor policy to Invalid user###############
+
+https://192.168.2.22/AncorWebService/perform
+{"request":{"method":"enforceMultiFactor","parameters":{"parameterset":[{"parameter":[{"key":"loginid","value":"Invalid_id"},{"key":"policyName","value":"INJECT_POLICYNAME"}]}]}}}
+{"response":{"method":"enforceMultiFactor","results":{"result":[{"key":"null","status":"fail","reason":"Failed due to invalid login id"}]}}}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "groups": {
+      "type": "object",
+      "properties": {
+        "group": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "confId": {
+                  "type": "string"
+                },
+                "profileId": {
+                  "type": "string"
+                },
+                "devices": {
+                  "type": "object",
+                  "properties": {
+                    "device": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string"
+                            },
+                            "profileId": {
+                              "type": "string"
+                            },
+                            "osname": {
+                              "type": "string"
+                            },
+                            "groupId": {
+                              "type": "string"
+                            },
+                            "lastScan": {
+                              "type": "string"
+                            },
+                            "totalVulnerabilities": {
+                              "type": "string"
+                            },
+                            "totalMisconfigurations": {
+                              "type": "string"
+                            },
+                            "totalThreatIndicators": {
+                              "type": "integer"
+                            }
+                          },
+                          "required": [
+                            "name",
+                            "profileId",
+                            "osname",
+                            "groupId",
+                            "lastScan",
+                            "totalVulnerabilities",
+                            "totalMisconfigurations",
+                            "totalThreatIndicators"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "device"
+                  ]
+                }
+              },
+              "required": [
+                "name",
+                "description",
+                "confId",
+                "profileId",
+                "devices"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "group"
+      ]
+    }
+  },
+  "required": [
+    "groups"
+  ]
+}

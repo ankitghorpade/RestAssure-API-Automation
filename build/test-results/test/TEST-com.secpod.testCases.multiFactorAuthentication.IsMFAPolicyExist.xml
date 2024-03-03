@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.secpod.testCases.multiFactorAuthentication.IsMFAPolicyExist" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:51:41" hostname="SP-ANKIT-LAPTOP" time="1.236">
+  <properties/>
+  <testcase name="isMFAPolicyExist[0]({&quot;request&quot;:{&quot;method&quot;:&quot;isMFAPolicyExist&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;INJECT_POLICYNAME&quot;}]}]}}}, 200.0, Is Mfa Policy Exist With Valid Policy name, &quot;TRUE&quot;)" classname="com.secpod.testCases.multiFactorAuthentication.IsMFAPolicyExist" time="0.624"/>
+  <testcase name="isMFAPolicyExist[1]({&quot;request&quot;:{&quot;method&quot;:&quot;isMFAPolicyExist&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;Invalid_Policyname&quot;}]}]}}}, 200.0, Is MFA Policy With InValid Parameters, &quot;Invalid Input&quot;)" classname="com.secpod.testCases.multiFactorAuthentication.IsMFAPolicyExist" time="0.611"/>
+  <system-out><![CDATA[
+###############addMFAPolicy###############
+
+https://192.168.2.22/AncorWebService/perform
+{"request":{"method":"addMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"PingOneTest11"},{"key":"policyDescription","value":"Test"},{"key":"environmentId","value":"612fb5a2-3c63-461c-8689-8286b316cdee"},{"key":"clientId","value":"2321773e-ed61-4e1b-8f2c-2031d6e12cbf"},{"key":"authenticationPath","value":"https://auth.pingone.asia"},{"key":"usernameOption","value":"custom"}]}]}}}
+{"response":{"method":"addMFAPolicy","results":{"result":[{"key":"PingOneTest11","status":"success","reason":""}]}}}
+totalNumberOfRows::2
+APIhelper::::::::::{"body":{"request":{"method":"isMFAPolicyExist","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"INJECT_POLICYNAME"}]}]}}},"status":"200.0","urlparam":"Valid","description_of_TC":"Is Mfa Policy Exist With Valid Policy name","expected_results":"TRUE"}
+APIhelper::::::::::{"body":{"request":{"method":"isMFAPolicyExist","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"Invalid_Policyname"}]}]}}},"status":"200.0","urlparam":"Valid","description_of_TC":"Is MFA Policy With InValid Parameters","expected_results":"Invalid Input"}
+
+###############Is Mfa Policy Exist With Valid Policy name###############
+
+https://192.168.2.22/AncorWebService/perform
+Body ->{"request":{"method":"isMFAPolicyExist","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"PingOneTest11"}]}]}}}
+{"response":{"method":"isMFAPolicyExist","results":{"result":[{"key":"PingOneTest11","status":"True","reason":""}]}}}
+
+###############Is MFA Policy With InValid Parameters###############
+
+https://192.168.2.22/AncorWebService/perform
+Body ->{"request":{"method":"isMFAPolicyExist","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"Invalid_Policyname"}]}]}}}
+{"response":{"method":"isMFAPolicyExist","results":{"result":[{"key":"No status found","status":"fail","reason":"Invalid Input"}]}}}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

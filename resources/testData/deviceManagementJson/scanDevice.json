@@ -1,0 +1,19 @@
+{
+  "body": {
+    "request": {
+      "method": "scandevice",
+      "parameters": {
+        "parameterset": [{
+          "parameter": [{
+            "key": "INJECT_KEY",
+            "value": "INJECT_VALUE"
+          }]
+        }]
+      }
+    }
+  },
+  "status": "INJECT_STATUS",
+  "urlparam": "INJECT_ACCNAME",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

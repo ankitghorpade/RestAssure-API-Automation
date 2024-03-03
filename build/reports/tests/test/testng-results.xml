@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="23" passed="22" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-27T01:21:17 IST" name="API Suite" finished-at="2023-11-27T01:22:11 IST" duration-ms="53750">
+    <groups>
+    </groups>
+    <test started-at="2023-11-27T01:21:17 IST" name="CreateOrg" finished-at="2023-11-27T01:21:17 IST" duration-ms="11">
+    </test> <!-- CreateOrg -->
+    <test started-at="2023-11-27T01:21:17 IST" name="UpdateOrg" finished-at="2023-11-27T01:21:17 IST" duration-ms="0">
+    </test> <!-- UpdateOrg -->
+    <test started-at="2023-11-27T01:21:17 IST" name="DeleteOrg" finished-at="2023-11-27T01:21:17 IST" duration-ms="0">
+    </test> <!-- DeleteOrg -->
+    <test started-at="2023-11-27T01:21:17 IST" name="GetOrganization" finished-at="2023-11-27T01:21:17 IST" duration-ms="1">
+    </test> <!-- GetOrganization -->
+    <test started-at="2023-11-27T01:21:17 IST" name="AddAccount" finished-at="2023-11-27T01:21:17 IST" duration-ms="1">
+    </test> <!-- AddAccount -->
+    <test started-at="2023-11-27T01:21:17 IST" name="UpdateAccount" finished-at="2023-11-27T01:21:17 IST" duration-ms="0">
+    </test> <!-- UpdateAccount -->
+    <test started-at="2023-11-27T01:21:17 IST" name="RemoveAccount" finished-at="2023-11-27T01:21:17 IST" duration-ms="0">
+    </test> <!-- RemoveAccount -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetAccount" finished-at="2023-11-27T01:21:18 IST" duration-ms="1">
+    </test> <!-- GetAccount -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetDownloadUrl" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- GetDownloadUrl -->
+    <test started-at="2023-11-27T01:21:18 IST" name="DownloadAgent" finished-at="2023-11-27T01:21:18 IST" duration-ms="1">
+    </test> <!-- DownloadAgent -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetAgentActivationConf" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- GetAgentActivationConf -->
+    <test started-at="2023-11-27T01:21:18 IST" name="UpdateServiceProvision" finished-at="2023-11-27T01:21:18 IST" duration-ms="1">
+    </test> <!-- UpdateServiceProvision -->
+    <test started-at="2023-11-27T01:21:18 IST" name="AddDevice" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- AddDevice -->
+    <test started-at="2023-11-27T01:21:18 IST" name="UpdateDevice" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- UpdateDevice -->
+    <test started-at="2023-11-27T01:21:18 IST" name="ScanDevice" finished-at="2023-11-27T01:21:18 IST" duration-ms="1">
+    </test> <!-- ScanDevice -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetDevice" finished-at="2023-11-27T01:21:18 IST" duration-ms="1">
+    </test> <!-- GetDevice -->
+    <test started-at="2023-11-27T01:21:18 IST" name="DeleteDevice" finished-at="2023-11-27T01:21:18 IST" duration-ms="1">
+    </test> <!-- DeleteDevice -->
+    <test started-at="2023-11-27T01:21:18 IST" name="UpdateDeviceAlias" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- UpdateDeviceAlias -->
+    <test started-at="2023-11-27T01:21:18 IST" name="RemoveDeviceAlias" finished-at="2023-11-27T01:21:18 IST" duration-ms="1">
+    </test> <!-- RemoveDeviceAlias -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetDeviceReport" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- GetDeviceReport -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetHostResults" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- GetHostResults -->
+    <test started-at="2023-11-27T01:21:18 IST" name="AddGroup" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- AddGroup -->
+    <test started-at="2023-11-27T01:21:18 IST" name="UpdateGroup" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- UpdateGroup -->
+    <test started-at="2023-11-27T01:21:18 IST" name="DeleteGroup" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- DeleteGroup -->
+    <test started-at="2023-11-27T01:21:18 IST" name="AssignDevicestoGroup" finished-at="2023-11-27T01:21:18 IST" duration-ms="1">
+    </test> <!-- AssignDevicestoGroup -->
+    <test started-at="2023-11-27T01:21:18 IST" name="UnAssignDevicesfromGroup" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- UnAssignDevicesfromGroup -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetGroup" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- GetGroup -->
+    <test started-at="2023-11-27T01:21:18 IST" name="AddConfig" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- AddConfig -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetConfig" finished-at="2023-11-27T01:21:18 IST" duration-ms="1">
+    </test> <!-- GetConfig -->
+    <test started-at="2023-11-27T01:21:18 IST" name="DeleteConfig" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- DeleteConfig -->
+    <test started-at="2023-11-27T01:21:18 IST" name="AddBenchmark" finished-at="2023-11-27T01:21:18 IST" duration-ms="1">
+    </test> <!-- AddBenchmark -->
+    <test started-at="2023-11-27T01:21:18 IST" name="ProvisionBenchmark" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- ProvisionBenchmark -->
+    <test started-at="2023-11-27T01:21:18 IST" name="UpdateProvisionBenchmark" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- UpdateProvisionBenchmark -->
+    <test started-at="2023-11-27T01:21:18 IST" name="DeleteProvisionBenchmark" finished-at="2023-11-27T01:21:18 IST" duration-ms="1">
+    </test> <!-- DeleteProvisionBenchmark -->
+    <test started-at="2023-11-27T01:21:18 IST" name="DeleteBenchmark" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- DeleteBenchmark -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetMisconfigurationFixForRollback" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- GetMisconfigurationFixForRollback -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetApplicableMisconfigurationRemediation" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- GetApplicableMisconfigurationRemediation -->
+    <test started-at="2023-11-27T01:21:18 IST" name="PAHealthCheck" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- PAHealthCheck -->
+    <test started-at="2023-11-27T01:21:18 IST" name="AddPAScanConfig" finished-at="2023-11-27T01:21:18 IST" duration-ms="1">
+    </test> <!-- AddPAScanConfig -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetPAScanConfig" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- GetPAScanConfig -->
+    <test started-at="2023-11-27T01:21:18 IST" name="DeletePAScanConfig" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- DeletePAScanConfig -->
+    <test started-at="2023-11-27T01:21:18 IST" name="InitiatePAScan" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- InitiatePAScan -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetStatus" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- GetStatus -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetPostureAnomaly" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- GetPostureAnomaly -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetAllConfiguration" finished-at="2023-11-27T01:21:18 IST" duration-ms="1">
+    </test> <!-- GetAllConfiguration -->
+    <test started-at="2023-11-27T01:21:18 IST" name="PostConfiguration" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- PostConfiguration -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetConfigurationStatus" finished-at="2023-11-27T01:21:18 IST" duration-ms="1">
+    </test> <!-- GetConfigurationStatus -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetConfiguration" finished-at="2023-11-27T01:21:18 IST" duration-ms="1">
+    </test> <!-- GetConfiguration -->
+    <test started-at="2023-11-27T01:21:18 IST" name="PostWhitelist" finished-at="2023-11-27T01:21:18 IST" duration-ms="1">
+    </test> <!-- PostWhitelist -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetWhitelist" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- GetWhitelist -->
+    <test started-at="2023-11-27T01:21:18 IST" name="AddADConfig" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- AddADConfig -->
+    <test started-at="2023-11-27T01:21:18 IST" name="DeleteADConfig" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- DeleteADConfig -->
+    <test started-at="2023-11-27T01:21:18 IST" name="UpdateADConfig" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- UpdateADConfig -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetADConfig" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- GetADConfig -->
+    <test started-at="2023-11-27T01:21:18 IST" name="InitiateAD" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- InitiateAD -->
+    <test started-at="2023-11-27T01:21:18 IST" name="AddUser" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- AddUser -->
+    <test started-at="2023-11-27T01:21:18 IST" name="AssignOrgToUser" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- AssignOrgToUser -->
+    <test started-at="2023-11-27T01:21:18 IST" name="UnAssignOrgToUser" finished-at="2023-11-27T01:21:18 IST" duration-ms="1">
+    </test> <!-- UnAssignOrgToUser -->
+    <test started-at="2023-11-27T01:21:18 IST" name="DeleteUser" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- DeleteUser -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetProfileNames" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- GetProfileNames -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetProfileReport" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- GetProfileReport -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetVulnerableAssets" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- GetVulnerableAssets -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetReportNames" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- GetReportNames -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetAssets" finished-at="2023-11-27T01:21:18 IST" duration-ms="0">
+    </test> <!-- GetAssets -->
+    <test started-at="2023-11-27T01:21:18 IST" name="GetReportApis" finished-at="2023-11-27T01:21:18 IST" duration-ms="1">
+    </test> <!-- GetReportApis -->
+    <test started-at="2023-11-27T01:21:18 IST" name="EnforeMultifactor" finished-at="2023-11-27T01:21:26 IST" duration-ms="7649">
+      <class name="com.secpod.testCases.multiFactorAuthentication.EnforceMultifactor">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.EnforceMultifactor@79145d5a]" started-at="2023-11-27T01:21:18 IST" name="setUp" finished-at="2023-11-27T01:21:21 IST" duration-ms="3127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="enforceMultiFactor(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.EnforceMultifactor@79145d5a]" started-at="2023-11-27T01:21:22 IST" name="enforceMultiFactor" data-provider="theTestData" finished-at="2023-11-27T01:21:23 IST" duration-ms="761" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"request":{"method":"enforceMultiFactor","parameters":{"parameterset":[{"parameter":[{"key":"loginid","value":"INJECT_USERID"},{"key":"policyName","value":"INJECT_POLICYNAME"}]}]}}}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Enfore Multifactor Policy to valid user]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["success"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enforceMultiFactor -->
+        <test-method signature="enforceMultiFactor(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.EnforceMultifactor@79145d5a]" started-at="2023-11-27T01:21:23 IST" name="enforceMultiFactor" data-provider="theTestData" finished-at="2023-11-27T01:21:23 IST" duration-ms="652" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"request":{"method":"enforceMultiFactor","parameters":{"parameterset":[{"parameter":[{"key":"loginid","value":"INJECT_USERID"},{"key":"policyName","value":"INJECT_POLICYNAME"}]}]}}}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Enfore Multifactor policy to already exist User]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["Multi-Factor Authentication is already enforced for user"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enforceMultiFactor -->
+        <test-method signature="enforceMultiFactor(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.EnforceMultifactor@79145d5a]" started-at="2023-11-27T01:21:23 IST" name="enforceMultiFactor" data-provider="theTestData" finished-at="2023-11-27T01:21:24 IST" duration-ms="634" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"request":{"method":"enforceMultiFactor","parameters":{"parameterset":[{"parameter":[{"key":"loginid","value":"Invalid_id"},{"key":"policyName","value":"INJECT_POLICYNAME"}]}]}}}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Enfore Multifactor policy to Invalid user]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["Failed due to invalid login id"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enforceMultiFactor -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.EnforceMultifactor@79145d5a]" started-at="2023-11-27T01:21:24 IST" name="tearDown" finished-at="2023-11-27T01:21:26 IST" duration-ms="1694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.secpod.testCases.multiFactorAuthentication.EnforceMultifactor -->
+    </test> <!-- EnforeMultifactor -->
+    <test started-at="2023-11-27T01:21:26 IST" name="WithdrawMultifactor" finished-at="2023-11-27T01:21:30 IST" duration-ms="4631">
+      <class name="com.secpod.testCases.multiFactorAuthentication.WithdrawMultifactor">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.WithdrawMultifactor@129b4fe2]" started-at="2023-11-27T01:21:26 IST" name="setUp" finished-at="2023-11-27T01:21:28 IST" duration-ms="2287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="withdrawMultiFactor(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.WithdrawMultifactor@129b4fe2]" started-at="2023-11-27T01:21:28 IST" name="withdrawMultiFactor" data-provider="theTestData" finished-at="2023-11-27T01:21:29 IST" duration-ms="637" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"request":{"method":"withdrawMultiFactor","parameters":{"parameterset":[{"parameter":[{"key":"loginid","value":"INJECT_USERID"}]}]}}}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Withdraw MFA Policy to valid user]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["success"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withdrawMultiFactor -->
+        <test-method signature="withdrawMultiFactor(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.WithdrawMultifactor@129b4fe2]" started-at="2023-11-27T01:21:29 IST" name="withdrawMultiFactor" data-provider="theTestData" finished-at="2023-11-27T01:21:29 IST" duration-ms="623" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"request":{"method":"withdrawMultiFactor","parameters":{"parameterset":[{"parameter":[{"key":"loginid","value":"Invalid_id"}]}]}}}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Withdraw MFA Policy to Invalid User]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["Failed due to invalid login id"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withdrawMultiFactor -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.WithdrawMultifactor@129b4fe2]" started-at="2023-11-27T01:21:29 IST" name="tearDown" finished-at="2023-11-27T01:21:30 IST" duration-ms="977" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.secpod.testCases.multiFactorAuthentication.WithdrawMultifactor -->
+    </test> <!-- WithdrawMultifactor -->
+    <test started-at="2023-11-27T01:21:30 IST" name="IsMultiFactorEnforced" finished-at="2023-11-27T01:21:36 IST" duration-ms="5201">
+      <class name="com.secpod.testCases.multiFactorAuthentication.IsMultiFactorEnforced">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.IsMultiFactorEnforced@2bb7bd00]" started-at="2023-11-27T01:21:30 IST" name="setUp" finished-at="2023-11-27T01:21:33 IST" duration-ms="2265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="isMultiFactorEnforced(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.IsMultiFactorEnforced@2bb7bd00]" started-at="2023-11-27T01:21:33 IST" name="isMultiFactorEnforced" data-provider="theTestData" finished-at="2023-11-27T01:21:33 IST" duration-ms="622" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"request":{"method":"isMultiFactorEnforced","parameters":{"parameterset":[{"parameter":[{"key":"loginid","value":"INJECT_USERID"}]}]}}}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[IsMultiFactorEnfored enforced with valid user id]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["TRUE"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isMultiFactorEnforced -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.IsMultiFactorEnforced@2bb7bd00]" started-at="2023-11-27T01:21:33 IST" name="tearDown" finished-at="2023-11-27T01:21:35 IST" duration-ms="1589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="isMultiFactorEnforced(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.IsMultiFactorEnforced@2bb7bd00]" started-at="2023-11-27T01:21:35 IST" name="isMultiFactorEnforced" data-provider="theTestData" finished-at="2023-11-27T01:21:36 IST" duration-ms="641" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"request":{"method":"isMultiFactorEnforced","parameters":{"parameterset":[{"parameter":[{"key":"loginid","value":"invalid@secpod.com"}]}]}}}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ISMultiFactorEnfored enforced with invalid user id]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["Failed due to invalid login id"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isMultiFactorEnforced -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.IsMultiFactorEnforced@2bb7bd00]" started-at="2023-11-27T01:21:36 IST" name="tearDown" finished-at="2023-11-27T01:21:36 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.secpod.testCases.multiFactorAuthentication.IsMultiFactorEnforced -->
+    </test> <!-- IsMultiFactorEnforced -->
+    <test started-at="2023-11-27T01:21:36 IST" name="RemoveMFAPolicy" finished-at="2023-11-27T01:21:39 IST" duration-ms="3463">
+      <class name="com.secpod.testCases.multiFactorAuthentication.RemoveMFAPolicy">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.RemoveMFAPolicy@422c3c7a]" started-at="2023-11-27T01:21:36 IST" name="setUp" finished-at="2023-11-27T01:21:38 IST" duration-ms="2030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="removeMFAPolicy(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.RemoveMFAPolicy@422c3c7a]" started-at="2023-11-27T01:21:38 IST" name="removeMFAPolicy" data-provider="theTestData" finished-at="2023-11-27T01:21:38 IST" duration-ms="683" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"request":{"method":"removeMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"PingOneTest11"}]}]}}}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Remove Pingone Mfa Policy With Valid PolicyName]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["success"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeMFAPolicy -->
+        <test-method signature="removeMFAPolicy(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.RemoveMFAPolicy@422c3c7a]" started-at="2023-11-27T01:21:38 IST" name="removeMFAPolicy" data-provider="theTestData" finished-at="2023-11-27T01:21:39 IST" duration-ms="660" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"request":{"method":"removeMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"PingOneTest11"}]}]}}}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Remove Pingone Mfa Policy With InValid Parameters]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["Policy does not exist"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeMFAPolicy -->
+      </class> <!-- com.secpod.testCases.multiFactorAuthentication.RemoveMFAPolicy -->
+    </test> <!-- RemoveMFAPolicy -->
+    <test started-at="2023-11-27T01:21:39 IST" name="IsMFAPolicyExist" finished-at="2023-11-27T01:21:43 IST" duration-ms="3507">
+      <class name="com.secpod.testCases.multiFactorAuthentication.IsMFAPolicyExist">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.IsMFAPolicyExist@531c311e]" started-at="2023-11-27T01:21:39 IST" name="setUp" finished-at="2023-11-27T01:21:41 IST" duration-ms="1578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="isMFAPolicyExist(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.IsMFAPolicyExist@531c311e]" started-at="2023-11-27T01:21:41 IST" name="isMFAPolicyExist" data-provider="theTestData" finished-at="2023-11-27T01:21:41 IST" duration-ms="624" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"request":{"method":"isMFAPolicyExist","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"INJECT_POLICYNAME"}]}]}}}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Is Mfa Policy Exist With Valid Policy name]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["TRUE"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isMFAPolicyExist -->
+        <test-method signature="isMFAPolicyExist(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.IsMFAPolicyExist@531c311e]" started-at="2023-11-27T01:21:41 IST" name="isMFAPolicyExist" data-provider="theTestData" finished-at="2023-11-27T01:21:42 IST" duration-ms="611" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"request":{"method":"isMFAPolicyExist","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"Invalid_Policyname"}]}]}}}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Is MFA Policy With InValid Parameters]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["Invalid Input"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isMFAPolicyExist -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.IsMFAPolicyExist@531c311e]" started-at="2023-11-27T01:21:42 IST" name="tearDown" finished-at="2023-11-27T01:21:43 IST" duration-ms="624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.secpod.testCases.multiFactorAuthentication.IsMFAPolicyExist -->
+    </test> <!-- IsMFAPolicyExist -->
+    <test started-at="2023-11-27T01:21:43 IST" name="IsMultiFactorEnabled" finished-at="2023-11-27T01:21:44 IST" duration-ms="1478">
+      <class name="com.secpod.testCases.multiFactorAuthentication.IsMultiFactorEnabled">
+        <test-method signature="isMultiFactorEnabled(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.IsMultiFactorEnabled@e077866]" started-at="2023-11-27T01:21:43 IST" name="isMultiFactorEnabled" data-provider="theTestData" finished-at="2023-11-27T01:21:43 IST" duration-ms="759" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"request":{"method":"isMultiFactorEnabled","parameters":{"parameterset":[{"parameter":[{"key":"loginid","value":"OrgnizationAdminSetup@test.com"}]}]}}}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Is mfa policy enabled to User]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["False"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected ["False"] but found ["Failed due to invalid login id"]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected ["False"] but found ["Failed due to invalid login id"]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.secpod.testCases.multiFactorAuthentication.IsMultiFactorEnabled.isMultiFactorEnabled(IsMultiFactorEnabled.java:88)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isMultiFactorEnabled -->
+        <test-method signature="isMultiFactorEnabled(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.IsMultiFactorEnabled@e077866]" started-at="2023-11-27T01:21:43 IST" name="isMultiFactorEnabled" data-provider="theTestData" finished-at="2023-11-27T01:21:44 IST" duration-ms="641" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"request":{"method":"isMultiFactorEnabled","parameters":{"parameterset":[{"parameter":[{"key":"loginid","value":"Invalid@secpod.com"}]}]}}}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid loginID]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["Failed due to invalid login id"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isMultiFactorEnabled -->
+      </class> <!-- com.secpod.testCases.multiFactorAuthentication.IsMultiFactorEnabled -->
+    </test> <!-- IsMultiFactorEnabled -->
+    <test started-at="2023-11-27T01:21:44 IST" name="GetMFAPolicy" finished-at="2023-11-27T01:21:45 IST" duration-ms="1254">
+      <class name="com.secpod.testCases.multiFactorAuthentication.GetMFAPolicy">
+        <test-method signature="getMFAPolicy(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.GetMFAPolicy@7b324585]" started-at="2023-11-27T01:21:44 IST" name="getMFAPolicy" data-provider="theTestData" finished-at="2023-11-27T01:21:45 IST" duration-ms="630" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"request":{"method":"getMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"INJECT_POLICYNAME"}]}]}}}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Get Mfa policy]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["Any TOTP Authenticator App"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMFAPolicy -->
+        <test-method signature="getMFAPolicy(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.GetMFAPolicy@7b324585]" started-at="2023-11-27T01:21:45 IST" name="getMFAPolicy" data-provider="theTestData" finished-at="2023-11-27T01:21:45 IST" duration-ms="578" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"request":{"method":"getMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"Demo"}]}]}}}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Wrong name]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["No records found with given name"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMFAPolicy -->
+      </class> <!-- com.secpod.testCases.multiFactorAuthentication.GetMFAPolicy -->
+    </test> <!-- GetMFAPolicy -->
+    <test started-at="2023-11-27T01:21:45 IST" name="UpdateMFAPolicy" finished-at="2023-11-27T01:21:51 IST" duration-ms="5686">
+      <class name="com.secpod.testCases.multiFactorAuthentication.UpdateMFAPolicy">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.UpdateMFAPolicy@1ef3efa8]" started-at="2023-11-27T01:21:45 IST" name="setUp" finished-at="2023-11-27T01:21:47 IST" duration-ms="1922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="updateMFAPolicy(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.UpdateMFAPolicy@1ef3efa8]" started-at="2023-11-27T01:21:47 IST" name="updateMFAPolicy" data-provider="theTestData" finished-at="2023-11-27T01:21:50 IST" duration-ms="2504" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"request":{"method":"updateMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"INJECT_POLICYNAME"},{"key":"newPolicyName","value":"PingoneNewPolicy"},{"key":"policyDescription","value":"INJECT_POLICYDESCRIPTION"},{"key":"environmentId","value":"INJECT_ENVIRONMENT_ID"},{"key":"clientId","value":"INJECT_CLIENT_ID"},{"key":"authenticationPath","value":"INJECT_AUTHENTICATION_PATH"},{"key":"usernameOption","value":"INJECT_MFA_USERNAME_OPTION"}]}]}}}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Update Pingone Mfa Policy With Valid Parameters]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["success"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateMFAPolicy -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.UpdateMFAPolicy@1ef3efa8]" started-at="2023-11-27T01:21:50 IST" name="tearDown" finished-at="2023-11-27T01:21:50 IST" duration-ms="631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="updateMFAPolicy(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.UpdateMFAPolicy@1ef3efa8]" started-at="2023-11-27T01:21:50 IST" name="updateMFAPolicy" data-provider="theTestData" finished-at="2023-11-27T01:21:51 IST" duration-ms="577" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"request":{"method":"updateMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"pingtest"},{"key":"newPolicyName","value":"Invalid name update"},{"key":"policyDescription","value":"demo"},{"key":"environmentId","value":"invalid_env_id"},{"key":"clientId","value":"Invalid_client_id"},{"key":"authenticationPath","value":"https://auth.pingone.asia"},{"key":"usernameOption","value":"custom"}]}]}}}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Update Pingone Mfa Policy With InValid Parameters]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["Policy does not exist"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateMFAPolicy -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.UpdateMFAPolicy@1ef3efa8]" started-at="2023-11-27T01:21:51 IST" name="tearDown" finished-at="2023-11-27T01:21:51 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.secpod.testCases.multiFactorAuthentication.UpdateMFAPolicy -->
+    </test> <!-- UpdateMFAPolicy -->
+    <test started-at="2023-11-27T01:21:51 IST" name="AddMFAPolicy" finished-at="2023-11-27T01:21:55 IST" duration-ms="4460">
+      <class name="com.secpod.testCases.multiFactorAuthentication.AddMFAPolicy">
+        <test-method signature="addMFAPolicy(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.AddMFAPolicy@75f5fd58]" started-at="2023-11-27T01:21:51 IST" name="addMFAPolicy" data-provider="theTestData" finished-at="2023-11-27T01:21:53 IST" duration-ms="1914" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"request":{"method":"addMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"INJECT_POLICYNAME"},{"key":"policyDescription","value":"INJECT_POLICYDESCRIPTION"},{"key":"environmentId","value":"INJECT_ENVIRONMENT_ID"},{"key":"clientId","value":"INJECT_CLIENT_ID"},{"key":"authenticationPath","value":"INJECT_AUTHENTICATION_PATH"},{"key":"usernameOption","value":"INJECT_MFA_USERNAME_OPTION"}]}]}}}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Add Pingone Mfa Policy With Valid Parameters]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["success"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMFAPolicy -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.AddMFAPolicy@75f5fd58]" started-at="2023-11-27T01:21:53 IST" name="tearDown" finished-at="2023-11-27T01:21:54 IST" duration-ms="642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="addMFAPolicy(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.AddMFAPolicy@75f5fd58]" started-at="2023-11-27T01:21:54 IST" name="addMFAPolicy" data-provider="theTestData" finished-at="2023-11-27T01:21:55 IST" duration-ms="1844" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"request":{"method":"addMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"pingtest"},{"key":"policyDescription","value":"demo"},{"key":"environmentId","value":"invalid_env_id"},{"key":"clientId","value":"Invalid_client_id"},{"key":"authenticationPath","value":"https://auth.pingone.asia"},{"key":"usernameOption","value":"custom"}]}]}}}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Add Pingone Mfa Policy With InValid Parameters]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["Invalid multi-factor authentication input"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMFAPolicy -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.AddMFAPolicy@75f5fd58]" started-at="2023-11-27T01:21:55 IST" name="tearDown" finished-at="2023-11-27T01:21:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.secpod.testCases.multiFactorAuthentication.AddMFAPolicy -->
+    </test> <!-- AddMFAPolicy -->
+    <test started-at="2023-11-27T01:21:55 IST" name="GetUserMFAPolicy" finished-at="2023-11-27T01:22:03 IST" duration-ms="8007">
+      <class name="com.secpod.testCases.multiFactorAuthentication.GetUserMFAPolicy">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.GetUserMFAPolicy@41813449]" started-at="2023-11-27T01:21:55 IST" name="setUp" finished-at="2023-11-27T01:22:00 IST" duration-ms="4162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getUserMFAPolicy(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.GetUserMFAPolicy@41813449]" started-at="2023-11-27T01:22:00 IST" name="getUserMFAPolicy" data-provider="theTestData" finished-at="2023-11-27T01:22:00 IST" duration-ms="678" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"request":{"method":"getUserMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"loginId","value":"INJECT_USERID"}]}]}}}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Get User MFA Policy For User]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["PingOneTest11"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserMFAPolicy -->
+        <test-method signature="getUserMFAPolicy(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.GetUserMFAPolicy@41813449]" started-at="2023-11-27T01:22:00 IST" name="getUserMFAPolicy" data-provider="theTestData" finished-at="2023-11-27T01:22:01 IST" duration-ms="821" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"request":{"method":"getUserMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"loginId","value":"invalid_userid"}]}]}}}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid policy details]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["No records found with given name"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserMFAPolicy -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.GetUserMFAPolicy@41813449]" started-at="2023-11-27T01:22:01 IST" name="tearDown" finished-at="2023-11-27T01:22:03 IST" duration-ms="2300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.secpod.testCases.multiFactorAuthentication.GetUserMFAPolicy -->
+    </test> <!-- GetUserMFAPolicy -->
+    <test started-at="2023-11-27T01:22:03 IST" name="IsUserMFAPolicy" finished-at="2023-11-27T01:22:11 IST" duration-ms="7657">
+      <class name="com.secpod.testCases.multiFactorAuthentication.IsUserMFAPolicyExist">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.IsUserMFAPolicyExist@a4b2d8f]" started-at="2023-11-27T01:22:03 IST" name="setUp" finished-at="2023-11-27T01:22:08 IST" duration-ms="4139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="isUserMFAPolicyExist(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.IsUserMFAPolicyExist@a4b2d8f]" started-at="2023-11-27T01:22:08 IST" name="isUserMFAPolicyExist" data-provider="theTestData" finished-at="2023-11-27T01:22:08 IST" duration-ms="632" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"request":{"method":"isUserMFAPolicyExist","parameters":{"parameterset":[{"parameter":[{"key":"loginId","value":"INJECT_USERID"}]}]}}}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Is User Mfa Policy Exist With Valid Policy name]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["TRUE"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isUserMFAPolicyExist -->
+        <test-method signature="isUserMFAPolicyExist(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.IsUserMFAPolicyExist@a4b2d8f]" started-at="2023-11-27T01:22:08 IST" name="isUserMFAPolicyExist" data-provider="theTestData" finished-at="2023-11-27T01:22:09 IST" duration-ms="599" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"request":{"method":"isUserMFAPolicyExist","parameters":{"parameterset":[{"parameter":[{"key":"loginId","value":"pingtest"}]}]}}}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Is User MFA Policy With InValid Parameters]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["Invalid Input"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isUserMFAPolicyExist -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.secpod.testCases.multiFactorAuthentication.IsUserMFAPolicyExist@a4b2d8f]" started-at="2023-11-27T01:22:09 IST" name="tearDown" finished-at="2023-11-27T01:22:11 IST" duration-ms="2231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.secpod.testCases.multiFactorAuthentication.IsUserMFAPolicyExist -->
+    </test> <!-- IsUserMFAPolicy -->
+  </suite> <!-- API Suite -->
+</testng-results>

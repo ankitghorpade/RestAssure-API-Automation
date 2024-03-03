@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.secpod.testCases.multiFactorAuthentication.RemoveMFAPolicy" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:51:38" hostname="SP-ANKIT-LAPTOP" time="1.344">
+  <properties/>
+  <testcase name="removeMFAPolicy[0]({&quot;request&quot;:{&quot;method&quot;:&quot;removeMFAPolicy&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;PingOneTest11&quot;}]}]}}}, 200.0, Remove Pingone Mfa Policy With Valid PolicyName, &quot;success&quot;)" classname="com.secpod.testCases.multiFactorAuthentication.RemoveMFAPolicy" time="0.683"/>
+  <testcase name="removeMFAPolicy[1]({&quot;request&quot;:{&quot;method&quot;:&quot;removeMFAPolicy&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;PingOneTest11&quot;}]}]}}}, 200.0, Remove Pingone Mfa Policy With InValid Parameters, &quot;Policy does not exist&quot;)" classname="com.secpod.testCases.multiFactorAuthentication.RemoveMFAPolicy" time="0.66"/>
+  <system-out><![CDATA[
+###############addMFAPolicy###############
+
+https://192.168.2.22/AncorWebService/perform
+{"request":{"method":"addMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"PingOneTest11"},{"key":"policyDescription","value":"Test"},{"key":"environmentId","value":"612fb5a2-3c63-461c-8689-8286b316cdee"},{"key":"clientId","value":"2321773e-ed61-4e1b-8f2c-2031d6e12cbf"},{"key":"authenticationPath","value":"https://auth.pingone.asia"},{"key":"usernameOption","value":"custom"}]}]}}}
+{"response":{"method":"addMFAPolicy","results":{"result":[{"key":"PingOneTest11","status":"success","reason":""}]}}}
+totalNumberOfRows::2
+APIhelper::::::::::{"body":{"request":{"method":"removeMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"PingOneTest11"}]}]}}},"status":"200.0","urlparam":"Valid","description_of_TC":"Remove Pingone Mfa Policy With Valid PolicyName","expected_results":"success"}
+APIhelper::::::::::{"body":{"request":{"method":"removeMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"PingOneTest11"}]}]}}},"status":"200.0","urlparam":"Valid","description_of_TC":"Remove Pingone Mfa Policy With InValid Parameters","expected_results":"Policy does not exist"}
+
+###############Remove Pingone Mfa Policy With Valid PolicyName###############
+
+https://192.168.2.22/AncorWebService/perform
+{"request":{"method":"removeMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"PingOneTest11"}]}]}}}
+{"response":{"method":"removeMFAPolicy","results":{"result":[{"key":"PingOneTest11","status":"success","reason":""}]}}}
+
+###############Remove Pingone Mfa Policy With InValid Parameters###############
+
+https://192.168.2.22/AncorWebService/perform
+{"request":{"method":"removeMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"PingOneTest11"}]}]}}}
+{"response":{"method":"removeMFAPolicy","results":{"result":[{"status":"fail","reason":"Policy does not exist"}]}}}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

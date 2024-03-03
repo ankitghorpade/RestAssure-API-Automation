@@ -1,0 +1,24 @@
+{
+  "body": {
+  "request": {
+    "method": "getUserMFAPolicy",
+    "parameters": {
+      "parameterset": [
+        {
+          "parameter": [
+            {
+              "key": "loginId",
+              "value": "INJECT_AUTH_LOGINID"
+            }
+          ]
+        }
+      ]
+    }
+  }
+},
+
+  "status": "INJECT_STATUS",
+  "urlparam": "Valid",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

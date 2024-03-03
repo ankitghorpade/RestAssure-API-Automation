@@ -1,0 +1,123 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "device": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "profileId": {
+              "type": "string"
+            },
+            "osname": {
+              "type": "string"
+            },
+            "groupId": {
+              "type": "string"
+            },
+            "lastScan": {
+              "type": "string"
+            },
+            "totalVulnerabilities": {
+              "type": "string"
+            },
+            "totalMisconfigurations": {
+              "type": "string"
+            },
+            "totalThreatIndicators": {
+              "type": "integer"
+            },
+            "categories": {
+              "type": "object",
+              "properties": {
+                "WINDOWS_10_GENERAL_COMPLIANCE": {
+                  "type": "object",
+                  "properties": {
+                    "categories": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "category": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                },
+                                "rules": {
+                                  "type": "array",
+                                  "items": [
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "rule": {
+                                          "type": "object",
+                                          "properties": {
+                                            "name": {
+                                              "type": "string"
+                                            },
+                                            "status": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "name",
+                                            "status"
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "rule"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "name",
+                                "rules"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "category"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "categories"
+                  ]
+                }
+              },
+              "required": [
+                "WINDOWS_11_GENERAL_COMPLIANCE"
+              ]
+            }
+          },
+          "required": [
+            "name",
+            "profileId",
+            "osname",
+            "groupId",
+            "lastScan",
+            "totalVulnerabilities",
+            "totalMisconfigurations",
+            "totalThreatIndicators",
+            "categories"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "device"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "body":{
+    "request": {
+      "method": "getreportapis",
+      "parameters": {
+        "parameterset": [
+          {
+            "parameter": [
+              {
+                "key": "accountid",
+                "value": "INJECT_ACCNAME"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "status": "INJECT_STATUS",
+  "urlparam": "Valid",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+
+}
+
+

@@ -1,0 +1,43 @@
+{
+  "body": {
+    "request": {
+      "method": "adduser",
+      "parameters": {
+        "parameterset": [
+          {
+            "parameter": [
+              {
+                "key": "id",
+                "value": "INJECT_USERID"
+              },
+              {
+                "key": "password",
+                "value": "INJECT_PASSWORD"
+              },
+              {
+                "key": "name",
+                "value": "INJECT_USERNAME"
+              },
+              {
+                "key": "organization",
+                "value": "INJECT_ORGNAME"
+              },
+              {
+                "key": "email",
+                "value": "INJECT_EMAIL"
+              },
+              {
+                "key": "role",
+                "value": "INJECT_USERROLE"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "status": "INJECT_STATUS",
+  "urlparam": "Valid",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

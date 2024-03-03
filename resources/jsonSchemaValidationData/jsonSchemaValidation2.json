@@ -1,0 +1,59 @@
+
+
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "organizations": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "organizationinfo": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "startdate": {
+                  "type": "string"
+                },
+                "enddate": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "maxsubscriptions": {
+                  "type": "integer"
+                },
+                "inusesubscriptions": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "name",
+                "email",
+                "startdate",
+                "enddate",
+                "id",
+                "maxsubscriptions",
+                "inusesubscriptions"
+              ]
+            }
+          },
+          "required": [
+            "organizationinfo"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "organizations"
+  ]
+}

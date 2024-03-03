@@ -1,0 +1,27 @@
+{
+  "body": {
+    "request": {
+      "method": "addconfig",
+      "parameters": {
+        "parameterset": [
+          {
+            "parameter": [
+              {
+                "key": "configname",
+                "value": "INJECT_CONFIGNAME"
+              },
+              {
+                "key": "configdesc",
+                "value": "INJECT_CONFIGDESC"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "status": "INJECT_STATUS",
+  "urlparam": "INJECT_ACCNAME",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

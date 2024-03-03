@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.secpod.testCases.multiFactorAuthentication.GetMFAPolicy" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:51:44" hostname="SP-ANKIT-LAPTOP" time="1.208">
+  <properties/>
+  <testcase name="getMFAPolicy[0]({&quot;request&quot;:{&quot;method&quot;:&quot;getMFAPolicy&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;INJECT_POLICYNAME&quot;}]}]}}}, 200, Get Mfa policy, &quot;Any TOTP Authenticator App&quot;)" classname="com.secpod.testCases.multiFactorAuthentication.GetMFAPolicy" time="0.63"/>
+  <testcase name="getMFAPolicy[1]({&quot;request&quot;:{&quot;method&quot;:&quot;getMFAPolicy&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;Demo&quot;}]}]}}}, 200, Wrong name, &quot;No records found with given name&quot;)" classname="com.secpod.testCases.multiFactorAuthentication.GetMFAPolicy" time="0.578"/>
+  <system-out><![CDATA[totalNumberOfRows::2
+APIhelper::::::::::{"body":{"request":{"method":"getMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"INJECT_POLICYNAME"}]}]}}},"status":"200","urlparam":"Valid","description_of_TC":"Get Mfa policy","expected_results":"Any TOTP Authenticator App"}
+APIhelper::::::::::{"body":{"request":{"method":"getMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"Demo"}]}]}}},"status":"200","urlparam":"Valid","description_of_TC":"Wrong name","expected_results":"No records found with given name"}
+
+###############Get Mfa policy###############
+
+https://192.168.2.22/AncorWebService/perform
+{"request":{"method":"getMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"Authenticator App"}]}]}}}
+{ "mfaPolicy":{"provider":"Any TOTP Authenticator App","name":"Authenticator App","description":"Time-based One-Time Password multi-factor authentication policy - TOTP"}}
+
+###############Wrong name###############
+
+https://192.168.2.22/AncorWebService/perform
+{"request":{"method":"getMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"Demo"}]}]}}}
+{"response":{"method":"getMFAPolicy","results":{"result":[{"key":"null","status":"Fail","reason":"No records found with given name"}]}}}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

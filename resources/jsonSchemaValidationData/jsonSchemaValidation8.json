@@ -1,0 +1,4021 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1679638645.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "results"
+  ],
+  "properties": {
+    "results": {
+      "$id": "#root/results",
+      "title": "Results",
+      "type": "object",
+      "required": [
+        "sysinfo",
+        "detailed-system-info"
+      ],
+      "properties": {
+        "sysinfo": {
+          "$id": "#root/results/sysinfo",
+          "title": "Sysinfo",
+          "type": "object",
+          "required": [
+            "os_name",
+            "os_version",
+            "os_release_id",
+            "architecture",
+            "primary_host_name",
+            "primary_host_ip",
+            "primary_host_mac",
+            "saner_version",
+            "family",
+            "interfaces",
+            "saner_profile_id",
+            "subs_mac_addr",
+            "subs_id",
+            "probname"
+          ],
+          "properties": {
+            "os_name": {
+              "$id": "#root/results/sysinfo/os_name",
+              "title": "Os_name",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "Apple Mac OS 13.2"
+              ],
+              "pattern": "^.*$"
+            },
+            "os_version": {
+              "$id": "#root/results/sysinfo/os_version",
+              "title": "Os_version",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "Darwin Kernel Version 22.3.0"
+              ],
+              "pattern": "^.*$"
+            },
+            "os_release_id": {
+              "$id": "#root/results/sysinfo/os_release_id",
+              "title": "Os_release_id",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "13.2"
+              ],
+              "pattern": "^.*$"
+            },
+            "architecture": {
+              "$id": "#root/results/sysinfo/architecture",
+              "title": "Architecture",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "x86_64"
+              ],
+              "pattern": "^.*$"
+            },
+            "primary_host_name": {
+              "$id": "#root/results/sysinfo/primary_host_name",
+              "title": "Primary_host_name",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "secpods-imac-pro.local"
+              ],
+              "pattern": "^.*$"
+            },
+            "primary_host_ip": {
+              "$id": "#root/results/sysinfo/primary_host_ip",
+              "title": "Primary_host_ip",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "192.168.2.240"
+              ],
+              "pattern": "^.*$"
+            },
+            "primary_host_mac": {
+              "$id": "#root/results/sysinfo/primary_host_mac",
+              "title": "Primary_host_mac",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "E2-98-E0-98-73-91"
+              ],
+              "pattern": "^.*$"
+            },
+            "saner_version": {
+              "$id": "#root/results/sysinfo/saner_version",
+              "title": "Saner_version",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "5.3;1.2-noui;1;osx;x64"
+              ],
+              "pattern": "^.*$"
+            },
+            "family": {
+              "$id": "#root/results/sysinfo/family",
+              "title": "Family",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "macos"
+              ],
+              "pattern": "^.*$"
+            },
+            "interfaces": {
+              "$id": "#root/results/sysinfo/interfaces",
+              "title": "Interfaces",
+              "type": "object",
+              "required": [
+                "interface"
+              ],
+              "properties": {
+                "interface": {
+                  "$id": "#root/results/sysinfo/interfaces/interface",
+                  "title": "Interface",
+                  "type": "array",
+                  "default": [],
+                  "items":{
+                    "$id": "#root/results/sysinfo/interfaces/interface/items",
+                    "title": "Items",
+                    "type": "object",
+                    "required": [
+                      "interface_name",
+                      "ip_address",
+                      "mac_address"
+                    ],
+                    "properties": {
+                      "interface_name": {
+                        "$id": "#root/results/sysinfo/interfaces/interface/items/interface_name",
+                        "title": "Interface_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "en0"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "ip_address": {
+                        "$id": "#root/results/sysinfo/interfaces/interface/items/ip_address",
+                        "title": "Ip_address",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "192.168.2.240"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "mac_address": {
+                        "$id": "#root/results/sysinfo/interfaces/interface/items/mac_address",
+                        "title": "Mac_address",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "E2-98-E0-98-73-91"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+            }
+          ,
+            "saner_profile_id": {
+              "$id": "#root/results/sysinfo/saner_profile_id",
+              "title": "Saner_profile_id",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "Apple Mac OS 13.2"
+              ],
+              "pattern": "^.*$"
+            },
+            "subs_mac_addr": {
+              "$id": "#root/results/sysinfo/subs_mac_addr",
+              "title": "Subs_mac_addr",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "E2-98-E0-98-73-91"
+              ],
+              "pattern": "^.*$"
+            },
+            "subs_id": {
+              "$id": "#root/results/sysinfo/subs_id",
+              "title": "Subs_id",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "db79b2b9-da27-4ab8-ad71-84fc088cd3fc"
+              ],
+              "pattern": "^.*$"
+            },
+            "probname": {
+              "$id": "#root/results/sysinfo/probname",
+              "title": "Probname",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "systemsetup"
+              ],
+              "pattern": "^.*$"
+            }
+          }
+        }
+      ,
+        "detailed-system-info": {
+          "$id": "#root/results/detailed-system-info",
+          "title": "Detailed-system-info",
+          "type": "object",
+          "required": [
+            "family",
+            "cve",
+            "cpe",
+            "cce",
+            "environmentvariable58",
+            "arpcache",
+            "bios",
+            "computerinfo",
+            "system_dns_info",
+            "etchosts",
+            "etcprotocols",
+            "etcservices",
+            "installedapplication",
+            "softwarelicenses",
+            "systemrestoreinfo",
+            "antivirus_info",
+            "nvram",
+            "deviceinfo",
+            "sysctl",
+            "interface",
+            "password",
+            "process58",
+            "uname",
+            "kernel_info",
+            "pfctl",
+            "rpc_map",
+            "loggedin_user",
+            "ip_forwarding_status",
+            "diskencryption",
+            "rlimit",
+            "launchd",
+            "gatekeeper",
+            "keychain",
+            "rpc_net_conn",
+            "shell_history",
+            "sudo_users",
+            "mount_points",
+            "group",
+            "partition",
+            "wireless_info",
+            "croninfo",
+            "serviceinfo",
+            "routingtable",
+            "system_dhcp_info",
+            "osinfo",
+            "installedpatches",
+            "port",
+            "systemsetup"
+          ],
+          "properties": {
+            "family": {
+              "$id": "#root/results/detailed-system-info/family",
+              "title": "Family",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/family/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "family_metadata"
+                ],
+                "properties": {
+                  "family_metadata": {
+                    "$id": "#root/results/detailed-system-info/family/items/family_metadata",
+                    "title": "Family_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "family"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/family/items/family_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "family_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "family": {
+                        "$id": "#root/results/detailed-system-info/family/items/family_metadata/family",
+                        "title": "Family",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "macos"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "cve": {
+              "$id": "#root/results/detailed-system-info/cve",
+              "title": "Cve",
+              "type": "array",
+              "default": []
+            },
+            "cpe": {
+              "$id": "#root/results/detailed-system-info/cpe",
+              "title": "Cpe",
+              "type": "array",
+              "default": []
+            },
+            "cce": {
+              "$id": "#root/results/detailed-system-info/cce",
+              "title": "Cce",
+              "type": "array",
+              "default": []
+            },
+            "environmentvariable58": {
+              "$id": "#root/results/detailed-system-info/environmentvariable58",
+              "title": "Environmentvariable58",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/environmentvariable58/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "environmentvariable58_metadata"
+                ],
+                "properties": {
+                  "environmentvariable58_metadata": {
+                    "$id": "#root/results/detailed-system-info/environmentvariable58/items/environmentvariable58_metadata",
+                    "title": "Environmentvariable58_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "pid",
+                      "value"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/environmentvariable58/items/environmentvariable58_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "PATH"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "pid": {
+                        "$id": "#root/results/detailed-system-info/environmentvariable58/items/environmentvariable58_metadata/pid",
+                        "title": "Pid",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "81697"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "value": {
+                        "$id": "#root/results/detailed-system-info/environmentvariable58/items/environmentvariable58_metadata/value",
+                        "title": "Value",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "/usr/bin:/bin:/usr/sbin:/sbin"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "arpcache": {
+              "$id": "#root/results/detailed-system-info/arpcache",
+              "title": "Arpcache",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/arpcache/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "arpcache_metadata"
+                ],
+                "properties": {
+                  "arpcache_metadata": {
+                    "$id": "#root/results/detailed-system-info/arpcache/items/arpcache_metadata",
+                    "title": "Arpcache_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "host_ip",
+                      "interface",
+                      "mac_address",
+                      "permanent"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/arpcache/items/arpcache_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "arpcache_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "host_ip": {
+                        "$id": "#root/results/detailed-system-info/arpcache/items/arpcache_metadata/host_ip",
+                        "title": "Host_ip",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "169.254.13.5"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "interface": {
+                        "$id": "#root/results/detailed-system-info/arpcache/items/arpcache_metadata/interface",
+                        "title": "Interface",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "en0"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "mac_address": {
+                        "$id": "#root/results/detailed-system-info/arpcache/items/arpcache_metadata/mac_address",
+                        "title": "Mac_address",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "3a:1b:a1:1e:56:ec"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "permanent": {
+                        "$id": "#root/results/detailed-system-info/arpcache/items/arpcache_metadata/permanent",
+                        "title": "Permanent",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "false"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "bios": {
+              "$id": "#root/results/detailed-system-info/bios",
+              "title": "Bios",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/bios/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "bios_metadata"
+                ],
+                "properties": {
+                  "bios_metadata": {
+                    "$id": "#root/results/detailed-system-info/bios/items/bios_metadata",
+                    "title": "Bios_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "bios_name",
+                      "bios_version",
+                      "bios_serialnumber",
+                      "bios_status"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/bios/items/bios_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "bios_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "bios_name": {
+                        "$id": "#root/results/detailed-system-info/bios/items/bios_metadata/bios_name",
+                        "title": "Bios_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "iMac Pro"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "bios_version": {
+                        "$id": "#root/results/detailed-system-info/bios/items/bios_metadata/bios_version",
+                        "title": "Bios_version",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "1916.40.2.0.0"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "bios_serialnumber": {
+                        "$id": "#root/results/detailed-system-info/bios/items/bios_metadata/bios_serialnumber",
+                        "title": "Bios_serialnumber",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "C02TM2ZBHX87"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "bios_status": {
+                        "$id": "#root/results/detailed-system-info/bios/items/bios_metadata/bios_status",
+                        "title": "Bios_status",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "OK"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "computerinfo": {
+              "$id": "#root/results/detailed-system-info/computerinfo",
+              "title": "Computerinfo",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/computerinfo/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "computerinfo_metadata"
+                ],
+                "properties": {
+                  "computerinfo_metadata": {
+                    "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata",
+                    "title": "Computerinfo_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "address_sizes",
+                      "cache_size",
+                      "cpu",
+                      "cpu_MHz",
+                      "cpu_arch",
+                      "cpu_cores",
+                      "cpu_family",
+                      "cpu_usage",
+                      "disk_model",
+                      "disk_name",
+                      "disk_removeable_device",
+                      "disk_size",
+                      "hostname",
+                      "model_name",
+                      "ntp_status",
+                      "nw_received_bytes",
+                      "nw_total_bytes",
+                      "nw_transmitted_bytes",
+                      "os_arch",
+                      "os_name",
+                      "os_release",
+                      "os_version",
+                      "ram",
+                      "ram_free",
+                      "ram_usage",
+                      "ram_used",
+                      "serial_number",
+                      "swap_free",
+                      "swap_total",
+                      "sys_manufacturer",
+                      "sys_type",
+                      "system_name",
+                      "system_product_name",
+                      "system_product_version",
+                      "system_uptime",
+                      "system_uuid",
+                      "timezone_name",
+                      "vmalloc_total"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "computer_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "address_sizes": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/address_sizes",
+                        "title": "Address_sizes",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "46 bits physical, 48 bits virtual"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "cache_size": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/cache_size",
+                        "title": "Cache_size",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "16384"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "cpu": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/cpu",
+                        "title": "Cpu",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "Intel(R) Xeon(R) CPU E5-2696 v2 @ 2.50GHz"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "cpu_MHz": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/cpu_MHz",
+                        "title": "Cpu_mhz",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "2500 MHz"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "cpu_arch": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/cpu_arch",
+                        "title": "Cpu_arch",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "x64"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "cpu_cores": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/cpu_cores",
+                        "title": "Cpu_cores",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "4"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "cpu_family": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/cpu_family",
+                        "title": "Cpu_family",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "6"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "cpu_usage": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/cpu_usage",
+                        "title": "Cpu_usage",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "3"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "disk_model": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/disk_model",
+                        "title": "Disk_model",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "AppleAPFSMedia"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "disk_name": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/disk_name",
+                        "title": "Disk_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "disk2s4s1"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "disk_removeable_device": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/disk_removeable_device",
+                        "title": "Disk_removeable_device",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "false"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "disk_size": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/disk_size",
+                        "title": "Disk_size",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "107000000000"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "hostname": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/hostname",
+                        "title": "Hostname",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "secpods-iMac-Pro.local"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "model_name": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/model_name",
+                        "title": "Model_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "Intel(R) Xeon(R) CPU E5-2696 v2 @ 2.50GHz"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "ntp_status": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/ntp_status",
+                        "title": "Ntp_status",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "True"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "nw_received_bytes": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/nw_received_bytes",
+                        "title": "Nw_received_bytes",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "2220820480"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "nw_total_bytes": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/nw_total_bytes",
+                        "title": "Nw_total_bytes",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "2333990912"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "nw_transmitted_bytes": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/nw_transmitted_bytes",
+                        "title": "Nw_transmitted_bytes",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "113170432"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "os_arch": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/os_arch",
+                        "title": "Os_arch",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "x86_64"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "os_name": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/os_name",
+                        "title": "Os_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "Apple Mac OS 13.2"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "os_release": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/os_release",
+                        "title": "Os_release",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "22.3.0"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "os_version": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/os_version",
+                        "title": "Os_version",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "Darwin Kernel Version 22.3.0: Thu Jan  5 20:53:49 PST 2023; root:xnu-8792.81.2~2/RELEASE_X86_64"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "ram": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/ram",
+                        "title": "Ram",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "4294967296"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "ram_free": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/ram_free",
+                        "title": "Ram_free",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "640212992"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "ram_usage": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/ram_usage",
+                        "title": "Ram_usage",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "14"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "ram_used": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/ram_used",
+                        "title": "Ram_used",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "3599519744"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "serial_number": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/serial_number",
+                        "title": "Serial_number",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "C02TM2ZBHX87"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "swap_free": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/swap_free",
+                        "title": "Swap_free",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "0"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "swap_total": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/swap_total",
+                        "title": "Swap_total",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "0"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "sys_manufacturer": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/sys_manufacturer",
+                        "title": "Sys_manufacturer",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "Apple Inc"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "sys_type": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/sys_type",
+                        "title": "Sys_type",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "iMac Pro"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "system_name": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/system_name",
+                        "title": "System_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "secpods-iMac-Pro.local"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "system_product_name": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/system_product_name",
+                        "title": "System_product_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "iMac Pro"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "system_product_version": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/system_product_version",
+                        "title": "System_product_version",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "iMacPro1,1"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "system_uptime": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/system_uptime",
+                        "title": "System_uptime",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "0 weeks,6 days,9 hours,1 minutes,21 seconds"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "system_uuid": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/system_uuid",
+                        "title": "System_uuid",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "6247366C-7B06-5EF1-A00C-F983162807B1"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "timezone_name": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/timezone_name",
+                        "title": "Timezone_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "America/Los_Angeles"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "vmalloc_total": {
+                        "$id": "#root/results/detailed-system-info/computerinfo/items/computerinfo_metadata/vmalloc_total",
+                        "title": "Vmalloc_total",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "1034554"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "system_dns_info": {
+              "$id": "#root/results/detailed-system-info/system_dns_info",
+              "title": "System_dns_info",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/system_dns_info/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "system_dns_info_metadata"
+                ],
+                "properties": {
+                  "system_dns_info_metadata": {
+                    "$id": "#root/results/detailed-system-info/system_dns_info/items/system_dns_info_metadata",
+                    "title": "System_dns_info_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "domain_name",
+                      "dns_server_ip"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/system_dns_info/items/system_dns_info_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "dnsinfo_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "domain_name": {
+                        "$id": "#root/results/detailed-system-info/system_dns_info/items/system_dns_info_metadata/domain_name",
+                        "title": "Domain_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          ""
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "dns_server_ip": {
+                        "$id": "#root/results/detailed-system-info/system_dns_info/items/system_dns_info_metadata/dns_server_ip",
+                        "title": "Dns_server_ip",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "8.8.8.8"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "etchosts": {
+              "$id": "#root/results/detailed-system-info/etchosts",
+              "title": "Etchosts",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/etchosts/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "etchosts_metadata"
+                ],
+                "properties": {
+                  "etchosts_metadata": {
+                    "$id": "#root/results/detailed-system-info/etchosts/items/etchosts_metadata",
+                    "title": "Etchosts_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "host_ip",
+                      "hostname"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/etchosts/items/etchosts_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "etchosts_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "host_ip": {
+                        "$id": "#root/results/detailed-system-info/etchosts/items/etchosts_metadata/host_ip",
+                        "title": "Host_ip",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "127.0.0.1"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "hostname": {
+                        "$id": "#root/results/detailed-system-info/etchosts/items/etchosts_metadata/hostname",
+                        "title": "Hostname",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "localhost"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "etcprotocols": {
+              "$id": "#root/results/detailed-system-info/etcprotocols",
+              "title": "Etcprotocols",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/etcprotocols/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "etcprotocols_metadata"
+                ],
+                "properties": {
+                  "etcprotocols_metadata": {
+                    "$id": "#root/results/detailed-system-info/etcprotocols/items/etcprotocols_metadata",
+                    "title": "Etcprotocols_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "protocol_aliases",
+                      "protocol_name",
+                      "protocol_number"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/etcprotocols/items/etcprotocols_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "etcprotocols_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "protocol_aliases": {
+                        "$id": "#root/results/detailed-system-info/etcprotocols/items/etcprotocols_metadata/protocol_aliases",
+                        "title": "Protocol_aliases",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "IP"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "protocol_name": {
+                        "$id": "#root/results/detailed-system-info/etcprotocols/items/etcprotocols_metadata/protocol_name",
+                        "title": "Protocol_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "ip"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "protocol_number": {
+                        "$id": "#root/results/detailed-system-info/etcprotocols/items/etcprotocols_metadata/protocol_number",
+                        "title": "Protocol_number",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "0"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "etcservices": {
+              "$id": "#root/results/detailed-system-info/etcservices",
+              "title": "Etcservices",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/etcservices/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "etcservices_metadata"
+                ],
+                "properties": {
+                  "etcservices_metadata": {
+                    "$id": "#root/results/detailed-system-info/etcservices/items/etcservices_metadata",
+                    "title": "Etcservices_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "service_name",
+                      "service_port",
+                      "service_protocol"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/etcservices/items/etcservices_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "etcservices_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "service_name": {
+                        "$id": "#root/results/detailed-system-info/etcservices/items/etcservices_metadata/service_name",
+                        "title": "Service_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "rtmp"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "service_port": {
+                        "$id": "#root/results/detailed-system-info/etcservices/items/etcservices_metadata/service_port",
+                        "title": "Service_port",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "1"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "service_protocol": {
+                        "$id": "#root/results/detailed-system-info/etcservices/items/etcservices_metadata/service_protocol",
+                        "title": "Service_protocol",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "ddp"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "installedapplication": {
+              "$id": "#root/results/detailed-system-info/installedapplication",
+              "title": "Installedapplication",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/installedapplication/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "installedapplication_metadata"
+                ],
+                "properties": {
+                  "installedapplication_metadata": {
+                    "$id": "#root/results/detailed-system-info/installedapplication/items/installedapplication_metadata",
+                    "title": "Installedapplication_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "application_executable",
+                      "application_lastuse",
+                      "application_name",
+                      "application_path",
+                      "application_publisher",
+                      "application_signedby",
+                      "application_version"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/installedapplication/items/installedapplication_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "application_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "application_executable": {
+                        "$id": "#root/results/detailed-system-info/installedapplication/items/installedapplication_metadata/application_executable",
+                        "title": "Application_executable",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "/Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app/Contents/MacOS/AppleMobileDeviceHelper"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "application_lastuse": {
+                        "$id": "#root/results/detailed-system-info/installedapplication/items/installedapplication_metadata/application_lastuse",
+                        "title": "Application_lastuse",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "2023-01-14T00:57:42Z"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "application_name": {
+                        "$id": "#root/results/detailed-system-info/installedapplication/items/installedapplication_metadata/application_name",
+                        "title": "Application_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "AppleMobileDeviceHelper"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "application_path": {
+                        "$id": "#root/results/detailed-system-info/installedapplication/items/installedapplication_metadata/application_path",
+                        "title": "Application_path",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "/Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "application_publisher": {
+                        "$id": "#root/results/detailed-system-info/installedapplication/items/installedapplication_metadata/application_publisher",
+                        "title": "Application_publisher",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "apple"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "application_signedby": {
+                        "$id": "#root/results/detailed-system-info/installedapplication/items/installedapplication_metadata/application_signedby",
+                        "title": "Application_signedby",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "Apple Code Signing Certification Authority"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "application_version": {
+                        "$id": "#root/results/detailed-system-info/installedapplication/items/installedapplication_metadata/application_version",
+                        "title": "Application_version",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "5.0"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "softwarelicenses": {
+              "$id": "#root/results/detailed-system-info/softwarelicenses",
+              "title": "Softwarelicenses",
+              "type": "array",
+              "default": []
+            },
+            "systemrestoreinfo": {
+              "$id": "#root/results/detailed-system-info/systemrestoreinfo",
+              "title": "Systemrestoreinfo",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/systemrestoreinfo/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "systemrestoreinfo_metadata"
+                ],
+                "properties": {
+                  "systemrestoreinfo_metadata": {
+                    "$id": "#root/results/detailed-system-info/systemrestoreinfo/items/systemrestoreinfo_metadata",
+                    "title": "Systemrestoreinfo_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "rp_status"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/systemrestoreinfo/items/systemrestoreinfo_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "systemrestoreinfo_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "rp_status": {
+                        "$id": "#root/results/detailed-system-info/systemrestoreinfo/items/systemrestoreinfo_metadata/rp_status",
+                        "title": "Rp_status",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "OFF"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "antivirus_info": {
+              "$id": "#root/results/detailed-system-info/antivirus_info",
+              "title": "Antivirus_info",
+              "type": "array",
+              "default": []
+            },
+            "nvram": {
+              "$id": "#root/results/detailed-system-info/nvram",
+              "title": "Nvram",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/nvram/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "nvram_metadata"
+                ],
+                "properties": {
+                  "nvram_metadata": {
+                    "$id": "#root/results/detailed-system-info/nvram/items/nvram_metadata",
+                    "title": "Nvram_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "nvram_var",
+                      "nvram_value"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/nvram/items/nvram_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "nvram_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "nvram_var": {
+                        "$id": "#root/results/detailed-system-info/nvram/items/nvram_metadata/nvram_var",
+                        "title": "Nvram_var",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "boot-args"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "nvram_value": {
+                        "$id": "#root/results/detailed-system-info/nvram/items/nvram_metadata/nvram_value",
+                        "title": "Nvram_value",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "keepsyms=1"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "deviceinfo": {
+              "$id": "#root/results/detailed-system-info/deviceinfo",
+              "title": "Deviceinfo",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/deviceinfo/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "deviceinfo_metadata"
+                ],
+                "properties": {
+                  "deviceinfo_metadata": {
+                    "$id": "#root/results/detailed-system-info/deviceinfo/items/deviceinfo_metadata",
+                    "title": "Deviceinfo_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "device_name",
+                      "device_path",
+                      "device_size",
+                      "device_type"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/deviceinfo/items/deviceinfo_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "device_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "device_name": {
+                        "$id": "#root/results/detailed-system-info/deviceinfo/items/deviceinfo_metadata/device_name",
+                        "title": "Device_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "disk0"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "device_path": {
+                        "$id": "#root/results/detailed-system-info/deviceinfo/items/deviceinfo_metadata/device_path",
+                        "title": "Device_path",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/SF0@1E/IOPP/S08@1/IOPP/S50@A/AppleVirtIOPCITransport/AppleVirtIOBlockStorageDevice/IOBlockStorageDriver/Apple Inc. VirtIO Block Media"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "device_size": {
+                        "$id": "#root/results/detailed-system-info/deviceinfo/items/deviceinfo_metadata/device_size",
+                        "title": "Device_size",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "107374182400"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "device_type": {
+                        "$id": "#root/results/detailed-system-info/deviceinfo/items/deviceinfo_metadata/device_type",
+                        "title": "Device_type",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "IOMedia"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "sysctl": {
+              "$id": "#root/results/detailed-system-info/sysctl",
+              "title": "Sysctl",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/sysctl/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "sysctl_metadata"
+                ],
+                "properties": {
+                  "sysctl_metadata": {
+                    "$id": "#root/results/detailed-system-info/sysctl/items/sysctl_metadata",
+                    "title": "Sysctl_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "value"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/sysctl/items/sysctl_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "user.cs_path"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "value": {
+                        "$id": "#root/results/detailed-system-info/sysctl/items/sysctl_metadata/value",
+                        "title": "Value",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "/usr/bin"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "interface": {
+              "$id": "#root/results/detailed-system-info/interface",
+              "title": "Interface",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/interface/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "interface_metadata"
+                ],
+                "properties": {
+                  "interface_metadata": {
+                    "$id": "#root/results/detailed-system-info/interface/items/interface_metadata",
+                    "title": "Interface_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "type",
+                      "gateway",
+                      "inet_addr",
+                      "netmask",
+                      "wol_enabled",
+                      "flag"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/interface/items/interface_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "lo0"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "type": {
+                        "$id": "#root/results/detailed-system-info/interface/items/interface_metadata/type",
+                        "title": "Type",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "ARPHRD_LOOPBACK"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "gateway": {
+                        "$id": "#root/results/detailed-system-info/interface/items/interface_metadata/gateway",
+                        "title": "Gateway",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "0.0.0.0"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "inet_addr": {
+                        "$id": "#root/results/detailed-system-info/interface/items/interface_metadata/inet_addr",
+                        "title": "Inet_addr",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "127.0.0.1"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "netmask": {
+                        "$id": "#root/results/detailed-system-info/interface/items/interface_metadata/netmask",
+                        "title": "Netmask",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "255.0.0.0"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "wol_enabled": {
+                        "$id": "#root/results/detailed-system-info/interface/items/interface_metadata/wol_enabled",
+                        "title": "Wol_enabled",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "FALSE"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "flag": {
+                        "$id": "#root/results/detailed-system-info/interface/items/interface_metadata/flag",
+                        "title": "Flag",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "UP"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "password": {
+              "$id": "#root/results/detailed-system-info/password",
+              "title": "Password",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/password/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "password_metadata"
+                ],
+                "properties": {
+                  "password_metadata": {
+                    "$id": "#root/results/detailed-system-info/password/items/password_metadata",
+                    "title": "Password_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "username",
+                      "password",
+                      "user_id",
+                      "group_id",
+                      "gcos",
+                      "home_dir",
+                      "login_shell"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/password/items/password_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "password_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "username": {
+                        "$id": "#root/results/detailed-system-info/password/items/password_metadata/username",
+                        "title": "Username",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "_appowner"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "password": {
+                        "$id": "#root/results/detailed-system-info/password/items/password_metadata/password",
+                        "title": "Password",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "*"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "user_id": {
+                        "$id": "#root/results/detailed-system-info/password/items/password_metadata/user_id",
+                        "title": "User_id",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "87"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "group_id": {
+                        "$id": "#root/results/detailed-system-info/password/items/password_metadata/group_id",
+                        "title": "Group_id",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "87"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "gcos": {
+                        "$id": "#root/results/detailed-system-info/password/items/password_metadata/gcos",
+                        "title": "Gcos",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "Application Owner"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "home_dir": {
+                        "$id": "#root/results/detailed-system-info/password/items/password_metadata/home_dir",
+                        "title": "Home_dir",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "/var/empty"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "login_shell": {
+                        "$id": "#root/results/detailed-system-info/password/items/password_metadata/login_shell",
+                        "title": "Login_shell",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "/usr/bin/false"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "process58": {
+              "$id": "#root/results/detailed-system-info/process58",
+              "title": "Process58",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/process58/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "process58_metadata"
+                ],
+                "properties": {
+                  "process58_metadata": {
+                    "$id": "#root/results/detailed-system-info/process58/items/process58_metadata",
+                    "title": "Process58_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "process_name",
+                      "parent_process_name",
+                      "command_line",
+                      "pid",
+                      "ppid",
+                      "priority",
+                      "ruid",
+                      "start_time",
+                      "user_id"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/process58/items/process58_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "process58_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "process_name": {
+                        "$id": "#root/results/detailed-system-info/process58/items/process58_metadata/process_name",
+                        "title": "Process_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "com.apple.audio.SandboxHelper"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "parent_process_name": {
+                        "$id": "#root/results/detailed-system-info/process58/items/process58_metadata/parent_process_name",
+                        "title": "Parent_process_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "launchd"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "command_line": {
+                        "$id": "#root/results/detailed-system-info/process58/items/process58_metadata/command_line",
+                        "title": "Command_line",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "/System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.SandboxHelper.xpc/Contents/MacOS/com.apple.audio.SandboxHelper"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "pid": {
+                        "$id": "#root/results/detailed-system-info/process58/items/process58_metadata/pid",
+                        "title": "Pid",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "82865"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "ppid": {
+                        "$id": "#root/results/detailed-system-info/process58/items/process58_metadata/ppid",
+                        "title": "Ppid",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "1"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "priority": {
+                        "$id": "#root/results/detailed-system-info/process58/items/process58_metadata/priority",
+                        "title": "Priority",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "40"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "ruid": {
+                        "$id": "#root/results/detailed-system-info/process58/items/process58_metadata/ruid",
+                        "title": "Ruid",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "501"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "start_time": {
+                        "$id": "#root/results/detailed-system-info/process58/items/process58_metadata/start_time",
+                        "title": "Start_time",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "17:17:05"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "user_id": {
+                        "$id": "#root/results/detailed-system-info/process58/items/process58_metadata/user_id",
+                        "title": "User_id",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "501"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "uname": {
+              "$id": "#root/results/detailed-system-info/uname",
+              "title": "Uname",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/uname/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "uname_metadata"
+                ],
+                "properties": {
+                  "uname_metadata": {
+                    "$id": "#root/results/detailed-system-info/uname/items/uname_metadata",
+                    "title": "Uname_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "machine_class",
+                      "node_name",
+                      "os_name",
+                      "os_release",
+                      "os_version",
+                      "processor_type",
+                      "time_zone",
+                      "locale"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/uname/items/uname_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "uname_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "machine_class": {
+                        "$id": "#root/results/detailed-system-info/uname/items/uname_metadata/machine_class",
+                        "title": "Machine_class",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "x86_64"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "node_name": {
+                        "$id": "#root/results/detailed-system-info/uname/items/uname_metadata/node_name",
+                        "title": "Node_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "secpods-iMac-Pro.local"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "os_name": {
+                        "$id": "#root/results/detailed-system-info/uname/items/uname_metadata/os_name",
+                        "title": "Os_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "Darwin"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "os_release": {
+                        "$id": "#root/results/detailed-system-info/uname/items/uname_metadata/os_release",
+                        "title": "Os_release",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "22.3.0"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "os_version": {
+                        "$id": "#root/results/detailed-system-info/uname/items/uname_metadata/os_version",
+                        "title": "Os_version",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "Darwin Kernel Version 22.3.0: Thu Jan  5 20:53:49 PST 2023; root:xnu-8792.81.2~2/RELEASE_X86_64"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "processor_type": {
+                        "$id": "#root/results/detailed-system-info/uname/items/uname_metadata/processor_type",
+                        "title": "Processor_type",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "x86_64"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "time_zone": {
+                        "$id": "#root/results/detailed-system-info/uname/items/uname_metadata/time_zone",
+                        "title": "Time_zone",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "PDT"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "locale": {
+                        "$id": "#root/results/detailed-system-info/uname/items/uname_metadata/locale",
+                        "title": "Locale",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "en_US"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "kernel_info": {
+              "$id": "#root/results/detailed-system-info/kernel_info",
+              "title": "Kernel_info",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/kernel_info/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "kernel_info_metadata"
+                ],
+                "properties": {
+                  "kernel_info_metadata": {
+                    "$id": "#root/results/detailed-system-info/kernel_info/items/kernel_info_metadata",
+                    "title": "Kernel_info_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "arguments",
+                      "kernel_ver"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/kernel_info/items/kernel_info_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "kernel_info_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "arguments": {
+                        "$id": "#root/results/detailed-system-info/kernel_info/items/kernel_info_metadata/arguments",
+                        "title": "Arguments",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "keepsyms=1"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "kernel_ver": {
+                        "$id": "#root/results/detailed-system-info/kernel_info/items/kernel_info_metadata/kernel_ver",
+                        "title": "Kernel_ver",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "22.3.0"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "pfctl": {
+              "$id": "#root/results/detailed-system-info/pfctl",
+              "title": "Pfctl",
+              "type": "array",
+              "default": []
+            },
+            "rpc_map": {
+              "$id": "#root/results/detailed-system-info/rpc_map",
+              "title": "Rpc_map",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/rpc_map/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "rpc_map_metadata"
+                ],
+                "properties": {
+                  "rpc_map_metadata": {
+                    "$id": "#root/results/detailed-system-info/rpc_map/items/rpc_map_metadata",
+                    "title": "Rpc_map_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "rpc_aliases",
+                      "rpc_program_name",
+                      "rpc_program_number"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/rpc_map/items/rpc_map_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "rpc_map_items"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "rpc_aliases": {
+                        "$id": "#root/results/detailed-system-info/rpc_map/items/rpc_map_metadata/rpc_aliases",
+                        "title": "Rpc_aliases",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "portmap sunrpc rpcbind"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "rpc_program_name": {
+                        "$id": "#root/results/detailed-system-info/rpc_map/items/rpc_map_metadata/rpc_program_name",
+                        "title": "Rpc_program_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "rpcbind"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "rpc_program_number": {
+                        "$id": "#root/results/detailed-system-info/rpc_map/items/rpc_map_metadata/rpc_program_number",
+                        "title": "Rpc_program_number",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "100000"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "loggedin_user": {
+              "$id": "#root/results/detailed-system-info/loggedin_user",
+              "title": "Loggedin_user",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/loggedin_user/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "loggedin_user_metadata"
+                ],
+                "properties": {
+                  "loggedin_user_metadata": {
+                    "$id": "#root/results/detailed-system-info/loggedin_user/items/loggedin_user_metadata",
+                    "title": "Loggedin_user_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "user_name",
+                      "tty",
+                      "time",
+                      "pid",
+                      "type"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/loggedin_user/items/loggedin_user_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "loggedin_user_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "user_name": {
+                        "$id": "#root/results/detailed-system-info/loggedin_user/items/loggedin_user_metadata/user_name",
+                        "title": "User_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "secpod"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "tty": {
+                        "$id": "#root/results/detailed-system-info/loggedin_user/items/loggedin_user_metadata/tty",
+                        "title": "Tty",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "console"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "time": {
+                        "$id": "#root/results/detailed-system-info/loggedin_user/items/loggedin_user_metadata/time",
+                        "title": "Time",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "1679066074"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "pid": {
+                        "$id": "#root/results/detailed-system-info/loggedin_user/items/loggedin_user_metadata/pid",
+                        "title": "Pid",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "175"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "type": {
+                        "$id": "#root/results/detailed-system-info/loggedin_user/items/loggedin_user_metadata/type",
+                        "title": "Type",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "7"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "ip_forwarding_status": {
+              "$id": "#root/results/detailed-system-info/ip_forwarding_status",
+              "title": "Ip_forwarding_status",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/ip_forwarding_status/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "ip_forwarding_status_metadata"
+                ],
+                "properties": {
+                  "ip_forwarding_status_metadata": {
+                    "$id": "#root/results/detailed-system-info/ip_forwarding_status/items/ip_forwarding_status_metadata",
+                    "title": "Ip_forwarding_status_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "ip_forwarding_status"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/ip_forwarding_status/items/ip_forwarding_status_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "ip_forwarding_status_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "ip_forwarding_status": {
+                        "$id": "#root/results/detailed-system-info/ip_forwarding_status/items/ip_forwarding_status_metadata/ip_forwarding_status",
+                        "title": "Ip_forwarding_status",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "disabled"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "diskencryption": {
+              "$id": "#root/results/detailed-system-info/diskencryption",
+              "title": "Diskencryption",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/diskencryption/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "diskencryption_metadata"
+                ],
+                "properties": {
+                  "diskencryption_metadata": {
+                    "$id": "#root/results/detailed-system-info/diskencryption/items/diskencryption_metadata",
+                    "title": "Diskencryption_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "encryption_status"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/diskencryption/items/diskencryption_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "diskencryption_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "encryption_status": {
+                        "$id": "#root/results/detailed-system-info/diskencryption/items/diskencryption_metadata/encryption_status",
+                        "title": "Encryption_status",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "off"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "rlimit": {
+              "$id": "#root/results/detailed-system-info/rlimit",
+              "title": "Rlimit",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/rlimit/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "rlimit_metadata"
+                ],
+                "properties": {
+                  "rlimit_metadata": {
+                    "$id": "#root/results/detailed-system-info/rlimit/items/rlimit_metadata",
+                    "title": "Rlimit_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "core_current",
+                      "maxfiles_current",
+                      "maxproc_current",
+                      "maxproc_max",
+                      "stack_current",
+                      "stack_max"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/rlimit/items/rlimit_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "rlimit_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "core_current": {
+                        "$id": "#root/results/detailed-system-info/rlimit/items/rlimit_metadata/core_current",
+                        "title": "Core_current",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "0"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "maxfiles_current": {
+                        "$id": "#root/results/detailed-system-info/rlimit/items/rlimit_metadata/maxfiles_current",
+                        "title": "Maxfiles_current",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "256"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "maxproc_current": {
+                        "$id": "#root/results/detailed-system-info/rlimit/items/rlimit_metadata/maxproc_current",
+                        "title": "Maxproc_current",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "1392"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "maxproc_max": {
+                        "$id": "#root/results/detailed-system-info/rlimit/items/rlimit_metadata/maxproc_max",
+                        "title": "Maxproc_max",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "2088"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "stack_current": {
+                        "$id": "#root/results/detailed-system-info/rlimit/items/rlimit_metadata/stack_current",
+                        "title": "Stack_current",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "8388608"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "stack_max": {
+                        "$id": "#root/results/detailed-system-info/rlimit/items/rlimit_metadata/stack_max",
+                        "title": "Stack_max",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "67104768"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "launchd": {
+              "$id": "#root/results/detailed-system-info/launchd",
+              "title": "Launchd",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/launchd/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "launchd_metadata"
+                ],
+                "properties": {
+                  "launchd_metadata": {
+                    "$id": "#root/results/detailed-system-info/launchd/items/launchd_metadata",
+                    "title": "Launchd_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "label",
+                      "status"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/launchd/items/launchd_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "launchd_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "label": {
+                        "$id": "#root/results/detailed-system-info/launchd/items/launchd_metadata/label",
+                        "title": "Label",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "com.apple.mobile.obliteration"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "status": {
+                        "$id": "#root/results/detailed-system-info/launchd/items/launchd_metadata/status",
+                        "title": "Status",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "0"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "gatekeeper": {
+              "$id": "#root/results/detailed-system-info/gatekeeper",
+              "title": "Gatekeeper",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/gatekeeper/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "gatekeeper_metadata"
+                ],
+                "properties": {
+                  "gatekeeper_metadata": {
+                    "$id": "#root/results/detailed-system-info/gatekeeper/items/gatekeeper_metadata",
+                    "title": "Gatekeeper_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "enabled"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/gatekeeper/items/gatekeeper_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "gatekeeper_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "enabled": {
+                        "$id": "#root/results/detailed-system-info/gatekeeper/items/gatekeeper_metadata/enabled",
+                        "title": "Enabled",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "true"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "keychain": {
+              "$id": "#root/results/detailed-system-info/keychain",
+              "title": "Keychain",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/keychain/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "keychain_metadata"
+                ],
+                "properties": {
+                  "keychain_metadata": {
+                    "$id": "#root/results/detailed-system-info/keychain/items/keychain_metadata",
+                    "title": "Keychain_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "filepath",
+                      "lock_on_sleep",
+                      "timeout"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/keychain/items/keychain_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "keychain_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "filepath": {
+                        "$id": "#root/results/detailed-system-info/keychain/items/keychain_metadata/filepath",
+                        "title": "Filepath",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "/Library/Keychains/System.keychain"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "lock_on_sleep": {
+                        "$id": "#root/results/detailed-system-info/keychain/items/keychain_metadata/lock_on_sleep",
+                        "title": "Lock_on_sleep",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "true"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "timeout": {
+                        "$id": "#root/results/detailed-system-info/keychain/items/keychain_metadata/timeout",
+                        "title": "Timeout",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "300"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "rpc_net_conn": {
+              "$id": "#root/results/detailed-system-info/rpc_net_conn",
+              "title": "Rpc_net_conn",
+              "type": "array",
+              "default": []
+            },
+            "shell_history": {
+              "$id": "#root/results/detailed-system-info/shell_history",
+              "title": "Shell_history",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/shell_history/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "shell_history_metadata"
+                ],
+                "properties": {
+                  "shell_history_metadata": {
+                    "$id": "#root/results/detailed-system-info/shell_history/items/shell_history_metadata",
+                    "title": "Shell_history_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "username",
+                      "uid",
+                      "history_file",
+                      "command"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/shell_history/items/shell_history_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "shell_history_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "username": {
+                        "$id": "#root/results/detailed-system-info/shell_history/items/shell_history_metadata/username",
+                        "title": "Username",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "secpod"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "uid": {
+                        "$id": "#root/results/detailed-system-info/shell_history/items/shell_history_metadata/uid",
+                        "title": "Uid",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "501"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "history_file": {
+                        "$id": "#root/results/detailed-system-info/shell_history/items/shell_history_metadata/history_file",
+                        "title": "History_file",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "/Users/secpod/.zsh_history"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "command": {
+                        "$id": "#root/results/detailed-system-info/shell_history/items/shell_history_metadata/command",
+                        "title": "Command",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "ip a"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "sudo_users": {
+              "$id": "#root/results/detailed-system-info/sudo_users",
+              "title": "Sudo_users",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/sudo_users/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "sudo_users_metadata"
+                ],
+                "properties": {
+                  "sudo_users_metadata": {
+                    "$id": "#root/results/detailed-system-info/sudo_users/items/sudo_users_metadata",
+                    "title": "Sudo_users_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "sudo_user_name"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/sudo_users/items/sudo_users_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "sudo_users_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "sudo_user_name": {
+                        "$id": "#root/results/detailed-system-info/sudo_users/items/sudo_users_metadata/sudo_user_name",
+                        "title": "Sudo_user_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "secpod"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "mount_points": {
+              "$id": "#root/results/detailed-system-info/mount_points",
+              "title": "Mount_points",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/mount_points/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "mount_points_metadata"
+                ],
+                "properties": {
+                  "mount_points_metadata": {
+                    "$id": "#root/results/detailed-system-info/mount_points/items/mount_points_metadata",
+                    "title": "Mount_points_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "disk_filesystem_name",
+                      "disk_filesystem_type",
+                      "disk_mounted_on",
+                      "disk_size",
+                      "disk_space_available",
+                      "disk_space_used",
+                      "disk_use_percentage"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/mount_points/items/mount_points_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "mount_points_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "disk_filesystem_name": {
+                        "$id": "#root/results/detailed-system-info/mount_points/items/mount_points_metadata/disk_filesystem_name",
+                        "title": "Disk_filesystem_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "/dev/disk2s4s1"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "disk_filesystem_type": {
+                        "$id": "#root/results/detailed-system-info/mount_points/items/mount_points_metadata/disk_filesystem_type",
+                        "title": "Disk_filesystem_type",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "APFS"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "disk_mounted_on": {
+                        "$id": "#root/results/detailed-system-info/mount_points/items/mount_points_metadata/disk_mounted_on",
+                        "title": "Disk_mounted_on",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "/"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "disk_size": {
+                        "$id": "#root/results/detailed-system-info/mount_points/items/mount_points_metadata/disk_size",
+                        "title": "Disk_size",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "107164426240"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "disk_space_available": {
+                        "$id": "#root/results/detailed-system-info/mount_points/items/mount_points_metadata/disk_space_available",
+                        "title": "Disk_space_available",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "87304499200"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "disk_space_used": {
+                        "$id": "#root/results/detailed-system-info/mount_points/items/mount_points_metadata/disk_space_used",
+                        "title": "Disk_space_used",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "8939884544"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "disk_use_percentage": {
+                        "$id": "#root/results/detailed-system-info/mount_points/items/mount_points_metadata/disk_use_percentage",
+                        "title": "Disk_use_percentage",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "0%"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "group": {
+              "$id": "#root/results/detailed-system-info/group",
+              "title": "Group",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/group/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "group_metadata"
+                ],
+                "properties": {
+                  "group_metadata": {
+                    "$id": "#root/results/detailed-system-info/group/items/group_metadata",
+                    "title": "Group_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "group",
+                      "group_id"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/group/items/group_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "group_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "group": {
+                        "$id": "#root/results/detailed-system-info/group/items/group_metadata/group",
+                        "title": "Group",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "_appowner"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "group_id": {
+                        "$id": "#root/results/detailed-system-info/group/items/group_metadata/group_id",
+                        "title": "Group_id",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "87"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "partition": {
+              "$id": "#root/results/detailed-system-info/partition",
+              "title": "Partition",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/partition/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "partition_metadata"
+                ],
+                "properties": {
+                  "partition_metadata": {
+                    "$id": "#root/results/detailed-system-info/partition/items/partition_metadata",
+                    "title": "Partition_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "device",
+                      "fs_type",
+                      "mount_point",
+                      "space_left",
+                      "space_used",
+                      "total_space",
+                      "uuid"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/partition/items/partition_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "partition_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "device": {
+                        "$id": "#root/results/detailed-system-info/partition/items/partition_metadata/device",
+                        "title": "Device",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "/dev/disk2s4s1"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "fs_type": {
+                        "$id": "#root/results/detailed-system-info/partition/items/partition_metadata/fs_type",
+                        "title": "Fs_type",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "APFS"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "mount_point": {
+                        "$id": "#root/results/detailed-system-info/partition/items/partition_metadata/mount_point",
+                        "title": "Mount_point",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "/"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "space_left": {
+                        "$id": "#root/results/detailed-system-info/partition/items/partition_metadata/space_left",
+                        "title": "Space_left",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "87304499200"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "space_used": {
+                        "$id": "#root/results/detailed-system-info/partition/items/partition_metadata/space_used",
+                        "title": "Space_used",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "8939884544"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "total_space": {
+                        "$id": "#root/results/detailed-system-info/partition/items/partition_metadata/total_space",
+                        "title": "Total_space",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "107164426240"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "uuid": {
+                        "$id": "#root/results/detailed-system-info/partition/items/partition_metadata/uuid",
+                        "title": "Uuid",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "54F8A7D5-A680-4599-8FE7-5B1DA39D5098"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "wireless_info": {
+              "$id": "#root/results/detailed-system-info/wireless_info",
+              "title": "Wireless_info",
+              "type": "array",
+              "default": []
+            },
+            "croninfo": {
+              "$id": "#root/results/detailed-system-info/croninfo",
+              "title": "Croninfo",
+              "type": "array",
+              "default": []
+            },
+            "serviceinfo": {
+              "$id": "#root/results/detailed-system-info/serviceinfo",
+              "title": "Serviceinfo",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/serviceinfo/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "serviceinfo_metadata"
+                ],
+                "properties": {
+                  "serviceinfo_metadata": {
+                    "$id": "#root/results/detailed-system-info/serviceinfo/items/serviceinfo_metadata",
+                    "title": "Serviceinfo_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "service_name",
+                      "service_status"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/serviceinfo/items/serviceinfo_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "serviceinfo_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "service_name": {
+                        "$id": "#root/results/detailed-system-info/serviceinfo/items/serviceinfo_metadata/service_name",
+                        "title": "Service_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "com.apple.mobile.obliteration"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "service_status": {
+                        "$id": "#root/results/detailed-system-info/serviceinfo/items/serviceinfo_metadata/service_status",
+                        "title": "Service_status",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "SERVICE_STOPPED"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "routingtable": {
+              "$id": "#root/results/detailed-system-info/routingtable",
+              "title": "Routingtable",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/routingtable/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "routingtable_metadata"
+                ],
+                "properties": {
+                  "routingtable_metadata": {
+                    "$id": "#root/results/detailed-system-info/routingtable/items/routingtable_metadata",
+                    "title": "Routingtable_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "destination",
+                      "flags",
+                      "gateway"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/routingtable/items/routingtable_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "routingtable_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "destination": {
+                        "$id": "#root/results/detailed-system-info/routingtable/items/routingtable_metadata/destination",
+                        "title": "Destination",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "127.0.0.1"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "flags": {
+                        "$id": "#root/results/detailed-system-info/routingtable/items/routingtable_metadata/flags",
+                        "title": "Flags",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "2097157"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "gateway": {
+                        "$id": "#root/results/detailed-system-info/routingtable/items/routingtable_metadata/gateway",
+                        "title": "Gateway",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "127.0.0.1"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "system_dhcp_info": {
+              "$id": "#root/results/detailed-system-info/system_dhcp_info",
+              "title": "System_dhcp_info",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/system_dhcp_info/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "system_dhcp_info_metadata"
+                ],
+                "properties": {
+                  "system_dhcp_info_metadata": {
+                    "$id": "#root/results/detailed-system-info/system_dhcp_info/items/system_dhcp_info_metadata",
+                    "title": "System_dhcp_info_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "dhcp_enabled",
+                      "dhcp_interface",
+                      "dhcp_server_ip",
+                      "gateway_ip",
+                      "interface_mac_address",
+                      "interface_type",
+                      "ip_mask",
+                      "lease_time"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/system_dhcp_info/items/system_dhcp_info_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "system_dhcp_info_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "dhcp_enabled": {
+                        "$id": "#root/results/detailed-system-info/system_dhcp_info/items/system_dhcp_info_metadata/dhcp_enabled",
+                        "title": "Dhcp_enabled",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "Yes"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "dhcp_interface": {
+                        "$id": "#root/results/detailed-system-info/system_dhcp_info/items/system_dhcp_info_metadata/dhcp_interface",
+                        "title": "Dhcp_interface",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "en0"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "dhcp_server_ip": {
+                        "$id": "#root/results/detailed-system-info/system_dhcp_info/items/system_dhcp_info_metadata/dhcp_server_ip",
+                        "title": "Dhcp_server_ip",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "192.168.2.1"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "gateway_ip": {
+                        "$id": "#root/results/detailed-system-info/system_dhcp_info/items/system_dhcp_info_metadata/gateway_ip",
+                        "title": "Gateway_ip",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "192.168.2.1"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "interface_mac_address": {
+                        "$id": "#root/results/detailed-system-info/system_dhcp_info/items/system_dhcp_info_metadata/interface_mac_address",
+                        "title": "Interface_mac_address",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "E2-98-E0-98-73-91"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "interface_type": {
+                        "$id": "#root/results/detailed-system-info/system_dhcp_info/items/system_dhcp_info_metadata/interface_type",
+                        "title": "Interface_type",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "ARPHRD_ETHER"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "ip_mask": {
+                        "$id": "#root/results/detailed-system-info/system_dhcp_info/items/system_dhcp_info_metadata/ip_mask",
+                        "title": "Ip_mask",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "255.255.254.0"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "lease_time": {
+                        "$id": "#root/results/detailed-system-info/system_dhcp_info/items/system_dhcp_info_metadata/lease_time",
+                        "title": "Lease_time",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "2 days"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "osinfo": {
+              "$id": "#root/results/detailed-system-info/osinfo",
+              "title": "Osinfo",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/osinfo/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "osinfo_metadata"
+                ],
+                "properties": {
+                  "osinfo_metadata": {
+                    "$id": "#root/results/detailed-system-info/osinfo/items/osinfo_metadata",
+                    "title": "Osinfo_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "build_version",
+                      "copy_right",
+                      "os_name",
+                      "os_release_id",
+                      "service_pack_major",
+                      "service_pack_minor"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/osinfo/items/osinfo_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "osinfo_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "build_version": {
+                        "$id": "#root/results/detailed-system-info/osinfo/items/osinfo_metadata/build_version",
+                        "title": "Build_version",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "22D49"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "copy_right": {
+                        "$id": "#root/results/detailed-system-info/osinfo/items/osinfo_metadata/copy_right",
+                        "title": "Copy_right",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "1983-2023 Apple Inc."
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "os_name": {
+                        "$id": "#root/results/detailed-system-info/osinfo/items/osinfo_metadata/os_name",
+                        "title": "Os_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "Mac OS X"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "os_release_id": {
+                        "$id": "#root/results/detailed-system-info/osinfo/items/osinfo_metadata/os_release_id",
+                        "title": "Os_release_id",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "13.2"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "service_pack_major": {
+                        "$id": "#root/results/detailed-system-info/osinfo/items/osinfo_metadata/service_pack_major",
+                        "title": "Service_pack_major",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "10"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "service_pack_minor": {
+                        "$id": "#root/results/detailed-system-info/osinfo/items/osinfo_metadata/service_pack_minor",
+                        "title": "Service_pack_minor",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "16"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "installedpatches": {
+              "$id": "#root/results/detailed-system-info/installedpatches",
+              "title": "Installedpatches",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/installedpatches/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "installedpatches_metadata"
+                ],
+                "properties": {
+                  "installedpatches_metadata": {
+                    "$id": "#root/results/detailed-system-info/installedpatches/items/installedpatches_metadata",
+                    "title": "Installedpatches_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "application_name",
+                      "display_version",
+                      "patch_installedby",
+                      "patch_installedon",
+                      "platform"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/installedpatches/items/installedpatches_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "installedpatches_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "application_name": {
+                        "$id": "#root/results/detailed-system-info/installedpatches/items/installedpatches_metadata/application_name",
+                        "title": "Application_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "macOS 13.2"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "display_version": {
+                        "$id": "#root/results/detailed-system-info/installedpatches/items/installedpatches_metadata/display_version",
+                        "title": "Display_version",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "13.2"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "patch_installedby": {
+                        "$id": "#root/results/detailed-system-info/installedpatches/items/installedpatches_metadata/patch_installedby",
+                        "title": "Patch_installedby",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "Software Update Daemon"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "patch_installedon": {
+                        "$id": "#root/results/detailed-system-info/installedpatches/items/installedpatches_metadata/patch_installedon",
+                        "title": "Patch_installedon",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "Fri Mar 10 00:44:11 2023"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "platform": {
+                        "$id": "#root/results/detailed-system-info/installedpatches/items/installedpatches_metadata/platform",
+                        "title": "Platform",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "Apple Mac OS 13.2"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "port": {
+              "$id": "#root/results/detailed-system-info/port",
+              "title": "Port",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/port/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "port_metadata"
+                ],
+                "properties": {
+                  "port_metadata": {
+                    "$id": "#root/results/detailed-system-info/port/items/port_metadata",
+                    "title": "Port_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "protocol",
+                      "local_address",
+                      "local_port",
+                      "local_full_address",
+                      "process_name",
+                      "portstate",
+                      "user_id",
+                      "pid",
+                      "foreign_address",
+                      "foreign_port",
+                      "foreign_full_address"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/port/items/port_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "port_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "protocol": {
+                        "$id": "#root/results/detailed-system-info/port/items/port_metadata/protocol",
+                        "title": "Protocol",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "TCP"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "local_address": {
+                        "$id": "#root/results/detailed-system-info/port/items/port_metadata/local_address",
+                        "title": "Local_address",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "*"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "local_port": {
+                        "$id": "#root/results/detailed-system-info/port/items/port_metadata/local_port",
+                        "title": "Local_port",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "22"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "local_full_address": {
+                        "$id": "#root/results/detailed-system-info/port/items/port_metadata/local_full_address",
+                        "title": "Local_full_address",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "*:22"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "process_name": {
+                        "$id": "#root/results/detailed-system-info/port/items/port_metadata/process_name",
+                        "title": "Process_name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "launchd"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "portstate": {
+                        "$id": "#root/results/detailed-system-info/port/items/port_metadata/portstate",
+                        "title": "Portstate",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "LISTEN"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "user_id": {
+                        "$id": "#root/results/detailed-system-info/port/items/port_metadata/user_id",
+                        "title": "User_id",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "root"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "pid": {
+                        "$id": "#root/results/detailed-system-info/port/items/port_metadata/pid",
+                        "title": "Pid",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "1"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "foreign_address": {
+                        "$id": "#root/results/detailed-system-info/port/items/port_metadata/foreign_address",
+                        "title": "Foreign_address",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          ""
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "foreign_port": {
+                        "$id": "#root/results/detailed-system-info/port/items/port_metadata/foreign_port",
+                        "title": "Foreign_port",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          ""
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "foreign_full_address": {
+                        "$id": "#root/results/detailed-system-info/port/items/port_metadata/foreign_full_address",
+                        "title": "Foreign_full_address",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          ""
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            },
+            "systemsetup": {
+              "$id": "#root/results/detailed-system-info/systemsetup",
+              "title": "Systemsetup",
+              "type": "array",
+              "default": [],
+              "items":{
+                "$id": "#root/results/detailed-system-info/systemsetup/items",
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "systemsetup_metadata"
+                ],
+                "properties": {
+                  "systemsetup_metadata": {
+                    "$id": "#root/results/detailed-system-info/systemsetup/items/systemsetup_metadata",
+                    "title": "Systemsetup_metadata",
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "timezone",
+                      "networktimeserver",
+                      "computername",
+                      "startupdisk",
+                      "kernelbootarchitecturesetting",
+                      "computersleep",
+                      "displaysleep",
+                      "disksleep",
+                      "waitforstartupafterpowerfailure",
+                      "usingnetworktime",
+                      "restartfreeze",
+                      "allowpowerbuttontosleepcomputer",
+                      "remotelogin",
+                      "remoteappleevents",
+                      "disablekeyboardwhenenclosurelockisengaged"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#root/results/detailed-system-info/systemsetup/items/systemsetup_metadata/name",
+                        "title": "Name",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "systemsetup_item"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "timezone": {
+                        "$id": "#root/results/detailed-system-info/systemsetup/items/systemsetup_metadata/timezone",
+                        "title": "Timezone",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "America/Los_Angeles"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "networktimeserver": {
+                        "$id": "#root/results/detailed-system-info/systemsetup/items/systemsetup_metadata/networktimeserver",
+                        "title": "Networktimeserver",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "time.apple.com"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "computername": {
+                        "$id": "#root/results/detailed-system-info/systemsetup/items/systemsetup_metadata/computername",
+                        "title": "Computername",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "secpods iMac Pro"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "startupdisk": {
+                        "$id": "#root/results/detailed-system-info/systemsetup/items/systemsetup_metadata/startupdisk",
+                        "title": "Startupdisk",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "/System/Volumes/Update/mnt1/System/Library/CoreServices"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "kernelbootarchitecturesetting": {
+                        "$id": "#root/results/detailed-system-info/systemsetup/items/systemsetup_metadata/kernelbootarchitecturesetting",
+                        "title": "Kernelbootarchitecturesetting",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "default"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "computersleep": {
+                        "$id": "#root/results/detailed-system-info/systemsetup/items/systemsetup_metadata/computersleep",
+                        "title": "Computersleep",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "0"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "displaysleep": {
+                        "$id": "#root/results/detailed-system-info/systemsetup/items/systemsetup_metadata/displaysleep",
+                        "title": "Displaysleep",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "0"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "disksleep": {
+                        "$id": "#root/results/detailed-system-info/systemsetup/items/systemsetup_metadata/disksleep",
+                        "title": "Disksleep",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "0"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "waitforstartupafterpowerfailure": {
+                        "$id": "#root/results/detailed-system-info/systemsetup/items/systemsetup_metadata/waitforstartupafterpowerfailure",
+                        "title": "Waitforstartupafterpowerfailure",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "0"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "usingnetworktime": {
+                        "$id": "#root/results/detailed-system-info/systemsetup/items/systemsetup_metadata/usingnetworktime",
+                        "title": "Usingnetworktime",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "true"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "restartfreeze": {
+                        "$id": "#root/results/detailed-system-info/systemsetup/items/systemsetup_metadata/restartfreeze",
+                        "title": "Restartfreeze",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "true"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "allowpowerbuttontosleepcomputer": {
+                        "$id": "#root/results/detailed-system-info/systemsetup/items/systemsetup_metadata/allowpowerbuttontosleepcomputer",
+                        "title": "Allowpowerbuttontosleepcomputer",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "true"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "remotelogin": {
+                        "$id": "#root/results/detailed-system-info/systemsetup/items/systemsetup_metadata/remotelogin",
+                        "title": "Remotelogin",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "true"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "remoteappleevents": {
+                        "$id": "#root/results/detailed-system-info/systemsetup/items/systemsetup_metadata/remoteappleevents",
+                        "title": "Remoteappleevents",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "false"
+                        ],
+                        "pattern": "^.*$"
+                      },
+                      "disablekeyboardwhenenclosurelockisengaged": {
+                        "$id": "#root/results/detailed-system-info/systemsetup/items/systemsetup_metadata/disablekeyboardwhenenclosurelockisengaged",
+                        "title": "Disablekeyboardwhenenclosurelockisengaged",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "false"
+                        ],
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            }
+          }
+        }
+
+      }
+    }
+
+  }
+}

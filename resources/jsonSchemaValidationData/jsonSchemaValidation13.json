@@ -1,0 +1,129 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "remediationinfo": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "account": {
+              "type": "string"
+            },
+            "devicerollbackpatchinfo": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "devicename": {
+                      "type": "string"
+                    },
+                    "rollbackpatchinfo": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "patchid": {
+                              "type": "string"
+                            },
+                            "asset": {
+                              "type": "string"
+                            },
+                            "size": {
+                              "type": "string"
+                            },
+                            "rollbackstatus": {
+                              "type": "string"
+                            },
+                            "installeddate": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "patchid",
+                            "asset",
+                            "size",
+                            "rollbackstatus",
+                            "installeddate"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "patchid": {
+                              "type": "string"
+                            },
+                            "asset": {
+                              "type": "string"
+                            },
+                            "size": {
+                              "type": "string"
+                            },
+                            "rollbackstatus": {
+                              "type": "string"
+                            },
+                            "installeddate": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "patchid",
+                            "asset",
+                            "size",
+                            "rollbackstatus",
+                            "installeddate"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "patchid": {
+                              "type": "string"
+                            },
+                            "asset": {
+                              "type": "string"
+                            },
+                            "size": {
+                              "type": "string"
+                            },
+                            "rollbackstatus": {
+                              "type": "string"
+                            },
+                            "installeddate": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "patchid",
+                            "asset",
+                            "size",
+                            "rollbackstatus",
+                            "installeddate"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "devicename",
+                    "rollbackpatchinfo"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "account",
+            "devicerollbackpatchinfo"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "remediationinfo"
+  ]
+}

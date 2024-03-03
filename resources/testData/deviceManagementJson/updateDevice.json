@@ -1,0 +1,22 @@
+{
+  "body": {
+    "request": {
+      "method": "updatedevice",
+      "parameters": {
+        "parameterset": [{
+          "parameter": [{
+            "key": "hostname",
+            "value": "INJECT_HOSTNAME"
+          }, {
+            "key": "os",
+            "value": "INJECT_OS"
+          }]
+        }]
+      }
+    }
+  },
+  "status": "INJECT_STATUS",
+  "urlparam": "INJECT_ACCNAME",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

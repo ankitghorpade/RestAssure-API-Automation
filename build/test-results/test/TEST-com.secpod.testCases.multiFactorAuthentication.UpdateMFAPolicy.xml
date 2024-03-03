@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.secpod.testCases.multiFactorAuthentication.UpdateMFAPolicy" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:51:47" hostname="SP-ANKIT-LAPTOP" time="3.712">
+  <properties/>
+  <testcase name="updateMFAPolicy[0]({&quot;request&quot;:{&quot;method&quot;:&quot;updateMFAPolicy&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;INJECT_POLICYNAME&quot;},{&quot;key&quot;:&quot;newPolicyName&quot;,&quot;value&quot;:&quot;PingoneNewPolicy&quot;},{&quot;key&quot;:&quot;policyDescription&quot;,&quot;value&quot;:&quot;INJECT_POLICYDESCRIPTION&quot;},{&quot;key&quot;:&quot;environmentId&quot;,&quot;value&quot;:&quot;INJECT_ENVIRONMENT_ID&quot;},{&quot;key&quot;:&quot;clientId&quot;,&quot;value&quot;:&quot;INJECT_CLIENT_ID&quot;},{&quot;key&quot;:&quot;authenticationPath&quot;,&quot;value&quot;:&quot;INJECT_AUTHENTICATION_PATH&quot;},{&quot;key&quot;:&quot;usernameOption&quot;,&quot;value&quot;:&quot;INJECT_MFA_USERNAME_OPTION&quot;}]}]}}}, 200.0, Update Pingone Mfa Policy With Valid Parameters, &quot;success&quot;)" classname="com.secpod.testCases.multiFactorAuthentication.UpdateMFAPolicy" time="2.504"/>
+  <testcase name="updateMFAPolicy[1]({&quot;request&quot;:{&quot;method&quot;:&quot;updateMFAPolicy&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;pingtest&quot;},{&quot;key&quot;:&quot;newPolicyName&quot;,&quot;value&quot;:&quot;Invalid name update&quot;},{&quot;key&quot;:&quot;policyDescription&quot;,&quot;value&quot;:&quot;demo&quot;},{&quot;key&quot;:&quot;environmentId&quot;,&quot;value&quot;:&quot;invalid_env_id&quot;},{&quot;key&quot;:&quot;clientId&quot;,&quot;value&quot;:&quot;Invalid_client_id&quot;},{&quot;key&quot;:&quot;authenticationPath&quot;,&quot;value&quot;:&quot;https://auth.pingone.asia&quot;},{&quot;key&quot;:&quot;usernameOption&quot;,&quot;value&quot;:&quot;custom&quot;}]}]}}}, 200.0, Update Pingone Mfa Policy With InValid Parameters, &quot;Policy does not exist&quot;)" classname="com.secpod.testCases.multiFactorAuthentication.UpdateMFAPolicy" time="0.577"/>
+  <system-out><![CDATA[
+###############addMFAPolicy###############
+
+https://192.168.2.22/AncorWebService/perform
+{"request":{"method":"addMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"PingOneTest11"},{"key":"policyDescription","value":"Test"},{"key":"environmentId","value":"612fb5a2-3c63-461c-8689-8286b316cdee"},{"key":"clientId","value":"2321773e-ed61-4e1b-8f2c-2031d6e12cbf"},{"key":"authenticationPath","value":"https://auth.pingone.asia"},{"key":"usernameOption","value":"custom"}]}]}}}
+{"response":{"method":"addMFAPolicy","results":{"result":[{"key":"PingOneTest11","status":"success","reason":""}]}}}
+totalNumberOfRows::2
+APIhelper::::::::::{"body":{"request":{"method":"updateMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"INJECT_POLICYNAME"},{"key":"newPolicyName","value":"PingoneNewPolicy"},{"key":"policyDescription","value":"INJECT_POLICYDESCRIPTION"},{"key":"environmentId","value":"INJECT_ENVIRONMENT_ID"},{"key":"clientId","value":"INJECT_CLIENT_ID"},{"key":"authenticationPath","value":"INJECT_AUTHENTICATION_PATH"},{"key":"usernameOption","value":"INJECT_MFA_USERNAME_OPTION"}]}]}}},"status":"200.0","urlparam":"Valid","description_of_TC":"Update Pingone Mfa Policy With Valid Parameters","expected_results":"success"}
+APIhelper::::::::::{"body":{"request":{"method":"updateMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"pingtest"},{"key":"newPolicyName","value":"Invalid name update"},{"key":"policyDescription","value":"demo"},{"key":"environmentId","value":"invalid_env_id"},{"key":"clientId","value":"Invalid_client_id"},{"key":"authenticationPath","value":"https://auth.pingone.asia"},{"key":"usernameOption","value":"custom"}]}]}}},"status":"200.0","urlparam":"Valid","description_of_TC":"Update Pingone Mfa Policy With InValid Parameters","expected_results":"Policy does not exist"}
+
+###############Update Pingone Mfa Policy With Valid Parameters###############
+
+https://192.168.2.22/AncorWebService/perform
+TestPingOneTest11
+1https://auth.pingone.asia
+{"request":{"method":"updateMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"PingOneTest11"},{"key":"newPolicyName","value":"PingoneNewPolicy"},{"key":"policyDescription","value":"Test"},{"key":"environmentId","value":"612fb5a2-3c63-461c-8689-8286b316cdee"},{"key":"clientId","value":"2321773e-ed61-4e1b-8f2c-2031d6e12cbf"},{"key":"authenticationPath","value":"https://auth.pingone.asia"},{"key":"usernameOption","value":"custom"}]}]}}}
+{"response":{"method":"updateMFAPolicy","results":{"result":[{"key":"PingoneNewPolicy","status":"success","reason":""}]}}}
+
+###############removeMFAPolicy###############
+
+https://192.168.2.22/AncorWebService/perform
+{"request":{"method":"removeMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"PingoneNewPolicy"}]}]}}}
+{"response":{"method":"removeMFAPolicy","results":{"result":[{"key":"PingoneNewPolicy","status":"success","reason":""}]}}}
+
+###############Update Pingone Mfa Policy With InValid Parameters###############
+
+https://192.168.2.22/AncorWebService/perform
+TestPingOneTest11
+{"request":{"method":"updateMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"pingtest"},{"key":"newPolicyName","value":"Invalid name update"},{"key":"policyDescription","value":"demo"},{"key":"environmentId","value":"invalid_env_id"},{"key":"clientId","value":"Invalid_client_id"},{"key":"authenticationPath","value":"https://auth.pingone.asia"},{"key":"usernameOption","value":"custom"}]}]}}}
+{"response":{"method":"updateMFAPolicy","results":{"result":[{"status":"fail","reason":"Policy does not exist"}]}}}
+getStatus Message for False::"fail"
+fail status in config"fail"
+"Policy does not exist"
+"Policy does not exist"
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

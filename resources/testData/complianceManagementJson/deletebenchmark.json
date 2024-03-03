@@ -1,0 +1,27 @@
+{
+  "body": {
+  "request": {
+    "method": "deletebenchmark",
+    "parameters": {
+      "parameterset": [
+        {
+          "parameter": [
+            {
+              "key": "account_name",
+              "value": "INJECT_ACCNAME"
+            },
+            {
+              "key": "benchmarkname",
+              "value": "INJECT_BENCHMARKNAME"
+            }
+          ]
+        }
+      ]
+    }
+  }
+},
+  "status": "INJECT_STATUS",
+  "urlparam": "Valid",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

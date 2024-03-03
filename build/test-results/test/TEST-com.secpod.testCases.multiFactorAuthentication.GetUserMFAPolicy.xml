@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.secpod.testCases.multiFactorAuthentication.GetUserMFAPolicy" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:52:00" hostname="SP-ANKIT-LAPTOP" time="1.499">
+  <properties/>
+  <testcase name="getUserMFAPolicy[0]({&quot;request&quot;:{&quot;method&quot;:&quot;getUserMFAPolicy&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;loginId&quot;,&quot;value&quot;:&quot;INJECT_USERID&quot;}]}]}}}, 200.0, Get User MFA Policy For User, &quot;PingOneTest11&quot;)" classname="com.secpod.testCases.multiFactorAuthentication.GetUserMFAPolicy" time="0.678"/>
+  <testcase name="getUserMFAPolicy[1]({&quot;request&quot;:{&quot;method&quot;:&quot;getUserMFAPolicy&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;loginId&quot;,&quot;value&quot;:&quot;invalid_userid&quot;}]}]}}}, 200.0, Invalid policy details, &quot;No records found with given name&quot;)" classname="com.secpod.testCases.multiFactorAuthentication.GetUserMFAPolicy" time="0.821"/>
+  <system-out><![CDATA[
+###############get organization###############
+
+https://192.168.2.22/AncorWebService/perform
+{"request":{"method":"getOrganization"}}
+{ "organizations":[{"organizationinfo":{"name":"Nicole","email":"qatest@secpod.com","startdate":"2023-09-21","enddate":"2023-12-31","maxsubscriptions":50,"inusesubscriptions":0}},{"organizationinfo":{"name":"org2","email":"qatest@secpod.com","startdate":"2023-09-20","enddate":"2023-12-31","maxsubscriptions":15,"inusesubscriptions":0}},{"organizationinfo":{"name":"Smitha","email":"qatest@secpod.com","startdate":"2023-10-11","enddate":"2023-12-31","maxsubscriptions":20,"inusesubscriptions":1}},{"organizationinfo":{"name":"testUpdate1","email":"test11@test.com","startdate":"2023-09-26","enddate":"2023-12-12","maxsubscriptions":1,"inusesubscriptions":0}},{"organizationinfo":{"name":"Test_ANKIT","email":"qatest@secpod.com","startdate":"2023-10-12","enddate":"2023-12-31","maxsubscriptions":5,"inusesubscriptions":0}},{"organizationinfo":{"name":"Avinash","email":"qatest@secpod.com","startdate":"2023-09-23","enddate":"2023-12-31","maxsubscriptions":2,"inusesubscriptions":0}},{"organizationinfo":{"name":"SHIV","email":"qatest@secpod.com","startdate":"2023-10-18","enddate":"2023-12-31","maxsubscriptions":5,"inusesubscriptions":3}},{"organizationinfo":{"name":"Ashok","email":"qatest@secpod.com","startdate":"2023-08-22","enddate":"2023-12-31","maxsubscriptions":5,"inusesubscriptions":1}}]}
+
+###############Create User for deletion###############
+
+https://192.168.2.22/AncorWebService/perform
+{"request":{"method":"adduser","parameters":{"parameterset":[{"parameter":[{"key":"id","value":"API.9yJH@123.com"},{"key":"password","value":"P4ssw0rd@"},{"key":"name","value":"uniqname"},{"key":"organization","value":"Nicole"},{"key":"email","value":"commonuserforDelete@secpod.com"},{"key":"role","value":"ORGADMIN"}]}]}}}
+{"response":{"method":"adduser","results":{"result":[{"key":"API.9yJH@123.com","status":"success","reason":""}]}}}
+
+###############addMFAPolicy###############
+
+https://192.168.2.22/AncorWebService/perform
+{"request":{"method":"addMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"policyName","value":"PingOneTest11"},{"key":"policyDescription","value":"Test"},{"key":"environmentId","value":"612fb5a2-3c63-461c-8689-8286b316cdee"},{"key":"clientId","value":"2321773e-ed61-4e1b-8f2c-2031d6e12cbf"},{"key":"authenticationPath","value":"https://auth.pingone.asia"},{"key":"usernameOption","value":"custom"}]}]}}}
+{"response":{"method":"addMFAPolicy","results":{"result":[{"key":"PingOneTest11","status":"success","reason":""}]}}}
+Print this1 API.9yJH@123.com
+Print this2"PingOneTest11"
+
+###############EnforeMultiFactor###############
+
+https://192.168.2.22/AncorWebService/perform
+{"request":{"method":"enforceMultiFactor","parameters":{"parameterset":[{"parameter":[{"key":"loginid","value":"API.9yJH@123.com"},{"key":"policyName","value":"PingOneTest11"}]}]}}}
+{"response":{"method":"enforceMultiFactor","results":{"result":[{"key":"API.9yJH@123.com","status":"success","reason":""}]}}}
+Print this API.9yJH@123.com
+totalNumberOfRows::2
+APIhelper::::::::::{"body":{"request":{"method":"getUserMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"loginId","value":"INJECT_USERID"}]}]}}},"status":"200.0","urlparam":"Valid","description_of_TC":"Get User MFA Policy For User","expected_results":"PingOneTest11"}
+APIhelper::::::::::{"body":{"request":{"method":"getUserMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"loginId","value":"invalid_userid"}]}]}}},"status":"200.0","urlparam":"Valid","description_of_TC":"Invalid policy details","expected_results":"No records found with given name"}
+
+###############Get User MFA Policy For User###############
+
+https://192.168.2.22/AncorWebService/perform
+{"request":{"method":"getUserMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"loginId","value":"API.9yJH@123.com"}]}]}}}
+{ "policyName":"PingOneTest11"}
+Print this 11:"PingOneTest11"
+Print this 12:"PingOneTest11"
+
+###############Invalid policy details###############
+
+https://192.168.2.22/AncorWebService/perform
+{"request":{"method":"getUserMFAPolicy","parameters":{"parameterset":[{"parameter":[{"key":"loginId","value":"invalid_userid"}]}]}}}
+{"response":{"method":"getUserMFAPolicy","results":{"result":[{"key":"null","status":"Fail","reason":"No records found with given name"}]}}}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

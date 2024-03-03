@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.secpod.testCases.multiFactorAuthentication.IsMultiFactorEnabled" tests="2" skipped="0" failures="1" errors="0" timestamp="2023-11-26T19:51:43" hostname="SP-ANKIT-LAPTOP" time="1.4">
+  <properties/>
+  <testcase name="isMultiFactorEnabled[0]({&quot;request&quot;:{&quot;method&quot;:&quot;isMultiFactorEnabled&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;loginid&quot;,&quot;value&quot;:&quot;OrgnizationAdminSetup@test.com&quot;}]}]}}}, 200, Is mfa policy enabled to User, &quot;False&quot;)" classname="com.secpod.testCases.multiFactorAuthentication.IsMultiFactorEnabled" time="0.759">
+    <failure message="java.lang.AssertionError: expected [&quot;False&quot;] but found [&quot;Failed due to invalid login id&quot;]" type="java.lang.AssertionError">java.lang.AssertionError: expected [&quot;False&quot;] but found [&quot;Failed due to invalid login id&quot;]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.secpod.testCases.multiFactorAuthentication.IsMultiFactorEnabled.isMultiFactorEnabled(IsMultiFactorEnabled.java:88)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</failure>
+  </testcase>
+  <testcase name="isMultiFactorEnabled[1]({&quot;request&quot;:{&quot;method&quot;:&quot;isMultiFactorEnabled&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;loginid&quot;,&quot;value&quot;:&quot;Invalid@secpod.com&quot;}]}]}}}, 200, invalid loginID, &quot;Failed due to invalid login id&quot;)" classname="com.secpod.testCases.multiFactorAuthentication.IsMultiFactorEnabled" time="0.641"/>
+  <system-out><![CDATA[totalNumberOfRows::2
+APIhelper::::::::::{"body":{"request":{"method":"isMultiFactorEnabled","parameters":{"parameterset":[{"parameter":[{"key":"loginid","value":"OrgnizationAdminSetup@test.com"}]}]}}},"status":"200","urlparam":"Valid","description_of_TC":"Is mfa policy enabled to User","expected_results":"False"}
+APIhelper::::::::::{"body":{"request":{"method":"isMultiFactorEnabled","parameters":{"parameterset":[{"parameter":[{"key":"loginid","value":"Invalid@secpod.com"}]}]}}},"status":"200","urlparam":"Valid","description_of_TC":"invalid loginID","expected_results":"Failed due to invalid login id"}
+
+###############Is mfa policy enabled to User###############
+
+https://192.168.2.22/AncorWebService/perform
+{"request":{"method":"isMultiFactorEnabled","parameters":{"parameterset":[{"parameter":[{"key":"loginid","value":"OrgnizationAdminSetup@test.com"}]}]}}}
+{"response":{"method":"isMultiFactorEnabled","results":{"result":[{"key":"OrgnizationAdminSetup@test.com","status":"fail","reason":"Failed due to invalid login id"}]}}}
+
+###############invalid loginID###############
+
+https://192.168.2.22/AncorWebService/perform
+{"request":{"method":"isMultiFactorEnabled","parameters":{"parameterset":[{"parameter":[{"key":"loginid","value":"Invalid@secpod.com"}]}]}}}
+{"response":{"method":"isMultiFactorEnabled","results":{"result":[{"key":"Invalid@secpod.com","status":"fail","reason":"Failed due to invalid login id"}]}}}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

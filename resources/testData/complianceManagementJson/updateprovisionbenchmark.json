@@ -1,0 +1,40 @@
+{
+    "body": {
+        "request": {
+            "method": "updateprovisionbenchmark",
+            "parameters": {
+                "parameterset": [
+                    {
+                        "parameter": [
+                            {
+                                "key": "adminId",
+                                "value": "INJECT_ADMINID"
+                            },
+                            {
+                                "key": "benchmarkname",
+                                "value": "INJECT_BENCHMARKNAME"
+                            },
+                            {
+                                "key": "target_organization",
+                                "value": "INJECT_TARGET_ORGANIZATION"
+                            },
+                            {
+                                "key": "target_account_name",
+                                "value": "INJECT_TARGET_ACCOUNT_NAME"
+                            },
+                            {
+                                "key": "target_group",
+                                "value": "INJECT_TARGET_GROUP"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+
+    "status": "INJECT_STATUS",
+    "urlparam": "Valid",
+    "description_of_TC": "INJECT_DESCRIPTION",
+    "expected_results": "INJECT_EXPECTED_RESULTS"
+}

@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "remediationinfo": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "account": {
+              "type": "string"
+            },
+            "assetpatchinfo": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "assetname": {
+                      "type": "string"
+                    },
+                    "displayname": {
+                      "type": "string"
+                    },
+                    "remjobpatchinfo": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "patchid": {
+                              "type": "string"
+                            },
+                            "eri": {
+                              "type": "string"
+                            },
+                            "reboot": {
+                              "type": "string"
+                            },
+                            "fixinfo": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "patchid",
+                            "eri",
+                            "reboot",
+                            "fixinfo"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "assetname",
+                    "displayname",
+                    "remjobpatchinfo"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "account",
+            "assetpatchinfo"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "remediationinfo"
+  ]
+}

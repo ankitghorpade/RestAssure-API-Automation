@@ -1,0 +1,23 @@
+{"body": {
+  "request": {
+    "method": "deletePostureAnomalyScannerConfig",
+    "parameters": {
+      "parameterset": [{
+        "parameter": [{
+          "key": "organization",
+          "value": "INJECT_ORGNAME"
+        },
+          {
+            "key": "account_name",
+            "value": "INJECT_ACCNAME"
+          }
+        ]
+      }]
+    }
+  }
+},
+  "status": "INJECT_STATUS",
+  "urlparam": "Valid",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

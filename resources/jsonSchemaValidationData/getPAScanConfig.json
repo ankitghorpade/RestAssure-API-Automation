@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "starttime": {
+      "type": "string"
+    },
+    "month-of-year": {
+      "type": "string"
+    },
+    "day-of-month": {
+      "type": "string"
+    },
+    "week-of-month": {
+      "type": "string"
+    },
+    "day-of-week": {
+      "type": "string"
+    },
+    "schedule": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "starttime",
+    "month-of-year",
+    "day-of-month",
+    "week-of-month",
+    "day-of-week",
+    "schedule"
+  ]
+}
+

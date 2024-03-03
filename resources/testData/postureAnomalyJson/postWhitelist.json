@@ -1,0 +1,18 @@
+{"body":{
+  "account_name": "INJECT_ACCNAME",
+  "whitelist": {
+    "whitelist_items": [
+      {
+        "type": "detection",
+        "whitelist": ["INJECT_PA_ID"]
+
+      }
+    ]
+  },
+  "scan": "INJECT_SCAN"
+},
+  "status": "INJECT_STATUS",
+  "urlparam": "Valid",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

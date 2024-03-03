@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.secpod.testCases.multiFactorAuthentication.IsUserMFAPolicyExist</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.secpod.testCases.multiFactorAuthentication.IsUserMFAPolicyExist</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.secpod.testCases.multiFactorAuthentication.html">com.secpod.testCases.multiFactorAuthentication</a> &gt; IsUserMFAPolicyExist</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.231s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">isUserMFAPolicyExist[0]({&quot;request&quot;:{&quot;method&quot;:&quot;isUserMFAPolicyExist&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;loginId&quot;,&quot;value&quot;:&quot;INJECT_USERID&quot;}]}]}}}, 200.0, Is User Mfa Policy Exist With Valid Policy name, &quot;TRUE&quot;)</td>
+<td class="success">0.632s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">isUserMFAPolicyExist[1]({&quot;request&quot;:{&quot;method&quot;:&quot;isUserMFAPolicyExist&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;loginId&quot;,&quot;value&quot;:&quot;pingtest&quot;}]}]}}}, 200.0, Is User MFA Policy With InValid Parameters, &quot;Invalid Input&quot;)</td>
+<td class="success">0.599s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+###############get organization###############
+
+https://192.168.2.22/AncorWebService/perform
+{&quot;request&quot;:{&quot;method&quot;:&quot;getOrganization&quot;}}
+{ &quot;organizations&quot;:[{&quot;organizationinfo&quot;:{&quot;name&quot;:&quot;Nicole&quot;,&quot;email&quot;:&quot;qatest@secpod.com&quot;,&quot;startdate&quot;:&quot;2023-09-21&quot;,&quot;enddate&quot;:&quot;2023-12-31&quot;,&quot;maxsubscriptions&quot;:50,&quot;inusesubscriptions&quot;:0}},{&quot;organizationinfo&quot;:{&quot;name&quot;:&quot;org2&quot;,&quot;email&quot;:&quot;qatest@secpod.com&quot;,&quot;startdate&quot;:&quot;2023-09-20&quot;,&quot;enddate&quot;:&quot;2023-12-31&quot;,&quot;maxsubscriptions&quot;:15,&quot;inusesubscriptions&quot;:0}},{&quot;organizationinfo&quot;:{&quot;name&quot;:&quot;Smitha&quot;,&quot;email&quot;:&quot;qatest@secpod.com&quot;,&quot;startdate&quot;:&quot;2023-10-11&quot;,&quot;enddate&quot;:&quot;2023-12-31&quot;,&quot;maxsubscriptions&quot;:20,&quot;inusesubscriptions&quot;:1}},{&quot;organizationinfo&quot;:{&quot;name&quot;:&quot;testUpdate1&quot;,&quot;email&quot;:&quot;test11@test.com&quot;,&quot;startdate&quot;:&quot;2023-09-26&quot;,&quot;enddate&quot;:&quot;2023-12-12&quot;,&quot;maxsubscriptions&quot;:1,&quot;inusesubscriptions&quot;:0}},{&quot;organizationinfo&quot;:{&quot;name&quot;:&quot;Test_ANKIT&quot;,&quot;email&quot;:&quot;qatest@secpod.com&quot;,&quot;startdate&quot;:&quot;2023-10-12&quot;,&quot;enddate&quot;:&quot;2023-12-31&quot;,&quot;maxsubscriptions&quot;:5,&quot;inusesubscriptions&quot;:0}},{&quot;organizationinfo&quot;:{&quot;name&quot;:&quot;Avinash&quot;,&quot;email&quot;:&quot;qatest@secpod.com&quot;,&quot;startdate&quot;:&quot;2023-09-23&quot;,&quot;enddate&quot;:&quot;2023-12-31&quot;,&quot;maxsubscriptions&quot;:2,&quot;inusesubscriptions&quot;:0}},{&quot;organizationinfo&quot;:{&quot;name&quot;:&quot;SHIV&quot;,&quot;email&quot;:&quot;qatest@secpod.com&quot;,&quot;startdate&quot;:&quot;2023-10-18&quot;,&quot;enddate&quot;:&quot;2023-12-31&quot;,&quot;maxsubscriptions&quot;:5,&quot;inusesubscriptions&quot;:3}},{&quot;organizationinfo&quot;:{&quot;name&quot;:&quot;Ashok&quot;,&quot;email&quot;:&quot;qatest@secpod.com&quot;,&quot;startdate&quot;:&quot;2023-08-22&quot;,&quot;enddate&quot;:&quot;2023-12-31&quot;,&quot;maxsubscriptions&quot;:5,&quot;inusesubscriptions&quot;:1}}]}
+
+###############Create User for deletion###############
+
+https://192.168.2.22/AncorWebService/perform
+{&quot;request&quot;:{&quot;method&quot;:&quot;adduser&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;id&quot;,&quot;value&quot;:&quot;API.q8O3@123.com&quot;},{&quot;key&quot;:&quot;password&quot;,&quot;value&quot;:&quot;P4ssw0rd@&quot;},{&quot;key&quot;:&quot;name&quot;,&quot;value&quot;:&quot;uniqname&quot;},{&quot;key&quot;:&quot;organization&quot;,&quot;value&quot;:&quot;Nicole&quot;},{&quot;key&quot;:&quot;email&quot;,&quot;value&quot;:&quot;commonuserforDelete@secpod.com&quot;},{&quot;key&quot;:&quot;role&quot;,&quot;value&quot;:&quot;ORGADMIN&quot;}]}]}}}
+{&quot;response&quot;:{&quot;method&quot;:&quot;adduser&quot;,&quot;results&quot;:{&quot;result&quot;:[{&quot;key&quot;:&quot;API.q8O3@123.com&quot;,&quot;status&quot;:&quot;success&quot;,&quot;reason&quot;:&quot;&quot;}]}}}
+
+###############addMFAPolicy###############
+
+https://192.168.2.22/AncorWebService/perform
+{&quot;request&quot;:{&quot;method&quot;:&quot;addMFAPolicy&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;PingOneTest11&quot;},{&quot;key&quot;:&quot;policyDescription&quot;,&quot;value&quot;:&quot;Test&quot;},{&quot;key&quot;:&quot;environmentId&quot;,&quot;value&quot;:&quot;612fb5a2-3c63-461c-8689-8286b316cdee&quot;},{&quot;key&quot;:&quot;clientId&quot;,&quot;value&quot;:&quot;2321773e-ed61-4e1b-8f2c-2031d6e12cbf&quot;},{&quot;key&quot;:&quot;authenticationPath&quot;,&quot;value&quot;:&quot;https://auth.pingone.asia&quot;},{&quot;key&quot;:&quot;usernameOption&quot;,&quot;value&quot;:&quot;custom&quot;}]}]}}}
+{&quot;response&quot;:{&quot;method&quot;:&quot;addMFAPolicy&quot;,&quot;results&quot;:{&quot;result&quot;:[{&quot;key&quot;:&quot;PingOneTest11&quot;,&quot;status&quot;:&quot;success&quot;,&quot;reason&quot;:&quot;&quot;}]}}}
+Print this1 API.q8O3@123.com
+Print this2&quot;PingOneTest11&quot;
+
+###############EnforeMultiFactor###############
+
+https://192.168.2.22/AncorWebService/perform
+{&quot;request&quot;:{&quot;method&quot;:&quot;enforceMultiFactor&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;loginid&quot;,&quot;value&quot;:&quot;API.q8O3@123.com&quot;},{&quot;key&quot;:&quot;policyName&quot;,&quot;value&quot;:&quot;PingOneTest11&quot;}]}]}}}
+{&quot;response&quot;:{&quot;method&quot;:&quot;enforceMultiFactor&quot;,&quot;results&quot;:{&quot;result&quot;:[{&quot;key&quot;:&quot;API.q8O3@123.com&quot;,&quot;status&quot;:&quot;success&quot;,&quot;reason&quot;:&quot;&quot;}]}}}
+Print this API.q8O3@123.com
+totalNumberOfRows::3
+APIhelper::::::::::{&quot;body&quot;:{&quot;request&quot;:{&quot;method&quot;:&quot;isUserMFAPolicyExist&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;loginId&quot;,&quot;value&quot;:&quot;INJECT_USERID&quot;}]}]}}},&quot;status&quot;:&quot;200.0&quot;,&quot;urlparam&quot;:&quot;Valid&quot;,&quot;description_of_TC&quot;:&quot;Is User Mfa Policy Exist With Valid Policy name&quot;,&quot;expected_results&quot;:&quot;TRUE&quot;}
+APIhelper::::::::::{&quot;body&quot;:{&quot;request&quot;:{&quot;method&quot;:&quot;isUserMFAPolicyExist&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;loginId&quot;,&quot;value&quot;:&quot;pingtest&quot;}]}]}}},&quot;status&quot;:&quot;200.0&quot;,&quot;urlparam&quot;:&quot;Valid&quot;,&quot;description_of_TC&quot;:&quot;Is User MFA Policy With InValid Parameters&quot;,&quot;expected_results&quot;:&quot;Invalid Input&quot;}
+
+###############Is User Mfa Policy Exist With Valid Policy name###############
+
+https://192.168.2.22/AncorWebService/perform
+{&quot;request&quot;:{&quot;method&quot;:&quot;isUserMFAPolicyExist&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;loginId&quot;,&quot;value&quot;:&quot;API.q8O3@123.com&quot;}]}]}}}
+{&quot;response&quot;:{&quot;method&quot;:&quot;isUserMFAPolicyExist&quot;,&quot;results&quot;:{&quot;result&quot;:[{&quot;key&quot;:&quot;API.q8O3@123.com&quot;,&quot;status&quot;:&quot;True&quot;,&quot;reason&quot;:&quot;&quot;}]}}}
+getStatus Message for success::&quot;True&quot;
+success status in config::&quot;TRUE&quot;
+Print this1API.q8O3@123.com
+print this2API.q8O3@123.com
+
+###############Is User MFA Policy With InValid Parameters###############
+
+https://192.168.2.22/AncorWebService/perform
+{&quot;request&quot;:{&quot;method&quot;:&quot;isUserMFAPolicyExist&quot;,&quot;parameters&quot;:{&quot;parameterset&quot;:[{&quot;parameter&quot;:[{&quot;key&quot;:&quot;loginId&quot;,&quot;value&quot;:&quot;pingtest&quot;}]}]}}}
+{&quot;response&quot;:{&quot;method&quot;:&quot;isUserMFAPolicyExist&quot;,&quot;results&quot;:{&quot;result&quot;:[{&quot;key&quot;:&quot;No status found&quot;,&quot;status&quot;:&quot;fail&quot;,&quot;reason&quot;:&quot;Invalid Input&quot;}]}}}
+getStatus Message for False::&quot;fail&quot;
+fail status in config&quot;fail&quot;
+&quot;Invalid Input&quot;
+&quot;Invalid Input&quot;
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4</a> at 27-Nov-2023, 1:22:12 am</p>
+</div>
+</div>
+</body>
+</html>

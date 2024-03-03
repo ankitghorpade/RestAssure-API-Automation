@@ -1,0 +1,27 @@
+{
+  "body": {
+  "request": {
+    "method": "addgroup",
+    "parameters": {
+      "parameterset": [
+        {
+          "parameter": [
+            {
+              "key": "groupname",
+              "value": "INJECT_GROUPNAME"
+            },
+            {
+              "key": "groupdesc",
+              "value": "INJECT_GROUPDESCRIPTION"
+            }
+          ]
+        }
+      ]
+    }
+  }
+},
+  "status": "INJECT_STATUS",
+  "urlparam": "INJECT_ACCNAME",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

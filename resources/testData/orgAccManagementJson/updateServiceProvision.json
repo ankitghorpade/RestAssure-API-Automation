@@ -1,0 +1,25 @@
+{
+  "body": {
+    "request": {
+      "method": "updateserviceprovision",
+      "parameters": {
+        "parameterset": [{
+          "parameter": [{
+            "key": "service",
+            "value": "INJECT_SERVICEPROVISION"
+          }, {
+            "key": "enabled",
+            "value": "INJECT_ENABLED"
+          }, {
+            "key": "INJECT_ROLE",
+            "value": "INJECT_LOGIN"
+          }]
+        }]
+      }
+    }
+  },
+  "status": "INJECT_STATUS",
+  "urlparam": "Valid",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

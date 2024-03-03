@@ -1,0 +1,25 @@
+{
+  "body": {
+    "request": {
+      "method": "downloadagent",
+      "parameters": {
+        "parameterset": [{
+          "parameter": [{
+            "key": "accountid",
+            "value": "INJECT_ACCNAME"
+          }, {
+            "key": "type",
+            "value": "INJECT_TYPE"
+          }, {
+            "key": "architecture",
+            "value": "INJECT_ARCH"
+          }]
+        }]
+      }
+    }
+  },
+  "status": "INJECT_STATUS",
+  "urlparam": "Valid",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

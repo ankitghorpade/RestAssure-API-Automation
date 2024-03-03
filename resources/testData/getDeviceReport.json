@@ -1,0 +1,22 @@
+{
+  "body": {
+    "request": {
+      "method": "getdevicereport",
+      "parameters": {
+        "parameterset": [{
+          "parameter": [{
+            "key": "INJECT_KEY",
+            "value": "INJECT_VALUE"
+          },{
+            "key": "includeDSI",
+            "value": "INJECT_DSI"
+          }]
+        }]
+      }
+    }
+  },
+  "status": "INJECT_STATUS",
+  "urlparam": "INJECT_ACCNAME",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

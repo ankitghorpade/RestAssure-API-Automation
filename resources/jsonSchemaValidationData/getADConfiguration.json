@@ -1,0 +1,109 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "adconfigurations": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "adconfigurationinfo": {
+              "type": "object",
+              "properties": {
+                "organization": {
+                  "type": "string"
+                },
+                "integrationtype": {
+                  "type": "string"
+                },
+                "devicename": {
+                  "type": "string"
+                },
+                "adcredentials": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "password": {
+                      "type": "string"
+                    },
+                    "domainname": {
+                      "type": "string"
+                    },
+                    "ssl": {
+                      "type": "string"
+                    },
+                    "sslverify": {
+                      "type": "string"
+                    },
+                    "secureldap": {
+                      "type": "string"
+                    },
+                    "usecredential": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "password",
+                    "domainname",
+                    "ssl",
+                    "sslverify",
+                    "secureldap",
+                    "usecredential"
+                  ]
+                },
+                "adschedule": {
+                  "type": "object",
+                  "properties": {
+                    "starttime": {
+                      "type": "string"
+                    },
+                    "nextscan": {
+                      "type": "string"
+                    },
+                    "monthoftheyear": {
+                      "type": "string"
+                    },
+                    "dayofthemonth": {
+                      "type": "string"
+                    },
+                    "weekofthemonth": {
+                      "type": "string"
+                    },
+                    "dayoftheweek": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "starttime",
+                    "nextscan",
+                    "monthoftheyear",
+                    "dayofthemonth",
+                    "weekofthemonth",
+                    "dayoftheweek"
+                  ]
+                }
+              },
+              "required": [
+                "organization",
+                "integrationtype",
+                "devicename",
+                "adcredentials",
+                "adschedule"
+              ]
+            }
+          },
+          "required": [
+            "adconfigurationinfo"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "adconfigurations"
+  ]
+}

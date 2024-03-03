@@ -1,0 +1,234 @@
+{
+  "configure_items": [
+    {
+      "configure": [],
+      "devices": "",
+      "family": "windows",
+      "group": "",
+      "id": "PA-2022-1068",
+      "key": "local_port",
+      "reference": "All Ports - Windows",
+      "type": "port"
+    },
+    {
+      "configure": [],
+      "devices": "",
+      "family": "windows",
+      "group": "",
+      "id": "PA-2022-1069",
+      "key": "service_displayname",
+      "label": "services",
+      "reference": "All Services - Windows",
+      "type": "serviceinfo"
+    },
+    {
+      "configure": [],
+      "devices": "",
+      "family": "unix",
+      "group": "",
+      "id": "PA-2022-1069",
+      "key": "service_displayname",
+      "label": "services",
+      "reference": "All Services - Linux",
+      "type": "serviceinfo"
+    },
+    {
+      "configure": [],
+      "devices": "",
+      "family": "macos",
+      "group": "",
+      "id": "PA-2022-1069",
+      "key": "service_displayname",
+      "label": "services",
+      "reference": "All Services - Mac",
+      "type": "serviceinfo"
+    },
+    {
+      "configure": [],
+      "devices": "",
+      "family": "others",
+      "group": "",
+      "id": "PA-2022-1069",
+      "key": "service_displayname",
+      "label": "services",
+      "reference": "All Services - Others",
+      "type": "serviceinfo"
+    },
+    {
+      "configure": [],
+      "devices": "",
+      "family": "unix",
+      "group": "",
+      "id": "PA-2022-1068",
+      "key": "local_port",
+      "label": "ports",
+      "reference": "All Ports - Linux",
+      "type": "port"
+    },
+    {
+      "configure": [],
+      "devices": "",
+      "family": "macos",
+      "group": "",
+      "id": "PA-2022-1068",
+      "key": "local_port",
+      "label": "ports",
+      "reference": "All Ports - Mac",
+      "type": "port"
+    },
+    {
+      "configure": [],
+      "devices": "",
+      "family": "others",
+      "group": "",
+      "id": "PA-2022-1068",
+      "key": "local_port",
+      "label": "ports",
+      "reference": "All Ports - Others",
+      "type": "port"
+    },
+    {
+      "configure": [],
+      "devices": "",
+      "family": "windows",
+      "group": "",
+      "id": "PA-2022-1070",
+      "key": "process_name",
+      "label": "processes",
+      "reference": "All Processes - Windows",
+      "type": "process58"
+    },
+    {
+      "configure": [],
+      "devices": "",
+      "family": "unix",
+      "group": "",
+      "id": "PA-2022-1070",
+      "key": "process_name",
+      "label": "processes",
+      "reference": "All Processes - Linux",
+      "type": "process58"
+    },
+    {
+      "configure": [],
+      "devices": "",
+      "family": "macos",
+      "group": "",
+      "id": "PA-2022-1070",
+      "key": "process_name",
+      "label": "processes",
+      "reference": "All Processes - Mac",
+      "type": "process58"
+    },
+    {
+      "configure": [],
+      "devices": "",
+      "family": "windows",
+      "group": "",
+      "id": "PA-2022-1071",
+      "key": "app_name",
+      "label": "applications",
+      "reference": "Start up Applications - Windows",
+      "type": "system_autorun"
+    },
+    {
+      "configure": [],
+      "devices": "",
+      "family": "unix",
+      "group": "",
+      "id": "PA-2022-1071",
+      "key": "service_name",
+      "label": "applications",
+      "reference": "Start up Applications - Linux",
+      "type": "runlevel"
+    },
+    {
+      "configure": [],
+      "devices": "",
+      "family": "macos",
+      "group": "",
+      "id": "PA-2022-1071",
+      "key": "label",
+      "label": "applications",
+      "reference": "Start up Applications - Mac",
+      "type": "launchd"
+    },
+    {
+      "configure": [],
+      "devices": "",
+      "family": "windows",
+      "group": "",
+      "id": "PA-2022-1073",
+      "key": "name",
+      "label": "envVars",
+      "reference": "All Environment Variables",
+      "type": "environmentvariable58"
+    },
+    {
+      "configure": [],
+      "devices": "",
+      "family": "unix",
+      "group": "",
+      "id": "PA-2022-1073",
+      "key": "name",
+      "label": "envVars",
+      "reference": "All Environment Variables",
+      "type": "environmentvariable58"
+    },
+    {
+      "configure": [],
+      "devices": "",
+      "family": "macos",
+      "group": "",
+      "id": "PA-2022-1073",
+      "key": "name",
+      "label": "envVars",
+      "reference": "All Environment Variables",
+      "type": "environmentvariable58"
+    },
+    {
+      "configure": [],
+      "devices": "",
+      "family": "windows",
+      "group": "",
+      "id": "PA-2022-1072",
+      "key": "system_name",
+      "label": "devices",
+      "reference": "All Devices - Windows",
+      "type": "computerinfo"
+    },
+    {
+      "configure": [],
+      "devices": "",
+      "family": "unix",
+      "group": "",
+      "id": "PA-2022-1072",
+      "key": "system_name",
+      "label": "devices",
+      "reference": "All Devices - Linux",
+      "type": "computerinfo"
+    },
+    {
+      "configure": [],
+      "devices": "",
+      "family": "macos",
+      "group": "",
+      "id": "PA-2022-1072",
+      "key": "system_name",
+      "label": "devices",
+      "reference": "All Devices - Mac",
+      "type": "computerinfo"
+    },
+    {
+      "configure": [],
+      "devices": "",
+      "family": "others",
+      "group": "",
+      "id": "PA-2022-1072",
+      "key": "system_name",
+      "label": "devices",
+      "reference": "All Devices - Others",
+      "type": "computerinfo"
+    }
+  ]
+}

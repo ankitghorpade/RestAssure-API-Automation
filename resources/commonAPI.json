@@ -1,0 +1,755 @@
+{
+	"createorg": {
+		"request": {
+			"method": "addOrganization",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "name",
+								"value": "INJECT_ORGNAME"
+							},
+							{
+								"key": "email",
+								"value": "test@gmail.com"
+							},
+							{
+								"key": "numberofsubscriptions",
+								"value": "5"
+							},
+							{
+								"key": "enddate",
+								"value": "2023-12-12"
+							},
+							{
+								"key": "adminid",
+								"value": "qatest@secpod.com"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"deleteorg": {
+		"request": {
+			"method": "removeOrganization",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "name",
+								"value": "INJECT_ORGNAME"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"addAccount": {
+		"request": {
+			"method": "addaccount",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "name",
+								"value": "INJECT_ACCNAME"
+							},
+							{
+								"key": "organization",
+								"value": "INJECT_ORGNAME"
+							},
+							{
+								"key": "email",
+								"value": "test1@test.com"
+							},
+							{
+								"key": "numberofsubscriptions",
+								"value": "1"
+							},
+							{
+								"key": "agentautoupgrade",
+								"value": "false"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"removeAccount": {
+		"request": {
+			"method": "removeaccount",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "name",
+								"value": "INJECT_ACCNAME"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"addDevice": {
+		"request": {
+			"method": "adddevice",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "ip",
+								"value": "192.168.1.38"
+							},
+							{
+								"key": "hostname",
+								"value": "centos-6.7-qa"
+							},
+							{
+								"key": "mac",
+								"value": "72-8D-06-98-78-04"
+							},
+							{
+								"key": "os",
+								"value": "CentOS v6.7 architecture x86_64"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"deleteDevice": {
+		"request": {
+			"method": "deletedevice",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "hostname",
+								"value": "INJECT_HOSTNAME"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"UpdateDeviceAlias": {
+		"request": {
+			"method": "updateDeviceAlias",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "hostname",
+								"value": "INJECT_HOSTNAME"
+							},
+							{
+								"key": "alias",
+								"value": "INJECT_ALIAS"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"RemoveDeviceAlias": {
+		"request": {
+			"method": "removeDeviceAlias",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "alias",
+								"value": "INJECT_ALIAS"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"addGroup": {
+		"request": {
+			"method": "addgroup",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "groupname",
+								"value": "valid-group-name"
+							},
+							{
+								"key": "groupdesc",
+								"value": "valid-group-description"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"deleteGroup": {
+		"request": {
+			"method": "deletegroup",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "groupname",
+								"value": "INJECT_GROUPNAME"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"AssignDevicestoGroup": {
+		"request": {
+			"method": "assigndevicestogroup",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "groupname",
+								"value": "valid-group-name"
+							},
+							{
+								"key": "hostname",
+								"value": "centos-6.7-qa"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"UnAssignDevicesfromGroup": {
+		"request": {
+			"method": "unassigndevicesfromgroup",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "groupname",
+								"value": "INJECT_GROUPNAME"
+							},
+							{
+								"key": "hostname",
+								"value": "INJECT_HOSTNAME"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"deleteconfig": {
+		"request": {
+			"method": "deleteconfig",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "configname",
+								"value": "INJECT_CONFIGNAME"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"addConfig": {
+		"request": {
+			"method": "addconfig",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "configname",
+								"value": "INJECT_CONFIGNAME"
+							},
+							{
+								"key": "configdesc",
+								"value": "INJECT_CONFIGDESC"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"deleteBenchmark": {
+		"request": {
+			"method": "deletebenchmark",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "account_name",
+								"value": "INJECT_ACCNAME"
+							},
+							{
+								"key": "benchmarkname",
+								"value": "INJECT_BENCHMARKNAME"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"AddBenchmark": {
+		"request": {
+			"method": "addbenchmark",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "account_name",
+								"value": "Windows"
+							},
+							{
+								"key": "benchmarkname",
+								"value": "TestingBenchmark"
+							},
+							{
+								"key": "target_account_name",
+								"value": "INJECT_TARGET_ACCOUNT_NAME"
+							},
+							{
+								"key": "target_group",
+								"value": "windows 11"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"ProvisionBenchmark": {
+		"request": {
+			"method": "provisionbenchmark",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "account_name",
+								"value": "Windows"
+							},
+							{
+								"key": "benchmarkname",
+								"value": "TestingBenchmark"
+							},
+							{
+								"key": "target_organization",
+								"value": "INJECT_ORGNAME"
+							},
+							{
+								"key": "target_account_name",
+								"value": "ALL"
+							},
+							{
+								"key": "target_group",
+								"value": "windows 11"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"deleteprovisionbenchmark": {
+		"request": {
+			"method": "deleteprovisionbenchmark",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "adminId",
+								"value": "apitestadmin@secpod.com"
+							},
+							{
+								"key": "benchmarkname",
+								"value": "INJECT_BENCHMARKNAME"
+							},
+							{
+								"key": "target_organization",
+								"value": "INJECT_ORGNAME"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"UpdateProvisionBenchmark": {
+		"request": {
+			"method": "updateprovisionbenchmark",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "adminId",
+								"value": "INJECT_ADMINID"
+							},
+							{
+								"key": "benchmarkname",
+								"value": "INJECT_BENCHMARKNAME"
+							},
+							{
+								"key": "target_organization",
+								"value": "INJECT_ORGNAME"
+							},
+							{
+								"key": "target_account_name",
+								"value": "INJECT_TARGET_ACCOUNT_NAME"
+							},
+							{
+								"key": "target_group",
+								"value": "INJECT_TARGET_GROUP"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"getaccount": {
+		"request": {
+			"method": "getaccount",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "name",
+								"value": "INJECT_ACCNAME"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"getStatus": {
+		"account_name": "INJECT_ACCNAME"
+	},
+	"getAllConfiguration": {
+		"account_name": "Windows",
+		"PA-ID": "PA-2022-1068"
+	},
+	"postConfiguration": {
+		"account_name": "Windows",
+		"configuration": {
+			"configure_items": [
+				{
+					"id": "PA-2022-1068",
+					"key": "local_port",
+					"type": "port",
+					"reference": "All Ports - Windows",
+					"family": "windows",
+					"group": "",
+					"devices": "",
+					"configure": [
+						"INJECT_PORT"
+					]
+				}
+			]
+		}
+	},
+	"deleteAD" : {
+		"request": {
+			"method": "deleteADconfig",
+			"parameters": {
+				"parameterset": [{
+					"parameter": [{
+						"key": "organization",
+						"value": "INJECT_ORGNAME"
+					}, {
+						"key": "devicename",
+						"value": "INJECT_DEVICENAME"
+					}]
+				}]
+			}
+		}
+	},
+	"addADConfig" : {
+		"request": {
+			"method": "addADconfig",
+			"parameters": {
+				"parameterset": [{
+					"parameter": [{
+						"key": "organization",
+						"value": "AutomationORG"
+					}, {
+						"key": "devicename",
+						"value": "secpod"
+					}, {
+						"key": "integrationtype",
+						"value": "agent"
+					}, {
+						"key": "save",
+						"value": "yes"
+					}, {
+						"key": "username",
+						"value": "Administrator"
+					}, {
+						"key": "password",
+						"value": "S3cP0d@"
+					}, {
+						"key": "domainname",
+						"value": "trs.secpod"
+					}, {
+						"key": "sslverify",
+						"value": "no"
+					}, {
+						"key": "mode",
+						"value": "manual"
+					}, {
+						"key": "schedule",
+						"value": "daily"
+					}, {
+						"key": "starttime",
+						"value": "10:05:AM"
+					}, {
+						"key": "monthoftheyear",
+						"value": "1"
+					}, {
+						"key": "weekofthemonth",
+						"value": "1"
+					}, {
+						"key": "dayoftheweek",
+						"value": "1"
+					}]
+				}]
+			}
+		}
+	},
+	"addUser": {
+		"request": {
+			"method": "adduser",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "id",
+								"value": "INJECT_USERID"
+							},
+							{
+								"key": "password",
+								"value": "P4ssw0rd@"
+							},
+							{
+								"key": "name",
+								"value": "uniqname"
+							},
+							{
+								"key": "organization",
+								"value": "INJECT_ORGNAME"
+							},
+							{
+								"key": "email",
+								"value": "commonuserforDelete@secpod.com"
+							},
+							{
+								"key": "role",
+								"value": "ORGADMIN"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"deleteUser": {
+		"request": {
+			"method": "removeuser",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "id",
+								"value": "INJECT_USERID"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"getAllOrg": {
+		"request": {
+			"method": "getOrganization"
+		}
+	},
+	"assignOrgToUser": {
+		"request": {
+			"method": "assignUserToOrganization",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "user",
+								"value": "INJECT_USERID"
+							},
+							{
+								"key": "organization",
+								"value": "INJECT_ORGNAME"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"enforceMultiFactor":{
+		"request": {
+			"method": "enforceMultiFactor",
+			"parameters": {
+				"parameterset": [{
+					"parameter": [{
+						"key": "loginid",
+						"value": "INJECT_AUTH_LOGINID"
+					},
+						{
+							"key": "policyName",
+							"value": "INJECT_POLICYNAME"
+
+						}
+					]
+				}]
+			}
+		}
+	},
+	"withdrawMultiFactor": {
+		"request": {
+			"method": "withdrawMultiFactor",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "loginid",
+								"value": "INJECT_AUTH_LOGINID"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"isMultiFactorEnforced": {
+		"request": {
+			"method": "isMultiFactorEnforced",
+			"parameters": {
+				"parameterset": [{
+					"parameter": [{
+						"key": "loginid",
+						"value": "INJECT_AUTH_LOGINID"
+					}]
+				}]
+			}
+		}
+	},
+
+	"addMFAPolicy": {
+		"request": {
+			"method": "addMFAPolicy",
+			"parameters": {
+				"parameterset": [{
+					"parameter": [{
+						"key": "policyName",
+						"value": "INJECT_POLICYNAME"
+					}, {
+						"key": "policyDescription",
+						"value": "INJECT_POLICYDESCRIPTION"
+					},
+						{
+							"key": "environmentId",
+							"value": "INJECT_ENVIRONMENT_ID"
+						},
+						{
+							"key": "clientId",
+							"value": "INJECT_CLIENT_ID"
+						},
+						{
+							"key": "authenticationPath",
+							"value": "INJECT_AUTHENTICATION_PATH"
+						},
+						{
+							"key": "usernameOption",
+							"value": "INJECT_MFA_USERNAME_OPTION"
+						}
+					]
+				}]
+			}
+		}
+	},
+
+	"removeMFAPolicy": {
+		"request": {
+			"method": "removeMFAPolicy",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "policyName",
+								"value": "INJECT_POLICYNAME"
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+
+	"isMultiFactorEnabled": {
+		"request": {
+			"method": "isMultiFactorEnabled",
+			"parameters": {
+				"parameterset": [
+					{
+						"parameter": [
+							{
+								"key": "loginid",
+								"value": "INJECT_AUTH_LOGINID"
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

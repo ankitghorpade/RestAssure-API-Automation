@@ -1,0 +1,39 @@
+{
+  "body": {
+    "request": {
+      "method": "updateaccount",
+      "parameters": {
+        "parameterset": [
+          {
+            "parameter": [
+              {
+                "key": "newname",
+                "value": "INJECT_NEWACCNAME"
+              },
+              {
+                "key": "name",
+                "value": "INJECT_ACCNAME"
+              },
+              {
+                "key": "organization",
+                "value": "INJECT_ORGNAME"
+              },
+              {
+                "key": "email",
+                "value": "INJECT_EMAIL"
+              },
+              {
+                "key": "numberofsubscriptions",
+                "value": "INJECT_SUBSCRIPTIONS"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "status": "INJECT_STATUS",
+  "urlparam": "Valid",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

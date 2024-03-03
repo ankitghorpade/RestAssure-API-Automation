@@ -1,0 +1,19 @@
+{
+  "body": {
+  "request": {
+    "method": "getMFAPolicy",
+    "parameters": {
+      "parameterset": [{
+        "parameter": [{
+          "key": "policyName",
+          "value": "INJECT_POLICYNAME"
+        }]
+      }]
+    }
+  }
+},
+  "status": "INJECT_STATUS",
+  "urlparam": "Valid",
+  "description_of_TC": "INJECT_DESCRIPTION",
+  "expected_results": "INJECT_EXPECTED_RESULTS"
+}

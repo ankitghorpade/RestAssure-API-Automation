@@ -1,0 +1,130 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "devices": {
+      "type": "object",
+      "properties": {
+        "device": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "majorVersion": {
+                  "type": "string"
+                },
+                "minorVersion": {
+                  "type": "string"
+                },
+                "arch": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "release": {
+                  "type": "string"
+                },
+                "lastseen": {
+                  "type": "string"
+                },
+                "family": {
+                  "type": "string"
+                },
+                "deviceType": {
+                  "type": "string"
+                },
+                "lastScan": {
+                  "type": "string"
+                },
+                "manufacturer": {
+                  "type": "string"
+                },
+                "serialNumber": {
+                  "type": "string"
+                },
+                "critical-resource": {
+                  "type": "string"
+                },
+                "group-id": {
+                  "type": "string"
+                },
+                "host-name": {
+                  "type": "string"
+                },
+                "ip-address": {
+                  "type": "string"
+                },
+                "mac-address": {
+                  "type": "string"
+                },
+                "operating-system": {
+                  "type": "string"
+                },
+                "host-reachable": {
+                  "type": "string"
+                },
+                "agent-version": {
+                  "type": "string"
+                },
+                "agent-enabled": {
+                  "type": "string"
+                },
+                "customId": {
+                  "type": "string"
+                },
+                "time-stamp": {
+                  "type": "string"
+                },
+                "creation": {
+                  "type": "string"
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {}
+                },
+                "host_peer_status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "majorVersion",
+                "minorVersion",
+                "arch",
+                "type",
+                "release",
+                "lastseen",
+                "family",
+                "deviceType",
+                "lastScan",
+                "manufacturer",
+                "serialNumber",
+                "critical-resource",
+                "group-id",
+                "host-name",
+                "ip-address",
+                "mac-address",
+                "operating-system",
+                "host-reachable",
+                "agent-version",
+                "agent-enabled",
+                "customId",
+                "time-stamp",
+                "creation",
+                "tags",
+                "host_peer_status"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "device"
+      ]
+    }
+  },
+  "required": [
+    "devices"
+  ]
+}
